@@ -3,7 +3,6 @@ import React from "react";
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-
   startDate: string;
   endDate: string;
   technologyStack: string[];
