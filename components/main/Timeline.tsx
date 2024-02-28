@@ -7,6 +7,7 @@ import { ExperienceData } from "@/constants/Experience";
 const Timeline = () => {
   return (
     <section id="Timeline">
+    <h1 className="text-center text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-12">Navigating My Career Galaxy</h1>
       <VerticalTimeline>
         {ExperienceData.map((item) => (
           <TimelineElement

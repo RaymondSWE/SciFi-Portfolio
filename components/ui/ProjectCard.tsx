@@ -3,6 +3,12 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaYoutube } from "react-icons/fa";
 import Modal from "./Modal";
+import { motion } from "framer-motion";
+import {
+  fadeInUp,
+  fadeInLeft,
+  slideInFromTop
+} from "@/utils/motion"; 
 
 interface ProjectCardProps {
   src: string;
@@ -35,7 +41,12 @@ const ProjectCard = ({
 
   return (
     <>
-      <div className=" z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg bg-[#1A1A2E] border border-[#2A0E61] hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-xs mx-auto">
+      <motion.div 
+      className=" z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg bg-[#1A1A2E] border border-[#2A0E61] hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-xs mx-auto"
+      initial="hidden"
+      animate="visible"
+      variants={fadeInUp}
+      >
         <div className="w-full h-48 relative">
           <Image
             src={src}
@@ -114,7 +125,8 @@ const ProjectCard = ({
         >
           Technology Stack
         </button>
-      </div>
+      </motion.div>
+
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}

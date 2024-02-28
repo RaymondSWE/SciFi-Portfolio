@@ -6,6 +6,7 @@ import {
   fadeInUp,
   fadeInLeft,
   fadeInRight,
+  slideInFromTop
 } from "@/utils/motion"; 
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
@@ -21,8 +22,12 @@ const HeroContent = () => {
           variants={fadeInLeft}
         >
           <div className="flex items-center mb-4">
+            <motion.div 
+            className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+            variants={slideInFromTop}>
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
             <h1 className="ml-2 text-lg font-semibold Welcome-text">Raman Mohammed - Fullstack Developer</h1>
+            </motion.div>
           </div>
           <motion.h2
             variants={fadeInUp}
