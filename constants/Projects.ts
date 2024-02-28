@@ -139,8 +139,8 @@
       sourceUrl: null,
       youtubeUrl: null,
       githubUrl: "https://github.com/RaymondSWE/Blackjack-game",
-      startDate: "2021-12-25",
-      endDate: "2023-06-01",
+      startDate: "2022-03-04",
+      endDate: "2022-04-20",
       technologyStack: ["Java", "Java Swing", "Github", "Eclipse"],
     },
     {
