@@ -28,6 +28,7 @@
         "Event-Driven",
         "Github",
         "Github Actions",
+        "Framer Motion",
       ],
     },
     {
@@ -60,6 +61,8 @@
         "Postman",
         "Linux",
         "TailwindCSS",
+        "Framer Motion",
+
       ],
     },
     {
