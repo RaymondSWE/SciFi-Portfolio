@@ -131,7 +131,17 @@
       githubUrl: "https://github.com/RaymondSWE/Blackjack-game",
       startDate: "2021-12-25",
       endDate: "2023-06-01",
-      technologyStack: ["Java", "Java Swing", "Github", "Eclipse"],
+      technologyStack: [        
+      "MySQL",
+      "React",
+      "Material UI",
+      "Spring Boot",
+      "Liquibase",
+      "Scrum",
+      "HTTP",
+      "Gitlab",
+      "VsCode",
+      "IntellJ",],
     },
     {
       src: "/img/webportfolio.png",
