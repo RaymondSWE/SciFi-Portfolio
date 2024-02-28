@@ -6,7 +6,6 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const SkillText = () => {
   return (

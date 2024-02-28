@@ -70,15 +70,29 @@
 }
 
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar-hidden {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
+/* Custom scrollbar for Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; 
 }
 
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ba9cff; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a48fff; 
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
 
 
 html {
