@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ModalProps {
   isOpen: boolean;
@@ -9,7 +9,13 @@ interface ModalProps {
   technologyStack: string[];
 }
 
-const Modal = ({ isOpen, onClose, startDate, endDate, technologyStack }: ModalProps) => {
+const Modal = ({
+  isOpen,
+  onClose,
+  startDate,
+  endDate,
+  technologyStack,
+}: ModalProps) => {
   if (!isOpen) return null;
 
   return (
@@ -19,14 +25,17 @@ const Modal = ({ isOpen, onClose, startDate, endDate, technologyStack }: ModalPr
           <div className="text-sm text-gray-400">
             <span>Start: {startDate}</span> | <span>End: {endDate}</span>
           </div>
-          <button 
-            onClick={onClose} 
-            className="px-4 py-2 text-white rounded-lg transition ease-in-out duration-150 button-primary">
+          <button
+            onClick={onClose}
+            className="px-4 py-2 text-white rounded-lg transition ease-in-out duration-150 button-primary"
+          >
             Close
           </button>
         </div>
         <div>
-          <h3 className="text-lg font-bold text-[#CCD6F6] m-6 text-center">Technology Stack:</h3>
+          <h3 className="text-lg font-bold text-[#CCD6F6] m-6 text-center">
+            Technology Stack:
+          </h3>
           <div className="flex flex-wrap gap-6 justify-center">
             {technologyStack.map((tech, index) => (
               <div key={index} className="relative">
