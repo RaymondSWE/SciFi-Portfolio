@@ -44,7 +44,7 @@ export const ExperienceData = [
     type: 'work',
     date: 'May 2016 - June 2018',
     title: 'Waiter at Scandic Hotels',
-    location: 'Sweden, Gothenburg',
+    location: 'Gothenburg, Sweden',
     description: 'Provided  customer service in a fast-paced environment.',
   },
 
