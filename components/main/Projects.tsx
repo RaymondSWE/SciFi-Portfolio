@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import ProjectCard from "../sub/ProjectCard";
-import { projects } from "@/constants";
+import ProjectCard from "../ui/ProjectCard";
+import { projectsData } from "@/constants/Projects";
 
 const Projects = () => {
   return (
@@ -10,7 +10,7 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12">
-        {projects.map((project, index) => (
+        {projectsData.map((project, index) => (
           <ProjectCard
             key={index}
             src={project.src}

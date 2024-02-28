@@ -12,6 +12,8 @@ import Image from "next/image";
 
 const HeroContent = () => {
   return (
+    <section
+    id="hero" >
     <motion.div
       initial="hidden"
       animate="visible"
@@ -67,6 +69,7 @@ const HeroContent = () => {
         />
       </motion.div>
     </motion.div>
+    </section>
   );
 };
 

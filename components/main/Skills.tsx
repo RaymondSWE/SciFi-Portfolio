@@ -4,10 +4,10 @@ import {
   Full_stack,
   Other_skill,
   Skill_data,
-} from "@/constants";
+} from "@/constants/Skills";
 import React from "react";
-import SkillDataProvider from "../sub/SkillDataProvider";
-import SkillText from "../sub/SkillText";
+import SkillDataProvider from "../ui/SkillDataProvider";
+import SkillText from "../ui/SkillText";
 
 const Skills = () => {
   return (
