@@ -39,8 +39,8 @@ const Modal = ({
           <div className="flex flex-wrap gap-6 justify-center">
             {technologyStack.map((tech, index) => (
               <div key={index} className="relative">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#647DEE] to-[#7F53AC] rounded-full flex items-center justify-center shadow-lg shadow-[#647DEE]/50">
-                  <p className="text-xs text-white text-center px-1">{tech}</p>
+                <div className="w-20 h-20 bg-gradient-to-br from-[#647DEE] to-[#7F53AC] rounded-full flex items-center justify-center shadow-lg shadow-[#647DEE]/50">
+                  <p className="text-sm text-white text-center px-1">{tech}</p>
                 </div>
               </div>
             ))}
