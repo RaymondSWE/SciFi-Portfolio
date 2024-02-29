@@ -13,6 +13,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const Skills = () => {
   return (
@@ -22,12 +23,23 @@ const Skills = () => {
       style={{ transform: "scale(0.9" }}
     >
       <div className="w-full h-auto flex flex-col items-center justify-center">
-        <motion.div
-          variants={slideInFromLeft(0.5)}
-          className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
-        >
-          Making apps with modern technologies
-        </motion.div>
+      <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-center"
+    >
+      <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400 leading-tight">
+        Making apps with modern technologies
+      </h1>
+      <div className="m-6 flex justify-center items-center">
+        <SparklesIcon className="text-purple-400 mr-2 h-8 w-8 animate-pulse" />
+        <p className="text-lg md:text-xl text-gray-300">
+          Crafting the future, one line of code at a time.
+        </p>
+      </div>
+    </motion.div>
+
       </div>
       <SkillSection skillsData={Frontend_skill} />
       <SkillSection skillsData={Backend_skill} />
