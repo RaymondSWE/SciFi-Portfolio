@@ -15,7 +15,7 @@ const Projects = () => {
         className="text-center"
       >
         <h1 className="text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-        Interstellar Inventions
+        Galaxy of Innovations
         </h1>
         <motion.div
           initial="hidden"
