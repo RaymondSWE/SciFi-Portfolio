@@ -9,6 +9,7 @@ import React from "react";
 import SkillSection from "../ui/SkillSection";
 import { motion } from "framer-motion";
 import { BeakerIcon } from "@heroicons/react/24/solid";
+import SectionHeader from "../ui/SectionHeader";
 
 const Skills = () => {
   return (
@@ -18,23 +19,11 @@ const Skills = () => {
       style={{ transform: "scale(0.9" }}
     >
       <div className="w-full h-auto flex flex-col items-center justify-center">
-      <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="text-center"
-    >
-      <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400 leading-tight">
-        Making apps with modern technologies
-      </h1>
-      <div className="m-6 flex justify-center items-center">
-        <BeakerIcon className="text-purple-400 mr-2 h-8 w-8 animate-pulse" />
-        <p className="text-lg md:text-xl text-gray-300">
-          Crafting the future, one line of code at a time.
-        </p>
-      </div>
-    </motion.div>
-
+        <SectionHeader
+          title="Skills Nebula"
+          subtitle="A cosmic cloud of abilities, where each particle is a skill honed through time and experience."
+          Icon={<BeakerIcon />}
+        />
       </div>
       <SkillSection skillsData={Frontend_skill} />
       <SkillSection skillsData={Backend_skill} />

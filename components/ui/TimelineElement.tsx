@@ -20,7 +20,6 @@ const TimelineElement = ({
   location,
   description,
 }: TimelineItemProps) => {
-  
   return (
     <VerticalTimelineElement
       visible={true}
