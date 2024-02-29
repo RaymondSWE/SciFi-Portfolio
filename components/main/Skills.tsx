@@ -8,12 +8,7 @@ import {
 import React from "react";
 import SkillSection from "../ui/SkillSection";
 import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
+import { BeakerIcon } from "@heroicons/react/24/solid";
 
 const Skills = () => {
   return (
@@ -33,7 +28,7 @@ const Skills = () => {
         Making apps with modern technologies
       </h1>
       <div className="m-6 flex justify-center items-center">
-        <SparklesIcon className="text-purple-400 mr-2 h-8 w-8 animate-pulse" />
+        <BeakerIcon className="text-purple-400 mr-2 h-8 w-8 animate-pulse" />
         <p className="text-lg md:text-xl text-gray-300">
           Crafting the future, one line of code at a time.
         </p>
