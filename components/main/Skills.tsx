@@ -21,6 +21,17 @@ const Skills = () => {
       <SkillSection skillsData={Backend_skill} />
       <SkillSection skillsData={Devops} />
       <SkillSection skillsData={Other_skill} />
+      <div className="w-full h-full absolute top-0 left-0 z-[-10] opacity-30">
+        <video
+          className="w-full h-full object-cover"
+          preload="none"
+          playsInline
+          loop
+          muted
+          autoPlay
+          src="/cards-video.webm"
+        />
+      </div>
     </section>
   );
 };
