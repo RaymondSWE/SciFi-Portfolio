@@ -3,7 +3,7 @@ import {
   Frontend_skill,
   Devops,
   Other_skill,
-} from "@/constants/Skills";
+} from "@/data/Skills";
 import React from "react";
 import SkillDataProvider from "../ui/SkillDataProvider";
 import SkillText from "../ui/SkillText";

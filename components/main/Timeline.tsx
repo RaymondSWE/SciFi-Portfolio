@@ -2,7 +2,7 @@
 import React from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import TimelineElement from "../ui/TimelineElement";
-import { ExperienceData } from "@/constants/Experience";
+import { ExperienceData } from "@/data/Experience";
 
 const Timeline = () => {
   return (

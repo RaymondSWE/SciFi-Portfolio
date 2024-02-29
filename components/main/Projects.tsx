@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ProjectCard from "../ui/ProjectCard";
-import { projectsData } from "@/constants/Projects";
+import { projectsData } from "@/data/Projects";
 
 
 const Projects = () => {
