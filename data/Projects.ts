@@ -91,6 +91,7 @@ export const projectsData = [
       "Serverless",
       "Bash-Scripting",
       "Linux",
+      "MySQL",
     ],
   },
   {
