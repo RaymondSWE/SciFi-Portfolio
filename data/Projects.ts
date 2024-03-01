@@ -86,6 +86,11 @@ export const projectsData = [
       "Postman",
       "HTTPS",
       "Github",
+      "Heroku",
+      "Serverless Functions",
+      "Serverless",
+      "Bash-Scripting",
+      "Linux",
     ],
   },
   {

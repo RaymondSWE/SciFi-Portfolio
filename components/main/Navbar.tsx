@@ -5,8 +5,6 @@ import { FaGithub, FaLinkedinIn, FaRocket } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a href="#hero" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/main.svg"
             alt="Main"
@@ -14,6 +12,11 @@ const Navbar = () => {
             objectFit="cover"
             className="opacity-90 z-[-10]"
           />
+      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+        <a
+          href="#hero"
+          className="h-auto w-auto flex flex-row items-center"
+        >
           <FaRocket className="text-purple-500 text-2xl mr-2 animate-bounce" />
           <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
             Raman Mohammed
