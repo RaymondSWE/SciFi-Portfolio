@@ -92,6 +92,8 @@ export const projectsData = [
       "Bash-Scripting",
       "Linux",
       "MySQL",
+      "Radix UI",
+      
     ],
   },
   {
