@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
-interface Props {
+interface SkillItemProps {
   src: string;
   width: number;
   height: number;
@@ -13,7 +13,7 @@ interface Props {
   skillName: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index, skillName }: Props) => {
+const SkillItem = ({ src, width, height, index, skillName }: SkillItemProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -44,4 +44,4 @@ const SkillDataProvider = ({ src, width, height, index, skillName }: Props) => {
   );
 };
 
-export default SkillDataProvider;
+export default SkillItem;
