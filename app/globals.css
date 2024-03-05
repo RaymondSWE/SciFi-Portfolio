@@ -96,3 +96,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+body, button, input, textarea {
+  cursor: url('/lightsaber.png'), auto;
+}

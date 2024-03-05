@@ -59,7 +59,7 @@ const HeroContent = () => {
           <motion.a
             variants={fadeInUp}
             href="#projects"
-            className="inline-block px-6 py-2 bg-accent rounded-lg hover:bg-accent-hover transition-colors button-primary z-50"
+            className="inline-block px-6 py-2 bg-accent rounded-lg hover:bg-accent-hover transition-colors button-primary z-20"
           >
             Explore My Projects
           </motion.a>
