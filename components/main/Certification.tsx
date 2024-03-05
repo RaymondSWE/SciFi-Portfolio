@@ -10,7 +10,7 @@ export const Certification = () => {
   return (
     <section>
         <SectionHeader title='Intergalactic Qualifications'  subtitle='A constellation of certifications spanning the tech universe' Icon={<AcademicCapIcon/>}/>
-        <div className="flex flex-wrap justify-center gap-10 mb-10">
+        <div className="flex flex-wrap justify-center gap-10 mb-10 mx-16">
         {CertificationData.map((certification, index) => (
           <CertificationCard
             key={index}

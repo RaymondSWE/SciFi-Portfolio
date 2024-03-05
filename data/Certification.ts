@@ -64,7 +64,7 @@ export const CertificationData = [
         "Include Spring Boot 3, Spring 6, and Hibernate. Learn core concepts, REST APIs, MVC, Security, JPA, and more with hands-on projects. ",
         CertificationLink: "https://ramanmohammedportfolio.mel",
         backgroundImg: "/card-background/card-bg-8.jpg",
-        borderBackground: "/card-border/card-3.svg",
+        borderBackground: "/card-border/card-1.svg",
         light: true 
 
     },
