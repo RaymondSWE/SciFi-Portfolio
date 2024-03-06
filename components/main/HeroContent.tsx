@@ -31,7 +31,7 @@ const HeroContent = () => {
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <h1 className="ml-2 text-lg font-semibold Welcome-text">
-                Raman Mohammed - Fullstack Developer
+                Nibar Ahmed - Software Developer
               </h1>
             </motion.div>
           </div>
@@ -41,9 +41,9 @@ const HeroContent = () => {
           >
             Building{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              cool stuff
+              systems 
             </span>{" "}
-            with code
+           that make a difference
           </motion.h2>
           <motion.p
             variants={fadeInUp}
@@ -51,10 +51,8 @@ const HeroContent = () => {
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
-            Development, I specialize in Java, React.js, TypeScript, Node.js,
-            MySQL, Azure, and more. Passionate about building scalable and
-            reliable distributed systems, continuously learning to tackle new
-            challenges in software infrastructure.
+            Development and accessibility, I specialize in Java, C++, MySQL, android development and more. Passionate about developing software that makes an impact and accessibility, continuously learning to tackle new
+            challenges in software development and accessibility.
           </motion.p>
           <motion.a
             variants={fadeInUp}
