@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    src: "/img/csgo.png",
+    src: "/project-img/csgo.png",
     title: "CSFairTrade",
     description:
       "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market.",
@@ -31,7 +31,7 @@ export const projectsData = [
     ],
   },
   {
-    src: "/img/codemate.png",
+    src: "/project-img/codemate.png",
     title: "CodeMate",
     description:
       "A dynamic platform designed to enhance collaboration among students in the tech field, facilitating the sharing of ideas, project development, and networking opportunities.",
@@ -65,7 +65,7 @@ export const projectsData = [
     ],
   },
   {
-    src: "/img/snipeskins.jpg",
+    src: "/project-img/snipeskins.jpg",
     title: "SnipeSkins",
     description:
       "A comprehensive trading platform designed for Rust in-game skins. SnipeSkins aims to provide a seamless experience for trading digital assets.",
@@ -97,7 +97,7 @@ export const projectsData = [
     ],
   },
   {
-    src: "/img/queue-student.png",
+    src: "/project-img/queue-student.png",
     title: "Distributed Queue System For Students",
     description:
       "Developed an Event-driven queue system for students and supervisors with ZeroMQ, Spring Boot, and Python.",
@@ -122,7 +122,7 @@ export const projectsData = [
     ],
   },
   {
-    src: "/img/massageapp.png",
+    src: "/project-img/massageapp.png",
     title: "Booking Application For Company Employees",
     description:
       "Developed an appointment management system for Bally's employees, providing a system for their daily massage appointments.",
@@ -145,7 +145,7 @@ export const projectsData = [
     ],
   },
   {
-    src: "/img/blackjack.png",
+    src: "/project-img/blackjack.png",
     title: "Blackjack Game",
     description:
       "A desktop version of the Blackjack card game, developed to transform the game rules into logic and implement it in Java.",
@@ -157,7 +157,7 @@ export const projectsData = [
     technologyStack: ["Java", "Java Swing", "Github", "Eclipse"],
   },
   {
-    src: "/img/webportfolio.png",
+    src: "/project-img/webportfolio.png",
     title: "Old Web Portfolio",
     description:
       "My old personal web portfolio, designed to be a comprehensive showcase of my skills, experiences, and projects.",
@@ -175,7 +175,7 @@ export const projectsData = [
     ],
   },
   {
-    src: "/img/RayDeploy.png",
+    src: "/project-img/RayDeploy.png",
     title: "Simple Website",
     description:
       "The project was developed while following a YouTube tutorial to grasp the fundamentals of web development.",
