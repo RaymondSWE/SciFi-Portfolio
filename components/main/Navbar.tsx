@@ -19,7 +19,7 @@ const Navbar = () => {
         >
           <FaRocket className="text-purple-500 text-2xl mr-2 animate-bounce" />
           <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-            Raman Mohammed
+            Nibar Ahmed
           </span>
         </a>
 
