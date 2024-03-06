@@ -37,7 +37,7 @@ const Skills = () => {
           loop
           muted
           autoPlay
-          src="/death_star.mp4"
+          src="/video/death_star.mp4"
         />
       </div>
     </section>
