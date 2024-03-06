@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn, FaRocket } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <nav className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
           <Image
             src="/main.svg"
             alt="Main"

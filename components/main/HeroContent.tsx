@@ -71,8 +71,8 @@ const HeroContent = () => {
           <Image
             src="/mainIconsdark.svg"
             alt="work icons"
-            height={500}
-            width={500}
+            height={650}
+            width={650}
             className="max-w-full h-auto"
           />
         </motion.div>
