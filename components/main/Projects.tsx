@@ -12,8 +12,8 @@ const Projects = () => {
       id="projects"
     >
       <SectionHeader
-        title="Nebula of Innovation"
-        subtitle="Where ideas collide and form stars of innovation"
+        title="projects"
+        subtitle="completed and ongoing projects"
         Icon={<GlobeAltIcon />}
       />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12">
