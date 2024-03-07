@@ -8,7 +8,7 @@ import { CertificationData } from "@/data/Certification";
 
 export const Certification = () => {
   return (
-    <section>
+    <section id='certifications'>
         <SectionHeader title='Intergalactic Qualifications'  subtitle='A constellation of certifications spanning the tech universe' Icon={<AcademicCapIcon/>}/>
         <div className="flex flex-wrap justify-center gap-12 max-w-7xl mx-auto">
         {CertificationData.map((certification, index) => (

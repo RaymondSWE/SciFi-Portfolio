@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn, FaRocket } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <nav className="">
           <Image
             src="/main.svg"
             alt="Main"
@@ -12,51 +12,18 @@ const Navbar = () => {
             objectFit="cover"
             className="opacity-90 z-[-10]"
           />
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#hero"
-          className="h-auto w-auto flex flex-row items-center"
-        >
-          <FaRocket className="text-purple-500 text-2xl mr-2 animate-bounce" />
-          <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-            Raman Mohammed
-          </span>
-        </a>
-
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#hero" className="cursor-pointer hover:text-gray-400">
-              About me
-            </a>
-            <a href="#skills" className="cursor-pointer hover:text-gray-400">
-              Skills
-            </a>
-            <a href="#Timeline" className="cursor-pointer hover:text-gray-400">
-              Work & Education
-            </a>
-            <a href="#projects" className="cursor-pointer hover:text-gray-400">
-              Projects
-            </a>
-          </div>
+       <div className="flex justify-center items-center w-full px-4 py-2 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] ">
+        <div className="flex justify-between items-center max-w-5xl w-full bg-[#0300145e] border border-[#7042f861] rounded-full text-gray-200 px-12 py-4 z-50 space-x-4 ">
+          <a href="#hero" className="cursor-pointer hover:text-gray-400 text-lg">About me</a>
+          <a href="#skills" className="cursor-pointer hover:text-gray-400 text-lg">Skills</a>
+          <a href="#certifications" className="cursor-pointer hover:text-gray-400 text-lg">Certifications</a>
+          <a href="#Timeline" className="cursor-pointer hover:text-gray-400 text-lg">Work & Education</a>
+          <a href="#projects" className="cursor-pointer hover:text-gray-400 text-lg">Projects</a>
+          
         </div>
-
-        <div className="flex items-center gap-4 ">
-          <a
-            href="https://github.com/RaymondSWE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-2xl transition duration-300 hover:text-gray-400"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/raman-mohammed"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-2xl transition duration-300 hover:text-gray-400"
-          >
-            <FaLinkedinIn />
-          </a>
+        <div className="hidden md:flex gap-6 ml-6 z-50">
+          <a href="https://github.com/RaymondSWE" target="_blank" rel="noopener noreferrer" className="text-white text-3xl transition duration-300 hover:text-gray-400"><FaGithub /></a>
+          <a href="https://linkedin.com/in/raman-mohammed" target="_blank" rel="noopener noreferrer" className="text-white text-3xl transition duration-300 hover:text-gray-400"><FaLinkedinIn /></a>
         </div>
       </div>
     </nav>
