@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedinIn, FaYoutube, FaEnvelope } from 'react-icons/fa';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
