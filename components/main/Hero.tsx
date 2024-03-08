@@ -3,9 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  fadeInUp,
-  fadeInLeft,
-  fadeInRight,
   slideInFromTop,
   slideInFromRight,
   slideInFromLeft,
@@ -48,7 +45,7 @@ const Hero = () => {
             with code
           </motion.h2>
           <motion.p
-            variants={fadeInUp}
+            variants={slideInFromLeft(0.5)}
             className="text-lg text-gray-400 my-5 max-w-[600px]"
           >
             With over three years of development experience and a
@@ -59,7 +56,7 @@ const Hero = () => {
             challenges in software infrastructure.
           </motion.p>
           <motion.a
-            variants={fadeInUp}
+            variants={slideInFromRight(0.8)}
             href="#projects"
             className="inline-block px-6 py-2 bg-accent rounded-lg hover:bg-accent-hover transition-colors button-primary z-20"
           >
