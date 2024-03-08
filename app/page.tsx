@@ -4,6 +4,7 @@ import Hero from "@/components/main/Hero";
 import Image from "next/image";
 import Timeline from "@/components/main/Timeline";
 import { Certification } from "@/components/main/Certification";
+import Footer from "@/components/main/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Certification />
         <Timeline />
         <Projects />
+        <Footer />
       </div>
     </main>
   );
