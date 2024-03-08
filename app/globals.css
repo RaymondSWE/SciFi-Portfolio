@@ -98,5 +98,5 @@ html {
 }
 
 body, button, input, textarea {
-  cursor: url('/lightsaber.png'), auto;
+  cursor: url('/star-wars-cursor.cur'), auto;
 }
