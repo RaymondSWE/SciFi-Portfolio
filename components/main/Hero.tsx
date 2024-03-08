@@ -13,7 +13,7 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-const HeroContent = () => {
+const Hero = () => {
   return (
     <section
       id="hero"
@@ -88,4 +88,4 @@ const HeroContent = () => {
   );
 };
 
-export default HeroContent;
+export default Hero;

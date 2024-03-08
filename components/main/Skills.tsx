@@ -7,7 +7,6 @@ import {
 } from "@/data/Skills";
 import React from "react";
 import SkillSection from "../ui/SkillsGallery";
-import { motion } from "framer-motion";
 import { BeakerIcon } from "@heroicons/react/24/solid";
 import SectionHeader from "../ui/SectionHeader";
 
