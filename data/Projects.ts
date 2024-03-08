@@ -93,7 +93,6 @@ export const projectsData = [
       "Linux",
       "MySQL",
       "Radix UI",
-      
     ],
   },
   {

@@ -13,7 +13,13 @@ interface SkillItemProps {
   skillName: string;
 }
 
-const SkillItem = ({ src, width, height, index, skillName }: SkillItemProps) => {
+const SkillItem = ({
+  src,
+  width,
+  height,
+  index,
+  skillName,
+}: SkillItemProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
