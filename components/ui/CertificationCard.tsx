@@ -75,7 +75,7 @@ export const CertificationCard = ({
           className="absolute inset-0.5  z-20"
           style={{ clipPath: "url(#certification)" }}
         >
-          <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10 z-50">
+          <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20 z-50">
             {backgroundImg && (
               <Image
                 src={backgroundImg}
