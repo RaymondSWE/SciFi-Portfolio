@@ -127,7 +127,7 @@ export const projectsData = [
       "My webportfolio with star wars theme, designed to be showcase of my skills, experiences, and projects.",
     sourceUrl: "https://www.ramanmohammed.com/",
     youtubeUrl: null,
-    githubUrl: "https://github.com/RaymondSWE/Ramans-portfolio-v2",
+    githubUrl: "https://github.com/RaymondSWE/Raymond-Portfolio-V2",
     startDate: "2024-02-15",
     endDate: "2024-03-09",
     technologyStack: [
