@@ -3,7 +3,11 @@
 import React from "react";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 import ClipPath from "./ClipPath";
-import { slideInFromRight, slideInFromLeft, slideInFromTop } from "@/utils/motion";
+import {
+  slideInFromRight,
+  slideInFromLeft,
+  slideInFromTop,
+} from "@/utils/motion";
 import { motion } from "framer-motion";
 
 interface CertificationCardProps {
@@ -27,21 +31,21 @@ export const CertificationCard = ({
   light,
 }: CertificationCardProps) => {
   return (
-    <motion.article className="flex flex-wrap gap-10 mb-10"
-    initial="hidden"
-    animate="visible"
-    variants={slideInFromTop}
-
+    <motion.article
+      className="flex flex-wrap gap-10 mb-10"
+      initial="hidden"
+      animate="visible"
+      variants={slideInFromTop}
     >
       <div
         className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:h-[24rem] md:max-w-[24rem]  "
         style={{ backgroundImage: `url(${borderBackground})` }}
       >
-        <motion.div className="flex flex-col justify-between h-full relative z-2 p-[2.4rem] "
-        variants={slideInFromLeft(0.5)}
+        <motion.div
+          className="flex flex-col justify-between h-full relative z-2 p-[2.4rem] "
+          variants={slideInFromLeft(0.5)}
         >
-          <header className="absolute top-0 left-0 mt-4 ml-6 text-xs text-gray-400"
-          >
+          <header className="absolute top-0 left-0 mt-4 ml-6 text-xs text-gray-400">
             {date}
           </header>
           <div>
@@ -53,8 +57,10 @@ export const CertificationCard = ({
             </p>
           </div>
 
-          <motion.footer className="flex justify-end items-center mt-4"
-          variants={slideInFromRight(0.8)}>
+          <motion.footer
+            className="flex justify-end items-center mt-4"
+            variants={slideInFromRight(0.8)}
+          >
             <a
               href={CertificationLink}
               className=" z-40 font-code text-xs font-bold text-n-1 uppercase tracking-wider Welcome-text"

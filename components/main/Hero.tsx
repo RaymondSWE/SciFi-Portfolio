@@ -35,8 +35,8 @@ const Hero = () => {
             </motion.div>
           </div>
           <motion.h2
-          variants={slideInFromLeft(0.5)}
-          className="text-5xl font-bold leading-tight mb-6"
+            variants={slideInFromLeft(0.5)}
+            className="text-5xl font-bold leading-tight mb-6"
           >
             Building{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -64,10 +64,10 @@ const Hero = () => {
           </motion.a>
         </motion.div>
         <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={slideInFromRight(0.8)}
-        className="w-full lg:w-1/2 px-4 mt-6 lg:mt-0 flex justify-center items-center"
+          initial="hidden"
+          animate="visible"
+          variants={slideInFromRight(0.8)}
+          className="w-full lg:w-1/2 px-4 mt-6 lg:mt-0 flex justify-center items-center"
         >
           <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-lg shadow-[#645AFF]/70">
             <div className="absolute inset-0 bg-gradient-to-r from-[#645AFF55] via-[#9b6bff55] to-[#d98eff55] mix-blend-normal opacity-60"></div>

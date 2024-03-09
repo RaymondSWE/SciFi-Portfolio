@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 import curve1 from "@/public/curve-1.svg";
 import curve2 from "@/public/curve-2.svg";
@@ -11,11 +11,10 @@ export const RightCurve = () => {
   );
 };
 
-
 export const LeftCurve = () => {
-    return (
-        <div className="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-10 pointer-events-none xl:block">
-            <Image src={curve1} width={522} height={182} alt="Curve 1" />
-        </div>
-    );
+  return (
+    <div className="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-10 pointer-events-none xl:block">
+      <Image src={curve1} width={522} height={182} alt="Curve 1" />
+    </div>
+  );
 };
