@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-gray-400">
-          <p>Built with ❤️ using NextJS, TypeScript and Tailwind CSS</p>
+          <p>Built with NextJS, TypeScript and Tailwind CSS</p>
         </div>
       </div>
     </footer>
