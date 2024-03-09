@@ -9,6 +9,7 @@ import {
   slideInFromTop,
 } from "@/utils/motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface CertificationCardProps {
   id: number;
@@ -76,10 +77,11 @@ export const CertificationCard = ({
         >
           <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10 z-50">
             {backgroundImg && (
-              <img
+              <Image
                 src={backgroundImg}
                 width={380}
                 height={362}
+                alt="Certification Image"
                 className="w-full h-full object-cover"
               />
             )}
