@@ -121,6 +121,24 @@ export const projectsData = [
     ],
   },
   {
+    src: "/project-img/starwars-portfolio.png",
+    title: "Web portfolio",
+    description:
+      "My webportfolio with star wars theme, designed to be showcase of my skills, experiences, and projects.",
+    sourceUrl: "https://www.ramanmohammed.com/",
+    youtubeUrl: null,
+    githubUrl: "https://github.com/RaymondSWE/Ramans-portfolio-v2",
+    startDate: "2024-02-15",
+    endDate: "2024-03-09",
+    technologyStack: [
+      "Framer",
+      "Tailwind CSS",
+      "Three.JS",
+      "Next.JS",
+      "Typescript",
+    ],
+  },
+  {
     src: "/project-img/massageapp.png",
     title: "Booking Application For Company Employees",
     description:
@@ -173,16 +191,5 @@ export const projectsData = [
       "Google Analytics",
     ],
   },
-  {
-    src: "/project-img/RayDeploy.png",
-    title: "Simple Website",
-    description:
-      "The project was developed while following a YouTube tutorial to grasp the fundamentals of web development.",
-    sourceUrl: "https://clever-pasca-d05919.netlify.app/",
-    youtubeUrl: null,
-    githubUrl: "https://github.com/RaymondSWE/RayDeploy",
-    startDate: "2021-10-26",
-    endDate: "2021-10-26",
-    technologyStack: ["HTML", "Javascript", "CSS"],
-  },
+
 ];
