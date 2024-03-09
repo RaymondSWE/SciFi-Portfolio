@@ -10,7 +10,7 @@ export const ServicesData = [
         id: 2,
         name: "API Development",
         description:
-        "I build scalable and secure RESTful APIs using Typescript or Java with MySQL. I also have experience with messaging libraries such as Kafka and ZeroMQ.",
+        "I build scalable and secure RESTful APIs using Typescript or Java with MySQL. I also have experience with messaging libraries such as ZeroMQ.",
         icon: "/check.svg",
     },
     {

@@ -96,7 +96,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-body, button, input, textarea {
-  cursor: url('/tie-fighter-2.cur'), auto;
-}
