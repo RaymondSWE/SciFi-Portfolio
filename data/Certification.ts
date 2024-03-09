@@ -16,7 +16,7 @@ export const CertificationData = [
     name: "Testing React with Jest and React Testing Library (RTL)",
     date: "09/03/2024",
     description:
-      "Comprehensive course on React testing best practices, includes a variety of examples and interactive 'code quizzes'.",
+      "The course focuses on React testing best practices, includes such as Unit Testing, Functional Testing, Snapshot Testing and Mocking ",
     CertificationLink: "https://www.udemy.com/certificate/UC-a533d56e-0066-497e-9c53-417cababd964/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
     backgroundImg: "/card-background/card-bg-5.jpg",
     borderBackground: "/card-border/card-2.svg",
