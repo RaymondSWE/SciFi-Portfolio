@@ -76,7 +76,7 @@ const Hero = () => {
               alt="Raman Mohammed Image"
               layout="fill"
               objectFit="cover"
-              className="rounded-full ml-5 opacity-80"
+              className="rounded-full ml-5 opacity-70"
             />
           </div>
         </motion.div>
