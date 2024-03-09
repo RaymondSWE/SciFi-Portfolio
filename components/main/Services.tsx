@@ -13,7 +13,7 @@ const Services = () => {
     const totalCount = ServicesApps.length;
 
   return (
-    <section className="px-4 lg:px-8 xl:px-16">
+    <section className="px-4 lg:px-8 xl:px-16" id="services">
       <SectionHeader
         title="Galactic Development Services"
         subtitle="Engineering your software products from Coruscant to the Outer Rim."

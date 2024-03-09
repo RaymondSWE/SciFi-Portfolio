@@ -21,6 +21,12 @@ const Navbar = () => {
             About me
           </a>
           <a
+            href="#services"
+            className="cursor-pointer hover:text-gray-400 text-sm md:text-lg"
+          >
+            Services
+          </a>
+          <a
             href="#skills"
             className="cursor-pointer hover:text-gray-400 text-sm md:text-lg"
           >
