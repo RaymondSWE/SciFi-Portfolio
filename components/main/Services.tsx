@@ -44,9 +44,9 @@ const Services = () => {
           <p className="mb-4 text-gray-500 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
           Discover my array of provided services, crafted with precision and passion. My portfolio showcases my expertise in solving diverse technological challenges, from sleek web designs to robust backend systems.
           </p>
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-gray-700 rounded-full -translate-x-1/2 scale-75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-gray-700 rounded-full">
-              <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-gray-700">
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-gray-800 rounded-full -translate-x-1/2 scale-75 md:scale-100">
+            <div className="flex w-60 aspect-square m-auto border border-gray-800 rounded-full">
+              <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-gray-800">
                 <div className="flex items-center justify-center w-full h-full border-black rounded-full">
                   <Image
                     src="/baby-yoda.png"
