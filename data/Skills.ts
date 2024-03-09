@@ -2,8 +2,8 @@ export const Frontend_skill = [
   {
     skillName: "Html 5",
     Image: "/logo/html.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
   {
     skillName: "CSS",
@@ -14,8 +14,8 @@ export const Frontend_skill = [
   {
     skillName: "JavaScript",
     Image: "/logo/js.png",
-    width: 65,
-    height: 65,
+    width: 60,
+    height: 60,
   },
   {
     skillName: "Tailwind CSS",
@@ -32,27 +32,26 @@ export const Frontend_skill = [
   {
     skillName: "React",
     Image: "/logo/react.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
   {
-    skillName: "Redux",
-    Image: "/logo/redux.png",
-    width: 80,
-    height: 80,
+    skillName: "Bootstrap",
+    Image: "/logo/bootstrap.png",
+    width: 70,
+    height: 70,
   },
-
   {
     skillName: "TypeScript",
     Image: "/logo/ts.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
   {
     skillName: "Nextjs ",
     Image: "/logo/next.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
 ];
 
@@ -116,15 +115,15 @@ export const Devops = [
   },
   {
     skillName: "Github Actions",
-    Image: "/logo/git.png",
-    width: 70,
-    height: 70,
+    Image: "/logo/github-2.png",
+    width: 60,
+    height: 60,
   },
   {
     skillName: "Kubernetes",
     Image: "/logo/kubernetes.png",
-    width: 70,
-    height: 70,
+    width: 60,
+    height: 60,
   },
   {
     skillName: "Docker",
@@ -142,7 +141,7 @@ export const Devops = [
   {
     skillName: "Nginx",
     Image: "/logo/nginx.png",
-    width: 60,
+    width: 70,
     height: 60,
   },
   {
@@ -170,19 +169,19 @@ export const Other_skill = [
   {
     skillName: "Postman",
     Image: "/logo/postman.png",
-    width: 70,
-    height: 70,
+    width: 60,
+    height: 60,
   },
   {
     skillName: "Jest",
     Image: "/logo/jest.png",
-    width: 80,
-    height: 80,
+    width: 90,
+    height: 90,
   },
   {
     skillName: "Liquibase",
     Image: "/logo/liquibase.png",
-    width: 120,
+    width: 130,
     height: 120,
   },
   {
@@ -200,7 +199,7 @@ export const Other_skill = [
   {
     skillName: "Figma",
     Image: "/logo/figma.png",
-    width: 50,
+    width: 40,
     height: 50,
   },
 ];
