@@ -8,9 +8,8 @@ const Navbar = () => {
       <Image
         src="/main.svg"
         alt="Main"
-        layout="fill"
-        objectFit="cover"
-        className="opacity-80 z-[-10]"
+        fill
+        className="opacity-80 z-[-10] object-cover"
       />
       <div className="flex justify-center items-center w-full px-4 py-2 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] ">
         <div className="flex justify-between items-center max-w-5xl w-full bg-[#0300145e] border border-[#7042f861] rounded-full text-gray-200 px-12 py-4 z-50 space-x-4 ">

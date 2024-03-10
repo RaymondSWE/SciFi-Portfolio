@@ -74,9 +74,8 @@ const Hero = () => {
             <Image
               src="/ramanbild.png"
               alt="Raman Mohammed Image"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full ml-5 opacity-70"
+              fill
+              className="rounded-full ml-5 opacity-70 object-cover"
             />
           </div>
         </motion.div>
