@@ -90,7 +90,7 @@ const Services = () => {
             </div>
             <div className="hidden absolute top-1/2 left-full w-[10.125rem] -mt-1 ml-10  pointer-events-none xl:block">
               <Image src={curve2} width={162} height={76} alt="Curve 2" />
-            </div>{" "}
+            </div>
           </div>
         </motion.div>
       </div>
