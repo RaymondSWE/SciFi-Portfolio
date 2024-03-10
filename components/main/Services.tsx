@@ -1,32 +1,41 @@
 "use client";
 import { ServicesApps, ServicesData } from "@/data/Services";
 import React from "react";
-import { LeftCurve, RightCurve } from "../ui/ServiceCurves";
 import Image from "next/image";
 import SectionHeader from "../ui/SectionHeader";
-import { ShoppingCartIcon  } from "@heroicons/react/24/solid";
+import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 import ServiceItem from "../ui/ServiceItem";
 import ServiceIconItem from "../ui/ServiceIconItem";
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion"; 
-import { motion } from 'framer-motion';
+import {
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "@/utils/motion";
+import { motion } from "framer-motion";
+import curve1 from "@/public/curve-1.svg";
+import curve2 from "@/public/curve-2.svg";
 
 const Services = () => {
-
-    const totalCount = ServicesApps.length;
+  const totalCount = ServicesApps.length;
 
   return (
-    <motion.section className="px-4 lg:px-8 xl:px-16" id="services"
-    initial="hidden"
-    animate="visible"
-    variants={slideInFromTop}
+    <motion.section
+      className="px-4 lg:px-8 xl:px-16"
+      id="services"
+      initial="hidden"
+      animate="visible"
+      variants={slideInFromTop}
     >
       <SectionHeader
         title="Galactic Development Services"
         subtitle="Engineering your software products from Coruscant to the Outer Rim."
-        Icon={<ShoppingCartIcon  />}
+        Icon={<ShoppingCartIcon />}
       />{" "}
       <div className="container lg:flex mx-auto">
-        <motion.div className="max-w-[25rem] lg:w-1/2" variants={slideInFromLeft(0.5)}>
+        <motion.div
+          className="max-w-[25rem] lg:w-1/2"
+          variants={slideInFromLeft(0.5)}
+        >
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {ServicesData.map((service) => (
               <ServiceItem
@@ -40,9 +49,15 @@ const Services = () => {
           </ul>
         </motion.div>
 
-        <motion.div className="lg:ml-auto xl:w-[38rem] lg:w-1/2 mt-4" variants={slideInFromRight(0.8)}>
+        <motion.div
+          className="lg:ml-auto xl:w-[38rem] lg:w-1/2 mt-4"
+          variants={slideInFromRight(0.8)}
+        >
           <p className="mb-4 text-gray-500 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
-          Discover my array of provided services, crafted with precision and passion. My portfolio showcases my expertise in solving diverse technological challenges, from sleek web designs to robust backend systems.
+            Discover my array of provided services, crafted with precision and
+            passion. My portfolio showcases my expertise in solving diverse
+            technological challenges, from sleek web designs to robust backend
+            systems.
           </p>
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-gray-800 rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-gray-800 rounded-full">
@@ -70,9 +85,12 @@ const Services = () => {
                 />
               ))}
             </ul>
-
-            <LeftCurve />
-            <RightCurve />
+            <div className="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-12 pointer-events-none xl:block">
+              <Image src={curve1} width={522} height={182} alt="Curve 1" />
+            </div>
+            <div className="hidden absolute top-1/2 left-full w-[10.125rem] -mt-1 ml-10  pointer-events-none xl:block">
+              <Image src={curve2} width={162} height={76} alt="Curve 2" />
+            </div>{" "}
           </div>
         </motion.div>
       </div>

@@ -8,7 +8,6 @@ interface ServiceIconItemProps {
   width: number;
   height: number;
   totalCount: number;
-
 }
 
 const ServiceIconItem = ({
@@ -17,9 +16,9 @@ const ServiceIconItem = ({
   icon,
   width,
   height,
-  totalCount
+  totalCount,
 }: ServiceIconItemProps) => {
-    const rotationDeg = 360 / totalCount;
+  const rotationDeg = 360 / totalCount;
   return (
     <li
       key={id}

@@ -191,5 +191,4 @@ export const projectsData = [
       "Google Analytics",
     ],
   },
-
 ];
