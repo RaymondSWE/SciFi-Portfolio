@@ -49,7 +49,7 @@ const ProjectCard = ({
         </div>
 
         <div className="flex-grow p-4">
-          <h1 className="text-xl font-bold text-white text-center">{title}</h1>
+          <h1 className="text-xl font-bold text-gray-200 text-center">{title}</h1>
           <p className="mt-2 text-sm text-gray-300 text-center">
             {description}
           </p>

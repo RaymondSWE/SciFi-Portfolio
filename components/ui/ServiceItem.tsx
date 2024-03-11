@@ -14,7 +14,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
       <li key={id} className="mb-3">
         <div className="flex items-center">
           <Image src={icon} width={24} height={24} alt="service icon" />
-          <h6 className="mx-5 text-white">{name}</h6>
+          <h6 className="mx-5 Welcome-text font-bold">{name}</h6>
         </div>
         <p className="text-[#a7a7a7] mt-3">{description}</p>
       </li>

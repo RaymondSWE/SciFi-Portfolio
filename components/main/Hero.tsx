@@ -29,14 +29,14 @@ const Hero = () => {
               variants={slideInFromTop}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <h1 className="ml-2 text-lg font-semibold Welcome-text">
+              <h1 className="text-lg font-semibold Welcome-text">
                 Raman Mohammed - Fullstack Developer
               </h1>
             </motion.div>
           </div>
           <motion.h2
             variants={slideInFromLeft(0.5)}
-            className="text-5xl font-bold leading-tight mb-6"
+            className="text-5xl font-bold leading-tight mb-2"
           >
             Building{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">

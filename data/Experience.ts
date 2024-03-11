@@ -4,7 +4,7 @@ export const ExperienceData = [
     type: "work",
     date: "December 2022 - January 2023",
     title: "Junior Developer at Bally's Skövde",
-    location: "Skovde, Sweden",
+    location: "Skövde, Sweden",
     description:
       "Participated in pair programming, handling player security and inquiries, and expanded skills in new technologies.",
   },
@@ -13,7 +13,7 @@ export const ExperienceData = [
     type: "work",
     date: "June 2022 - July 2022",
     title: "Junior Developer at Bally's Skövde",
-    location: "Skovde, Sweden",
+    location: "Skövde, Sweden",
     description:
       "Developed a massage application, designing the database and implementing backend logic.",
   },
@@ -59,7 +59,7 @@ export const ExperienceData = [
     type: "education",
     date: "August 2021 - May 2024",
     title: "Bachelor's in Computer Science at University Skövde",
-    location: "Skovde, Sweden",
+    location: "Skövde, Sweden",
     description: "Specializing in System Development.",
   },
   {
@@ -67,7 +67,7 @@ export const ExperienceData = [
     type: "education",
     date: "August 2020 - Jan 2021",
     title: "Economics Studies at University Borås",
-    location: "Boras, Sweden",
+    location: "Borås, Sweden",
     description:
       "Studied Economics for one term before deciding to pursue other interests.",
   },

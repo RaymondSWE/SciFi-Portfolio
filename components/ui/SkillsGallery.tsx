@@ -15,7 +15,7 @@ interface SkillsGalleryProps {
 
 const SkillsGallery = ({ skillsData }: SkillsGalleryProps) => {
   return (
-    <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+    <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
       {skillsData.map((skill, index) => (
         <SkillItem
           key={`${skill.skillName}-${index}`}
