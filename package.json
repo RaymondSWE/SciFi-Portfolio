@@ -16,7 +16,8 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-tooltip": "^5.26.3",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@react-three/drei": "^9.88.4",

@@ -1,4 +1,5 @@
 "use client";
+import Typewriter from "typewriter-effect";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -29,9 +30,20 @@ const Hero = () => {
               variants={slideInFromTop}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <h1 className="text-lg font-semibold Welcome-text">
-                Raman Mohammed - Fullstack Developer
-              </h1>
+              <div className="Welcome-text text-xl font-semibold">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Hey there, I'm Raman Mohammed✋",
+                      "I'm an enthusiast Full-Stack developer💻",
+                      "You can contact me through Linkedin or email📧",
+                    ],
+                    delay: 100,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </div>
             </motion.div>
           </div>
           <motion.h2
