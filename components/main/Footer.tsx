@@ -9,7 +9,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 ">
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0">
           <div className="text-white text-center lg:text-left">
-            <h2 className="text-xl font-semibold mb-2 Welcome-text">Raman Mohammed</h2>
+            <h2 className="text-xl font-semibold mb-2 Welcome-text">
+              Raman Mohammed
+            </h2>
             <p className="text-gray-400">
               Fullstack Developer - Crafting Software solutions
             </p>
