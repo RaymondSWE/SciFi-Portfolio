@@ -67,7 +67,7 @@ const Services = () => {
                     src="/baby-yoda.png"
                     width={40}
                     height={40}
-                    alt="nextjs icon"
+                    alt="Baby yoda icon"
                   />
                 </div>
               </div>

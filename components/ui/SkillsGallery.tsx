@@ -9,13 +9,13 @@ interface Skill {
 }
 
 interface SkillsGalleryProps {
-  title?: string; //Optional if i want to add title for each part, depends on the design outcome
+  title?: string; 
   skillsData: Skill[];
 }
 
 const SkillsGallery = ({ skillsData }: SkillsGalleryProps) => {
   return (
-    <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
+    <div className="flex flex-row justify-around flex-wrap gap-6 items-center">
       {skillsData.map((skill, index) => (
         <SkillItem
           key={`${skill.skillName}-${index}`}

@@ -35,8 +35,8 @@ const Hero = () => {
                   options={{
                     strings: [
                       "Hey there, I'm Raman Mohammed✋",
-                      "I'm an enthusiast Full-Stack developer💻",
-                      "You can contact me through Linkedin or email📧",
+                      "I'm a Full-Stack developer💻",
+                      "You can contact me through Linkedin or Email📧",
                     ],
                     delay: 100,
                     autoStart: true,

@@ -64,10 +64,10 @@ export const CertificationCard = ({
           >
             <a
               href={CertificationLink}
-              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider Welcome-text"
+              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-400"
             >
               See Certification
-              <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-100" />
+              <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-400" />
             </a>
           </motion.footer>
         </motion.div>

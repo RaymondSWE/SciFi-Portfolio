@@ -17,7 +17,7 @@ export const ServicesData = [
     id: 3,
     name: "Automated Testing",
     description:
-      "I write unit, functional, end-to-end and snapshot tests using Jest, React Testing Library, and Cypress. I also have experience with CI/CD pipelines.",
+      "I write unit, functional and snapshot tests using Jest, React Testing Library and JUnit. I also have experience with CI/CD pipelines.",
     icon: "/check.svg",
   },
 ];

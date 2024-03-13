@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Image from "next/image";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 interface SkillItemProps {
   src: string;
@@ -13,13 +13,7 @@ interface SkillItemProps {
   skillName: string;
 }
 
-const SkillItem = ({
-  src,
-  width,
-  height,
-  index,
-  skillName,
-}: SkillItemProps) => {
+const SkillItem = ({ src, width, height, index, skillName }: SkillItemProps) => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   const variants = {
@@ -31,16 +25,10 @@ const SkillItem = ({
     <motion.div
       ref={ref}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
       variants={variants}
     >
-      <Image
-        src={src}
-        width={width}
-        height={height}
-        alt={skillName}
-        className="z-50"
-      />
+      <Image src={src} width={width} height={height} alt={skillName} />
     </motion.div>
   );
 };
