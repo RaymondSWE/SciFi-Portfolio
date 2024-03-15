@@ -64,7 +64,7 @@ export const CertificationCard = ({
           >
             <a
               href={CertificationLink}
-              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-400 secondary-button  "
+              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300 secondary-button  "
             >
               See Certification
             </a>
