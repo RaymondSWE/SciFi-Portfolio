@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
 @import 'react-vertical-timeline-component/style.min.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .cursive {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Dancing Script", cursive;
 }
 .Welcome-text {
   background: linear-gradient(

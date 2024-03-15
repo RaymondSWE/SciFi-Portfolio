@@ -58,7 +58,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             variants={slideInFromLeft(0.5)}
-            className="text-lg text-gray-400 my-5 max-w-[600px] text-center md:text-left"
+            className="text-lg text-gray-400 italic my-5 max-w-[600px] text-center md:text-left"
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System

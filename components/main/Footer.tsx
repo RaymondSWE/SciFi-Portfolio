@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 ">
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0">
           <div className="text-white text-center lg:text-left">
-            <h2 className="text-xl font-semibold mb-2 Welcome-text">
+            <h2 className="text-3xl font-semibold mb-2 Welcome-text cursive">
               Raman Mohammed
             </h2>
-            <p className="text-gray-400">
+            <p className="text-gray-400 italic">
               Fullstack Developer - Crafting Software solutions
             </p>
           </div>
@@ -41,13 +41,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="text-center lg:text-right">
-            <p className="text-gray-400">
+            <p className="text-gray-400 italic">
               &copy; {year} Raman Mohammed. All Rights Reserved.
             </p>
           </div>
-        </div>
-        <div className="mt-8 text-center text-gray-400">
-          <p>Built with NextJS, TypeScript and Tailwind CSS</p>
         </div>
       </div>
     </footer>

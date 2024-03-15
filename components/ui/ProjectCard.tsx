@@ -38,7 +38,7 @@ const ProjectCard = ({
   return (
     <>
       <motion.div
-        className=" z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg bg-[#1A1A2E] border border-[#2A0E61] hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-xs mx-auto"
+        className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg bg-[#1A1A2E] border border-[#2A0E61] hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-xs mx-auto"
         initial="hidden"
         animate="visible"
         variants={slideInFromTop}
@@ -49,7 +49,7 @@ const ProjectCard = ({
         </div>
 
         <div className="flex-grow p-4">
-          <h1 className="text-xl font-bold text-gray-200 text-center">
+          <h1 className="text-xl font-bold text-gray-200 text-center Welcome-text">
             {title}
           </h1>
           <p className="mt-2 text-sm text-gray-300 text-center">

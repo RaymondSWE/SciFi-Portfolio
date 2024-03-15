@@ -53,7 +53,7 @@ const Services = () => {
           className="lg:ml-auto xl:w-[38rem] lg:w-1/2 mt-4"
           variants={slideInFromRight(0.8)}
         >
-          <p className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-32 font-semibold lg:w-[22rem] lg:mx-auto">
+          <p className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-32 italic font-semibold lg:w-[22rem] lg:mx-auto">
             Discover my array of provided services, crafted with precision and
             passion. My portfolio showcases my expertise in solving diverse
             technological challenges, from sleek web designs to robust backend
