@@ -83,8 +83,8 @@ export const ServicesApps = [
     id: "9",
     title: "Next.js",
     icon: "/logo/next.png",
-    width: 40,
-    height: 60,
+    width: 35,
+    height: 40,
   },
   {
     id: "10",

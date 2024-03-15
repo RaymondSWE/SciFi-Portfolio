@@ -26,7 +26,7 @@ const ServiceIconItem = ({
       style={{ transform: `rotate(${parseInt(id) * rotationDeg}deg)` }}
     >
       <div
-        className="relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-gray-700 border border-n-1/15 rounded-xl"
+        className="relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-gray-700 border border-gray-400	 rounded-xl"
         style={{ transform: `rotate(-${parseInt(id) * rotationDeg}deg)` }}
       >
         <Image
