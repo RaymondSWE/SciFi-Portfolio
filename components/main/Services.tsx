@@ -59,10 +59,10 @@ const Services = () => {
             technological challenges, from sleek web designs to robust backend
             systems.
           </p>
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-[#141024] rounded-full -translate-x-1/2 scale-75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-[#141024] rounded-full">
-              <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-[#141024]">
-                <div className="flex items-center justify-center w-full h-full border-black rounded-full ">
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-[#252134] rounded-full -translate-x-1/2 scale-75 md:scale-100">
+            <div className="flex w-60 aspect-square m-auto border border-[#252134] rounded-full">
+              <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-[#252134]">
+                <div className="flex items-center justify-center w-full h-full">
                   <Image
                     src="/baby-yoda.png"
                     width={40}

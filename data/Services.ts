@@ -24,28 +24,28 @@ export const ServicesData = [
 
 export const ServicesApps = [
   {
-    id: "0",
+    id: "1",
     title: "Jest",
     icon: "/logo/jest.png",
     width: 70,
     height: 70,
   },
   {
-    id: "1",
+    id: "2",
     title: "Azure",
     icon: "/logo/azure.png",
     width: 40,
     height: 40,
   },
   {
-    id: "2",
+    id: "3",
     title: "Tailwind CSS",
     icon: "/logo/tailwind.png",
     width: 40,
     height: 40,
   },
   {
-    id: "3",
+    id: "4",
     title: "React",
     icon: "/logo/react.png",
     width: 40,
@@ -62,13 +62,6 @@ export const ServicesApps = [
     id: "6",
     title: "docker",
     icon: "/logo/docker.webp",
-    width: 40,
-    height: 40,
-  },
-  {
-    id: "7",
-    title: "Nextjs",
-    icon: "/logo/next.png",
     width: 40,
     height: 40,
   },
