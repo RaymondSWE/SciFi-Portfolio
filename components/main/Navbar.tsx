@@ -57,6 +57,8 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               className="text-white text-3xl transition duration-300 hover:text-gray-400"
+              target="_blank"
+              rel="noreferrer"
             >
               {link.icon}
             </a>

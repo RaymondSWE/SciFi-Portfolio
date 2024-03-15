@@ -62,12 +62,16 @@ export const CertificationCard = ({
             className="flex justify-end items-center mt-4"
             variants={slideInFromRight(0.8)}
           >
+            <button className="secondary-button rounded-xl z-40">
             <a
               href={CertificationLink}
-              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300 secondary-button  "
+              className=" flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
+              target="_blank"
+              rel="noreferrer"
             >
               See Certification
             </a>
+            </button>
           </motion.footer>
         </motion.div>
         <div

@@ -28,7 +28,7 @@ export const CertificationData = [
     date: "Ongoing",
     description:
       "Master Cypress for web automation, including UI and API testing, with this comprehensive course. Covers JavaScript basics, Cypress framework design, and integration testing.",
-    CertificationLink: "https://ramanmohammedportfolio.mel",
+    CertificationLink: "https://ramanmohammedportfolio.me",
     backgroundImg: "/card-background/card-bg-3.jpg",
     borderBackground: "/card-border/card-3.svg",
     light: true,
@@ -52,7 +52,7 @@ export const CertificationData = [
     date: "Ongoing",
     description:
       "This certification, will transition from basic cloud concepts to mastering advanced Azure services and architectural designs. ",
-    CertificationLink: "https://ramanmohammedportfolio.mel",
+    CertificationLink: "https://ramanmohammedportfolio.me",
     backgroundImg: "/card-background/card-bg-7.jpg",
     borderBackground: "/card-border/card-5.svg",
     light: true,
@@ -63,7 +63,7 @@ export const CertificationData = [
     date: "Ongoing",
     description:
       "Include Spring Boot 3, Spring 6, and Hibernate. Learn core concepts, REST APIs, MVC, Security, JPA, and more with hands-on projects. ",
-    CertificationLink: "https://ramanmohammedportfolio.mel",
+    CertificationLink: "https://ramanmohammedportfolio.me",
     backgroundImg: "/card-background/card-bg-8.jpg",
     borderBackground: "/card-border/card-1.svg",
     light: true,
