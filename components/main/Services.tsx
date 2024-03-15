@@ -62,7 +62,7 @@ const Services = () => {
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-gray-800 rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-gray-800 rounded-full">
               <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-gray-800">
-                <div className="flex items-center justify-center w-full h-full border-black rounded-full">
+                <div className="flex items-center justify-center w-full h-full border-black rounded-full ">
                   <Image
                     src="/baby-yoda.png"
                     width={40}

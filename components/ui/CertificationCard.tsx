@@ -69,7 +69,6 @@ export const CertificationCard = ({
               See Certification
             </a>
           </motion.footer>
-
         </motion.div>
         <div
           className="absolute inset-0.5  z-20"

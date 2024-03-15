@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
-@import 'react-vertical-timeline-component/style.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap");
+@import "react-vertical-timeline-component/style.min.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,48 +56,25 @@
   box-shadow: inset 0 0 12px #bf97ff70;
 }
 
-
 .secondary-button {
   cursor: pointer;
   display: inline-block;
   height: 40px;
   line-height: 40px;
   padding: 0 10px;
-  
   background-color: transparent;
-
   border: solid 1px;
-  border-radius: 6px;
   border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
   border-image-slice: 1;
-
-  clip-path: polygon(0 0, 12px 0, 12px 1px, 24px 1px, 24px 0, 100% 0, 100% 100%, 0 100%);
-
 }
 
 .secondary-button:hover {
   transform: scale(1.05);
-
 }
-
-
-.vertical-timeline-element-title {
-  font-weight: bold;
-  color: #ccd6f6; 
-}
-
-.vertical-timeline-element-subtitle {
-  color: #8892b0; 
-}
-
-.vertical-timeline-element-description {
-  color: #e6f1ff;
-}
-
 
 /* Custom scrollbar for Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 12px; 
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -106,19 +83,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ba9cff; 
+  background: #e59cff;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a48fff; 
+  background: #ba9cff;
 }
 
 .scrollbar-hidden {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
 
 html {
   scroll-behavior: smooth;
