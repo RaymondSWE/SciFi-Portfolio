@@ -39,7 +39,7 @@ const Navbar = () => {
             Raman Mohammed
           </span>
         </div>
-        <div className="flex justify-center items-center flex-grow md:max-w-4xl md:px-2">
+        <div className="flex justify-center items-center flex-grow md:max-w-2xl md:px-2">
           <div className="flex justify-between items-center w-full bg-[#0300145e] border border-[#7042f861] rounded-full text-gray-200 px-6 py-4 space-x-2 z-50">
             {navLinks.map((link) => (
               <a
