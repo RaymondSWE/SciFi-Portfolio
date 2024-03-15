@@ -131,7 +131,7 @@ export const projectsData = [
       "Serverless function were introduced to me and I had to learn how to use it for the project.",
     ],
     accomplishments: [
-      "2000 users registered and bugs was introduced and fixed.",
+      "1500 users registered and bugs was introduced and fixed.",
       "Deployed production with Bash-Scripting, utilising Dokku and Heroku.",
       "Good GUI and UX for the users.",
     ]

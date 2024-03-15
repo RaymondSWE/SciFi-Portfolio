@@ -16,9 +16,9 @@ interface ProjectCardProps {
   startDate: string;
   endDate: string;
   technologyStack: string[];
-  features: string[];
-  challenges: string[];
-  accomplishments: string[];
+  features?: string[];
+  challenges?: string[];
+  accomplishments?: string[];
 }
 
 const ProjectCard = ({

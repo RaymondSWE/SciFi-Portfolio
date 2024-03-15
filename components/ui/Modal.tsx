@@ -64,7 +64,7 @@ const Modal = ({
         <h1 className="md:text-2xl text-lg font-bold m-6 text-center Welcome-text">
             {title}
           </h1>
-          <p className="text-gray-300 text-center text-base mb-4 italic font-semibold">{description}</p>
+          <p className="text-gray-300 text-center text-sm mb-4 italic font-semibold">{description}</p>
           <Section title="Features" items={features || []} />
         <Section title="Challenges" items={challenges || []} />
         <Section title="Accomplishments" items={accomplishments || []} />
