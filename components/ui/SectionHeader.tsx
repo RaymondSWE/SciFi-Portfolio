@@ -24,7 +24,7 @@ const SectionHeader = ({ title, subtitle, Icon }: SectionHeaderProps) => {
           className:
             "text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse",
         })}
-        <p className="text-lg md:text-xl text-gray-300">{subtitle}</p>
+        <p className="text-lg md:text-xl text-gray-300" style={{ fontFamily: "'Cursive Font', cursive" }}>{subtitle}</p>
       </div>
     </motion.div>
   );
