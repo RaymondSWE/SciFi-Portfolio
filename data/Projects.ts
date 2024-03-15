@@ -95,7 +95,7 @@ export const projectsData = [
     src: "/project-img/snipeskins.jpg",
     title: "SnipeSkins",
     description:
-      "A comprehensive trading platform designed for Rust in-game skins. SnipeSkins aims to provide a seamless experience for trading digital assets.",
+      "A comprehensive trading platform designed for Rust in-game skins. SnipeSkins aims to provide user friendly experience for trading digital assets.",
     sourceUrl: "https://snipeskins.com/",
     youtubeUrl: null,
     githubUrl: null,
@@ -127,7 +127,6 @@ export const projectsData = [
       "KYC and AML for secure trading."
     ],
     challenges: [
-      "Necessity to implement secure and real-time trading.",
       "Introduction to PaaS and automate deployment to production with Bash-Scripting, utilising Dokku and Heroku.",
       "Serverless function were introduced to me and I had to learn how to use it for the project.",
     ],
