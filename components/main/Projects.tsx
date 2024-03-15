@@ -29,6 +29,10 @@ const Projects = () => {
             startDate={project.startDate}
             endDate={project.endDate}
             technologyStack={project.technologyStack}
+            features={project.features}
+            challenges={project.challenges}
+            accomplishments={project.accomplishments}
+            
           />
         ))}
       </div>

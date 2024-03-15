@@ -62,7 +62,7 @@ export const CertificationCard = ({
             className="flex justify-end items-center mt-4"
             variants={slideInFromRight(0.8)}
           >
-            <button className="secondary-button rounded-xl z-40">
+            <button className="button-secondary rounded-xl z-40">
             <a
               href={CertificationLink}
               className=" flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"

@@ -9,13 +9,16 @@ import { slideInFromTop } from "@/utils/motion";
 interface ProjectCardProps {
   src: string;
   title: string;
-  description: string | null;
+  description: string;
   githubUrl: string | null;
   sourceUrl: string | null;
   youtubeUrl: string | null;
   startDate: string;
   endDate: string;
   technologyStack: string[];
+  features: string[];
+  challenges: string[];
+  accomplishments: string[];
 }
 
 const ProjectCard = ({
@@ -28,8 +31,13 @@ const ProjectCard = ({
   startDate,
   endDate,
   technologyStack,
+  features,
+  challenges,
+  accomplishments,
 }: ProjectCardProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
+
+  console.log(challenges, "challenges")
 
   const handleMissingLink = (serviceName: string) => {
     alert(`Sorry, the ${serviceName} link is not available for this project.`);
@@ -38,7 +46,7 @@ const ProjectCard = ({
   return (
     <>
       <motion.div
-        className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg bg-[#1A1A2E] border border-[#2A0E61] hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-xs mx-auto"
+        className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         initial="hidden"
         animate="visible"
         variants={slideInFromTop}
@@ -58,7 +66,7 @@ const ProjectCard = ({
         </div>
 
         {/* Icons container */}
-        <div className="flex justify-around items-center p-4 bg-[#14141f] rounded-b-lg">
+        <div className="flex justify-around items-center p-4 bg-[#14141f]">
           {githubUrl ? (
             <a
               href={githubUrl}
@@ -99,7 +107,7 @@ const ProjectCard = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="text-white text-xl"
+              className="text-white text-2xl "
             >
               <FaYoutube />
             </a>
@@ -115,7 +123,7 @@ const ProjectCard = ({
           onClick={() => setModalOpen(true)}
           className="text-center text-sm text-white py-2 button-primary transition-colors rounded-b-lg"
         >
-          Technology Stack
+          View Details
         </button>
       </motion.div>
 
@@ -126,6 +134,11 @@ const ProjectCard = ({
         startDate={startDate}
         endDate={endDate}
         technologyStack={technologyStack}
+        description={description}
+        title={title}
+        features={features}
+        challenges={challenges}
+        accomplishments={accomplishments}
       />
     </>
   );

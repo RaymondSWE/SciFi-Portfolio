@@ -56,7 +56,7 @@
   box-shadow: inset 0 0 12px #bf97ff70;
 }
 
-.secondary-button {
+.button-secondary {
   cursor: pointer;
   display: inline-block;
   height: 40px;
