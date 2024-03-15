@@ -30,7 +30,7 @@ const Hero = () => {
               variants={slideInFromTop}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <div className="Welcome-text md:text-xl text-sm font-semibold">
+              <div className="Welcome-text italic md:text-xl text-sm font-semibold">
                 <Typewriter
                   options={{
                     strings: [
