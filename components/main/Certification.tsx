@@ -13,7 +13,7 @@ export const Certification = () => {
         subtitle="A constellation of certifications spanning the tech universe"
         Icon={<AcademicCapIcon />}
       />
-      <div className="flex flex-wrap justify-center gap-12 max-w-7xl mx-auto">
+      <div className="flex flex-wrap justify-center gap-10 max-w-7xl mx-auto">
         {CertificationData.map((certification, index) => (
           <CertificationCard
             key={index}

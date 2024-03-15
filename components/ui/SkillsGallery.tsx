@@ -9,7 +9,7 @@ interface Skill {
 }
 
 interface SkillsGalleryProps {
-  title?: string; 
+  title?: string;
   skillsData: Skill[];
 }
 

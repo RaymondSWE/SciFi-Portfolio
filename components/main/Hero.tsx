@@ -15,13 +15,13 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center min-h-screen bg-primary text-white"
+      className="flex items-center min-h-screen bg-primary text-white px-4 py-4"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div
           initial="hidden"
           animate="visible"
-          className="w-full lg:w-1/2 flex flex-col items-start"
+          className="w-full md:w-1/2 flex flex-col items-start"
           variants={slideInFromLeft(0.5)}
         >
           <div className="flex items-center mb-4">
@@ -30,13 +30,13 @@ const Hero = () => {
               variants={slideInFromTop}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <div className="Welcome-text text-xl font-semibold">
+              <div className="Welcome-text md:text-xl text-sm font-semibold">
                 <Typewriter
                   options={{
                     strings: [
                       "Hey there, I'm Raman Mohammed✋",
                       "I'm a Full-Stack developer💻",
-                      "You can contact me through Linkedin or Email📧",
+                      "You can contact me via Linkedin or Email📧",
                     ],
                     delay: 100,
                     autoStart: true,
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
           <motion.h2
             variants={slideInFromLeft(0.5)}
-            className="text-5xl font-bold leading-tight mb-2"
+            className="md:text-5xl text-2xl font-bold leading-tight mb-2"
           >
             Building{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -58,7 +58,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             variants={slideInFromLeft(0.5)}
-            className="text-lg text-gray-400 my-5 max-w-[600px]"
+            className="text-md text-gray-400 my-5  max-w-[600px]"
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
@@ -70,7 +70,7 @@ const Hero = () => {
           <motion.a
             variants={slideInFromRight(0.8)}
             href="#projects"
-            className="inline-block px-6 py-2 bg-accent rounded-lg hover:bg-accent-hover transition-colors button-primary z-20"
+            className="inline-block px-6 py-2 bg-accent rounded-md hover:bg-accent-hover transition-colors button-primary z-20"
           >
             Explore My Projects
           </motion.a>
@@ -79,9 +79,9 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={slideInFromRight(0.8)}
-          className="w-full lg:w-1/2 px-4 mt-6 lg:mt-0 flex justify-center items-center"
+          className="w-full md:w-1/2 px-4 mt-6 md:mt-0 flex justify-center items-center"
         >
-          <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-lg shadow-[#645AFF]/70">
+          <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-md shadow-[#645AFF]/70">
             <Image
               src="/ramanbild.png"
               alt="Raman Mohammed Image"

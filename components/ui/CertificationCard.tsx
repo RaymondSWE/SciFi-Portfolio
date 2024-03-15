@@ -33,7 +33,7 @@ export const CertificationCard = ({
 }: CertificationCardProps) => {
   return (
     <motion.article
-      className="flex flex-wrap gap-10 mb-10"
+      className="flex flex-wrap gap-10 mb-10 px-2"
       initial="hidden"
       animate="visible"
       variants={slideInFromTop}
