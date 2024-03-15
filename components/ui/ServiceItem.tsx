@@ -16,7 +16,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
           <Image src={icon} width={24} height={24} alt="service icon" />
           <h6 className="mx-5 Welcome-text text-lg font-bold">{name}</h6>
         </div>
-        <p className="text-[#a7a7a7] mt-3">{description}</p>
+        <p className="text-[#a7a7a7] italic  mt-3">{description}</p>
       </li>
     </div>
   );
