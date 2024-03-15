@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="flex justify-between w-full px-6 ">
         <div className="md:flex items-center hidden">
           <FaRocket className="text-purple-500 text-2xl mr-2 animate-bounce" />
-          <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+          <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
             Raman Mohammed
           </span>
         </div>
