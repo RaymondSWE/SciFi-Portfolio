@@ -15,13 +15,13 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center min-h-screen bg-primary text-white px-4 py-4"
+      className="flex items-center h-auto md:h-[75vh] lg:h-[85vh] py-4 px-4 text-white"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div
           initial="hidden"
           animate="visible"
-          className="w-full md:w-1/2 flex flex-col items-start"
+          className="w-full md:w-1/2 flex flex-col md:items-start items-center"
           variants={slideInFromLeft(0.5)}
         >
           <div className="flex items-center mb-4">
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
           <motion.h2
             variants={slideInFromLeft(0.5)}
-            className="md:text-5xl text-2xl font-bold leading-tight mb-2"
+            className="md:text-6xl text-2xl font-bold leading-tight mb-2"
           >
             Building{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -58,7 +58,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             variants={slideInFromLeft(0.5)}
-            className="text-md text-gray-400 my-5  max-w-[600px]"
+            className="text-lg text-gray-400 my-5 max-w-[600px] text-center md:text-left"
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
@@ -70,8 +70,8 @@ const Hero = () => {
           <motion.a
             variants={slideInFromRight(0.8)}
             href="#projects"
-            className="inline-block px-6 py-2 bg-accent rounded-md hover:bg-accent-hover transition-colors button-primary z-20"
-          >
+            className=" md:inline-block px-6 py-2 text-lg rounded-3xl transition-colors button-primary z-20"
+            >
             Explore My Projects
           </motion.a>
         </motion.div>
