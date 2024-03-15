@@ -26,7 +26,7 @@ const TimelineElement = ({
       key={id}
       date={date}
       contentStyle={{
-        background: "rgba(33, 150, 243, 0.1)",
+        background: "rgba(33,149,243,0.07)",
         color: "#fff",
         boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
       }}
