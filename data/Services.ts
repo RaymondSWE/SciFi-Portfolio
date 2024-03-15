@@ -55,7 +55,7 @@ export const ServicesApps = [
     id: "5",
     title: "Typescript",
     icon: "/logo/ts.png",
-    width: 40,
+    width: 35,
     height: 40,
   },
   {
@@ -72,4 +72,19 @@ export const ServicesApps = [
     width: 60,
     height: 60,
   },
+  {
+    id: "8",
+    title: "Java",
+    icon: "/logo/java.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    id: "9",
+    title: "Next.js",
+    icon: "/logo/next.png",
+    width: 40,
+    height: 60,
+  },
+
 ];
