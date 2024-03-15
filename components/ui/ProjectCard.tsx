@@ -37,8 +37,6 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  console.log(challenges, "challenges")
-
   const handleMissingLink = (serviceName: string) => {
     alert(`Sorry, the ${serviceName} link is not available for this project.`);
   };
