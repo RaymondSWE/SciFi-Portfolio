@@ -86,5 +86,12 @@ export const ServicesApps = [
     width: 40,
     height: 60,
   },
+  {
+    id: "10",
+    title: "Linux",
+    icon: "/logo/linux.png",
+    width: 40,
+    height: 60,
+  },
 
 ];

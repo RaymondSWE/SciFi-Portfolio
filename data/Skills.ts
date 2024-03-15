@@ -110,13 +110,13 @@ export const Devops = [
   {
     skillName: "Azure",
     Image: "/logo/azure.png",
-    width: 70,
-    height: 70,
+    width: 60,
+    height: 60,
   },
   {
     skillName: "Github Actions",
     Image: "/logo/github-2.png",
-    width: 60,
+    width: 55,
     height: 60,
   },
   {
@@ -139,15 +139,21 @@ export const Devops = [
     height: 60,
   },
   {
+    skillName: "Linux",
+    Image: "/logo/linux.png",
+    width: 60,
+    height: 60,
+  },
+  {
     skillName: "Nginx",
     Image: "/logo/nginx.png",
-    width: 70,
+    width: 60,
     height: 60,
   },
   {
     skillName: "Grafana",
     Image: "/logo/grafana_.png",
-    width: 70,
+    width: 60,
     height: 70,
   },
   {
@@ -162,20 +168,20 @@ export const Other_skill = [
   {
     skillName: "VS Code",
     Image: "/logo/vscode.png",
-    width: 60,
+    width: 50,
     height: 60,
   },
 
   {
     skillName: "Postman",
     Image: "/logo/postman.png",
-    width: 60,
+    width: 50,
     height: 60,
   },
   {
     skillName: "Jest",
     Image: "/logo/jest.png",
-    width: 90,
+    width: 80,
     height: 90,
   },
   {
