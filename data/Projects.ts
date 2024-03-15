@@ -97,7 +97,7 @@ export const projectsData = [
   },
   {
     src: "/project-img/queue-student.png",
-    title: "Distributed Queue System For Students",
+    title: "Student Queue System",
     description:
       "Developed an Event-driven queue system for students and supervisors with ZeroMQ, Spring Boot, and Python.",
     sourceUrl: "https://www.youtube.com/watch?v=m-omLSKbUtc",
@@ -140,7 +140,7 @@ export const projectsData = [
   },
   {
     src: "/project-img/massageapp.png",
-    title: "Booking Application For Company Employees",
+    title: "Bally's Massage Appointments System",
     description:
       "Developed an appointment management system for Bally's employees, providing a system for their daily massage appointments.",
     sourceUrl: "https://massage.silverspin.com/",
