@@ -4,7 +4,7 @@ export const CertificationData = [
     name: "Docker Mastery: with Kubernetes + Docker Swarm from a Docker Captain",
     date: "01/23/2024",
     description:
-      "Comprehensive guide to using Docker, Compose, and Kubernetes. Includes CI/CD examples, configuration best practices, orchestration tool management, container creation, image registry, and workflow optimization.",
+      "Comprehensive guide to using Docker, Compose, and Kubernetes. Includes CI/CD examples, orchestration tool management, container creation, and workflow optimization.",
     CertificationLink:
       "https://www.udemy.com/certificate/UC-1fc30466-eee4-488e-9993-67d336a8c927/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
     backgroundImg: "/card-background/card-bg-4.jpg",

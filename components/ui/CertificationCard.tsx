@@ -46,14 +46,14 @@ export const CertificationCard = ({
           className="flex flex-col justify-between h-full  relative z-2 p-[2.4rem] "
           variants={slideInFromLeft(0.5)}
         >
-          <header className="absolute top-0 left-0 mt-4 ml-6 text-xs  text-gray-400">
+          <header className="absolute top-0 left-0 mt-4 ml-6 text-sm cursive text-gray-400">
             {date}
           </header>
           <div>
-            <h5 className="text-xl md:text-xl font-bold mb-4 Welcome-text">
+            <h5 className="text-xl md:text-xl font-bold my-2 Welcome-text">
               {name}
             </h5>
-            <p className="text-sm md:text-base text-[#a7a7a7] mb-6">
+            <p className="text-sm md:text-base italic text-gray-400 mb-6">
               {description}
             </p>
           </div>
@@ -64,12 +64,12 @@ export const CertificationCard = ({
           >
             <a
               href={CertificationLink}
-              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-400"
+              className="z-40 flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-400 secondary-button  "
             >
               See Certification
-              <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-400" />
             </a>
           </motion.footer>
+
         </motion.div>
         <div
           className="absolute inset-0.5  z-20"

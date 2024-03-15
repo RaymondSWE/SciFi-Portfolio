@@ -38,8 +38,8 @@ const TimelineElement = ({
       icon={type === "work" ? <FaBriefcase /> : <FaGraduationCap />}
     >
       <h3 className="Welcome-text font-bold text-lg">{title}</h3>
-      <h4 className="text-gray-200 text-base font-semibold mb-1">{location}</h4>
-      <p className="text-gray-300 text-sm">{description}</p>
+      <h4 className="text-gray-300 text-base font-semibold mb-1">{location}</h4>
+      <p className="text-gray-400 italic text-sm">{description}</p>
     </VerticalTimelineElement>
   );
 };
