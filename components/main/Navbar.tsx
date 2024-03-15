@@ -4,10 +4,10 @@ import { FaGithub, FaLinkedinIn, FaRocket } from "react-icons/fa";
 
 const navLinks = [
   { href: "#services", label: "Services" },
-  { href: "#skills", label: "Skills" },
-  { href: "#certifications", label: "Certifications" },
   { href: "#Timeline", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "Skills" },
+  { href: "#certifications", label: "Certifications" },
 ];
 
 const socialLinks = [

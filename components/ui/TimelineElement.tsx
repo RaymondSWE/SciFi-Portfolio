@@ -27,8 +27,8 @@ const TimelineElement = ({
       date={date}
       contentStyle={{
         background: "rgba(33,149,243,0.07)",
+        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.3)",
         color: "#fff",
-        boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
       }}
       contentArrowStyle={{ borderRight: "7px solid  rgba(33, 150, 243, 0.4)" }}
       iconStyle={{
