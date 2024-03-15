@@ -71,7 +71,7 @@ const Hero = () => {
             variants={slideInFromRight(0.8)}
             href="#projects"
             className=" md:inline-block px-6 py-2 text-lg rounded-3xl transition-colors button-primary z-20"
-            >
+          >
             Explore My Projects
           </motion.a>
         </motion.div>

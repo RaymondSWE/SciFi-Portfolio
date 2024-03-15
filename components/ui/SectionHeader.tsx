@@ -21,7 +21,8 @@ const SectionHeader = ({ title, subtitle, Icon }: SectionHeaderProps) => {
       </h1>
       <div className="m-6 flex justify-center items-center">
         {React.cloneElement(Icon, {
-          className: "text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse",
+          className:
+            "text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse",
         })}
         <p className="text-lg md:text-xl text-gray-300">{subtitle}</p>
       </div>

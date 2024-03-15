@@ -31,12 +31,12 @@ const Services = () => {
         subtitle="Engineering your software products from Coruscant to the Outer Rim."
         Icon={<ShoppingCartIcon />}
       />{" "}
-      <div className="container lg:flex mx-auto">
+      <div className="container mx-auto flex flex-col items-center lg:flex-row">
         <motion.div
           className="max-w-[25rem] lg:w-1/2"
           variants={slideInFromLeft(0.5)}
         >
-          <ul className="max-w-[22rem] mb-10 md:mb-14">
+          <ul className="max-w-[22rem]">
             {ServicesData.map((service) => (
               <ServiceItem
                 key={service.id}
