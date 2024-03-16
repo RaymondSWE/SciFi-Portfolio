@@ -7,7 +7,7 @@ import { Certification } from "@/components/main/Certification";
 import Footer from "@/components/main/Footer";
 import Services from "@/components/main/Services";
 import React, { useEffect } from 'react';
-import { WelcomeToast } from "@/components/ui/Toast";
+import { WelcomeToast } from "@/utils/Toaster";
 
 export default function Home() {
 
