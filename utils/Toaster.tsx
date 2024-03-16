@@ -6,7 +6,7 @@ export const WelcomeToast = () => {
   useEffect(() => {
     toast(() => (
         <div className="flex items-center p-2 ">
-        <Image src="/notification.png" alt="Star Wars" width={50} height={50} />
+        <Image src="/notification.png" alt="Star Wars" width={50} height={50} className='mx-2' />
         <div className="text-yellow-400 font-bold text-sm md:text-base ml-4">
             Welcome, and may the Force be with you! 
         </div>
