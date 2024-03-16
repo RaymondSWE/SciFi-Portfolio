@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Pacifico&display=swap");
 @import "react-vertical-timeline-component/style.min.css";
+@import 'react-toastify/dist/ReactToastify.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
