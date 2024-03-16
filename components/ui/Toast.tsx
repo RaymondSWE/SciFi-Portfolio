@@ -19,7 +19,6 @@ export const WelcomeToast = () => {
       pauseOnHover: true,
       draggable: true,
       theme: "dark", 
-      transition: "bounce",
       style: {
         background: "rgba(0,0,0,0.4)",
         color: "#FFE81F", 
