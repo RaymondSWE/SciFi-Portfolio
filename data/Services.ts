@@ -93,5 +93,4 @@ export const ServicesApps = [
     width: 40,
     height: 60,
   },
-
 ];

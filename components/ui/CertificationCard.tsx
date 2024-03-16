@@ -63,14 +63,14 @@ export const CertificationCard = ({
             variants={slideInFromRight(0.8)}
           >
             <button className="button-secondary rounded-xl z-40">
-            <a
-              href={CertificationLink}
-              className=" flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
-              target="_blank"
-              rel="noreferrer"
-            >
-              See Certification
-            </a>
+              <a
+                href={CertificationLink}
+                className=" flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
+                target="_blank"
+                rel="noreferrer"
+              >
+                See Certification
+              </a>
             </button>
           </motion.footer>
         </motion.div>

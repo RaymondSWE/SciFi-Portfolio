@@ -32,7 +32,6 @@ const Projects = () => {
             features={project.features}
             challenges={project.challenges}
             accomplishments={project.accomplishments}
-            
           />
         ))}
       </div>
