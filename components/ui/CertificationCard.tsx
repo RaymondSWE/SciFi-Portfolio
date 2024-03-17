@@ -19,7 +19,6 @@ interface CertificationCardProps {
   CertificationLink: string;
   backgroundImg: string;
   borderBackground: string;
-  light?: boolean;
 }
 
 export const CertificationCard = ({
@@ -29,7 +28,6 @@ export const CertificationCard = ({
   backgroundImg,
   borderBackground,
   CertificationLink,
-  light,
 }: CertificationCardProps) => {
   return (
     <motion.article
@@ -53,7 +51,7 @@ export const CertificationCard = ({
             <h5 className="text-xl md:text-xl font-bold my-2 Welcome-text">
               {name}
             </h5>
-            <p className="text-sm md:text-base italic text-gray-400 mb-6">
+            <p className="text-sm md:text-base italic text-gray-300 mb-6">
               {description}
             </p>
           </div>
@@ -62,7 +60,7 @@ export const CertificationCard = ({
             className="flex justify-end items-center mt-4"
             variants={slideInFromRight(0.8)}
           >
-            <button className="button-secondary rounded-xl z-40">
+            <button className=" z-40">
               <a
                 href={CertificationLink}
                 className=" flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
@@ -70,7 +68,10 @@ export const CertificationCard = ({
                 rel="noreferrer"
               >
                 See Certification
+                <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-300" />
+
               </a>
+              
             </button>
           </motion.footer>
         </motion.div>
@@ -78,7 +79,7 @@ export const CertificationCard = ({
           className="absolute inset-0.5  z-20"
           style={{ clipPath: "url(#certification)" }}
         >
-          <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20 z-50">
+          <div className="absolute inset-0 opacity-5 transition-opacity hover:opacity-30 z-50">
             {backgroundImg && (
               <Image
                 src={backgroundImg}
