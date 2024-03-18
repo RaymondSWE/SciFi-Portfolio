@@ -26,8 +26,8 @@ export const ServicesApps = [
   {
     id: "1",
     title: "Jest",
-    icon: "/logo/jest.png",
-    width: 70,
+    icon: "/logo/Jest.svg",
+    width: 35,
     height: 70,
   },
   {

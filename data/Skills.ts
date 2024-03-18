@@ -120,8 +120,32 @@ export const SkillsData = [
     height: 70,
   },
   {
+    skillName: "Docker Swarm",
+    Image: "/logo/dockerswarm.png",
+    width: 70,
+    height: 70,
+  },
+  {
     skillName: "Kubernetes",
     Image: "/logo/kubernetes.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "Helm",
+    Image: "/logo/Helm.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "Bash",
+    Image: "/logo/bash.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "Digital Ocean",
+    Image: "/logo/DigitalOcean.png",
     width: 70,
     height: 70,
   },
@@ -135,6 +159,12 @@ export const SkillsData = [
   {
     skillName: "Linux",
     Image: "/logo/linux.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "PowerShell",
+    Image: "/logo/Powershell.svg",
     width: 70,
     height: 70,
   },
@@ -158,27 +188,27 @@ export const SkillsData = [
   }, {
     skillName: "VS Code",
     Image: "/logo/vscode.png",
-    width: 50,
+    width: 65,
     height: 70,
   },
 
   {
     skillName: "Postman",
     Image: "/logo/postman.png",
-    width: 50,
+    width: 70,
     height: 70,
   },
   {
     skillName: "Jest",
-    Image: "/logo/jest.png",
-    width: 80,
+    Image: "/logo/Jest.svg",
+    width: 70,
     height: 90,
   },
   {
     skillName: "Liquibase",
-    Image: "/logo/liquibase.png",
-    width: 130,
-    height: 120,
+    Image: "/logo/Liquibase.svg",
+    width: 70,
+    height: 70,
   },
   {
     skillName: "DataGrip",
@@ -192,6 +222,37 @@ export const SkillsData = [
     width: 70,
     height: 70,
   },
+  {
+    skillName: "PyCharm",
+    Image: "/logo/PyCharm.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "XML",
+    Image: "/logo/XML.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "YAML",
+    Image: "/logo/YAML.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "JSON",
+    Image: "/logo/JSON.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "Jupyter",
+    Image: "/logo/Jupyter.svg",
+    width: 70,
+    height: 70,
+  },
+
   // {
   //   skillName: "Figma",
   //   Image: "/logo/figma.png",
