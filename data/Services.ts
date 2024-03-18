@@ -62,7 +62,7 @@ export const ServicesApps = [
     id: "6",
     title: "Docker",
     icon: "/logo/Docker.svg",
-    width: 40,
+    width: 50,
     height: 40,
   },
   {
