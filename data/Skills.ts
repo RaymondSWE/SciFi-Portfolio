@@ -1,9 +1,9 @@
-export const Frontend_skill = [
+export const SkillsData = [
   {
     skillName: "Html 5",
     Image: "/logo/html.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "CSS",
@@ -16,6 +16,12 @@ export const Frontend_skill = [
     Image: "/logo/js.png",
     width: 60,
     height: 60,
+  },
+  {
+    skillName: "TypeScript",
+    Image: "/logo/ts.png",
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Tailwind CSS",
@@ -32,35 +38,26 @@ export const Frontend_skill = [
   {
     skillName: "React",
     Image: "/logo/react.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Bootstrap",
     Image: "/logo/bootstrap.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
-  {
-    skillName: "TypeScript",
-    Image: "/logo/ts.png",
-    width: 70,
-    height: 70,
-  },
+
   {
     skillName: "Nextjs ",
     Image: "/logo/next.png",
-    width: 70,
-    height: 70,
-  },
-];
-
-export const Backend_skill = [
-  {
+    width: 65,
+    height: 65,
+  },{
     skillName: "Nodejs",
     Image: "/logo/node-js.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Java",
@@ -71,14 +68,14 @@ export const Backend_skill = [
   {
     skillName: "Python",
     Image: "/logo/python.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Expressjs",
     Image: "/logo/express.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Spring",
@@ -89,25 +86,21 @@ export const Backend_skill = [
   {
     skillName: "MySQL",
     Image: "/logo/mysql.png",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Prisma",
     Image: "/logo/prisma.webp",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
   },
   {
     skillName: "Sequelize",
     Image: "/logo/sequelize.svg",
-    width: 70,
-    height: 70,
-  },
-];
-
-export const Devops = [
-  {
+    width: 65,
+    height: 65,
+  }, {
     skillName: "Azure",
     Image: "/logo/azure.png",
     width: 60,
@@ -119,17 +112,18 @@ export const Devops = [
     width: 55,
     height: 60,
   },
-  {
-    skillName: "Kubernetes",
-    Image: "/logo/kubernetes.png",
-    width: 60,
-    height: 60,
-  },
+
   {
     skillName: "Docker",
     Image: "/logo/docker.webp",
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
+  },
+  {
+    skillName: "Kubernetes",
+    Image: "/logo/kubernetes.svg",
+    width: 65,
+    height: 65,
   },
 
   {
@@ -154,18 +148,14 @@ export const Devops = [
     skillName: "Grafana",
     Image: "/logo/grafana_.png",
     width: 60,
-    height: 70,
+    height: 65,
   },
   {
     skillName: "Prometheus",
     Image: "/logo/prometheus.svg",
     width: 60,
     height: 60,
-  },
-];
-
-export const Other_skill = [
-  {
+  }, {
     skillName: "VS Code",
     Image: "/logo/vscode.png",
     width: 50,
@@ -202,10 +192,11 @@ export const Other_skill = [
     width: 60,
     height: 60,
   },
-  {
-    skillName: "Figma",
-    Image: "/logo/figma.png",
-    width: 40,
-    height: 50,
-  },
+  // {
+  //   skillName: "Figma",
+  //   Image: "/logo/figma.png",
+  //   width: 40,
+  //   height: 50,
+  // },
 ];
+

@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import Tooltip from "./Tooltip";
 
 interface SkillItemProps {
   src: string;
@@ -34,7 +35,11 @@ const SkillItem = ({
       animate={inView ? "visible" : "hidden"}
       variants={variants}
     >
+      <Tooltip content={skillName} position="top">
+      <div className="relative w-full max-w-[150px] sm:max-w-[200px]">
       <Image src={src} width={width} height={height} alt={skillName} />
+      </div>
+      </Tooltip>
     </motion.div>
   );
 };

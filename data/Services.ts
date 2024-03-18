@@ -60,7 +60,7 @@ export const ServicesApps = [
   },
   {
     id: "6",
-    title: "docker",
+    title: "Docker",
     icon: "/logo/docker.webp",
     width: 40,
     height: 40,

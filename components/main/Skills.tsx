@@ -1,9 +1,6 @@
 "use client";
 import {
-  Backend_skill,
-  Frontend_skill,
-  Devops,
-  Other_skill,
+  SkillsData,
 } from "@/data/Skills";
 import React from "react";
 import SkillSection from "../ui/SkillsGallery";
@@ -24,10 +21,7 @@ const Skills = () => {
           Icon={<BeakerIcon />}
         />
       </div>
-      <SkillSection skillsData={Frontend_skill} />
-      <SkillSection skillsData={Backend_skill} />
-      <SkillSection skillsData={Devops} />
-      <SkillSection skillsData={Other_skill} />
+      <SkillSection skillsData={SkillsData} />
       <div className="w-full h-full absolute top-0 left-0 z-[-10] opacity-30">
         <video
           className="w-full h-full object-cover opacity-40"
