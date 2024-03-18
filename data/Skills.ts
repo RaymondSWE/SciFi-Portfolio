@@ -73,7 +73,7 @@ export const SkillsData = [
   },
   {
     skillName: "Express.js",
-    Image: "/logo/Express.svg",
+    Image: "/logo/express.png",
     width: 70,
     height: 70,
   },
@@ -98,31 +98,31 @@ export const SkillsData = [
   {
     skillName: "Sequelize",
     Image: "/logo/sequelize.svg",
-    width: 60,
+    width: 70,
     height: 70,
   }, {
     skillName: "Azure",
     Image: "/logo/Azure.svg",
-    width: 60,
+    width: 70,
     height: 70,
   },
   {
     skillName: "Github Actions & Github",
     Image: "/logo/GitHub.svg",
-    width: 60,
+    width: 70,
     height: 70,
   },
 
   {
     skillName: "Docker",
     Image: "/logo/Docker.svg",
-    width: 75,
+    width: 80,
     height: 70,
   },
   {
     skillName: "Docker Swarm",
     Image: "/logo/dockerswarm.png",
-    width: 75,
+    width: 80,
     height: 70,
   },
   {
@@ -202,7 +202,7 @@ export const SkillsData = [
     skillName: "Jest",
     Image: "/logo/Jest.svg",
     width: 70,
-    height: 90,
+    height: 70,
   },
   {
     skillName: "Liquibase",
@@ -231,6 +231,12 @@ export const SkillsData = [
   {
     skillName: "XML",
     Image: "/logo/XML.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "Markdown",
+    Image: "/logo/Markdown.svg",
     width: 70,
     height: 70,
   },
