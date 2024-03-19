@@ -30,9 +30,9 @@ const Navbar = () => {
         src="/main.svg"
         alt="Main"
         fill
-        className="opacity-80 z-[-10] object-cover"
+        className="z-[-10] object-cover"
       />
-      <div className="flex justify-between w-full px-6 ">
+      <div className="flex justify-between w-full px-8">
         <div className="md:flex items-center hidden">
         <FaRocket className="text-purple-500 text-2xl mr-2" />
           <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 cursive">
@@ -40,7 +40,7 @@ const Navbar = () => {
           </span>
         </div>
         <div className="flex justify-center items-center flex-grow md:max-w-2xl md:px-2">
-          <div className="flex justify-between items-center w-full bg-[#0300145e] border border-[#7042f861] rounded-full text-gray-200 px-6 py-4 space-x-2 z-50">
+          <div className="flex justify-between items-center w-full bg-[#0300145e] border border-[#7042f861] backdrop-blur-lg rounded-full text-gray-200 px-6 py-4 space-x-2 z-50">
             {navLinks.map((link) => (
               <a
                 key={link.href}
