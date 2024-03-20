@@ -25,7 +25,7 @@ const socialLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] border-b-2 border-[#7042f861] w-full py-4 ">
+    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] border-b-0 border-[#7042f861] w-full py-4">
       <Image
         src="/main.svg"
         alt="Main"
@@ -39,13 +39,13 @@ const Navbar = () => {
             Raman Mohammed
           </span>
         </div>
-        <div className="flex justify-center items-center flex-grow md:max-w-2xl md:px-2">
-          <div className="flex justify-between items-center w-full bg-[#0300145e] border border-[#7042f861] backdrop-blur-lg rounded-full text-gray-200 px-6 py-4 space-x-2 z-50">
+        <div className="flex justify-center items-center flex-grow md:max-w-xl">
+          <div className="flex justify-between items-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-xl rounded-full text-gray-200 px-4 py-4 space-x-2 z-50">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white md:text-lg text-xs transition duration-300 hover:text-gray-400"
+                className="text-white md:text-base text-xs transition duration-300 hover:text-gray-400"
               >
                 {link.label}
               </a>
