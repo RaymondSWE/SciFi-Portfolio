@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center h-auto md:h-[75vh] lg:h-[85vh] py-4 px-4 text-white"
+      className="flex items-center h-auto md:h-[75vh] lg:h-[85vh] py-4 px-4 mt-12 md:mt-0 text-white"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div
