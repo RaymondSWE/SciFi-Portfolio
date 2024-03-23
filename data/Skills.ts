@@ -221,7 +221,14 @@ export const SkillsData = [
     Image: "/logo/intellij.svg",
     width: 70,
     height: 70,
+  },  
+  {
+    skillName: "Vim",
+    Image: "/logo/Vim.svg",
+    width: 70,
+    height: 70,
   },
+  
   {
     skillName: "PyCharm",
     Image: "/logo/PyCharm.svg",
