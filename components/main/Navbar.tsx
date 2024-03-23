@@ -34,21 +34,21 @@ const Navbar = () => {
       />
       <div className="flex justify-between w-full px-8">
         <div className="md:flex items-center hidden">
-        <FaRocket className="text-purple-500 text-2xl mr-2" />
+          <FaRocket className="text-purple-500 text-2xl mr-2" />
           <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 cursive">
             Raman Mohammed
           </span>
         </div>
-          <div className="flex justify-between w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-xl rounded-full text-gray-200 px-4 py-4 space-x-2 z-50 flex-grow md:max-w-xl">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-white md:text-base text-xs transition duration-300 hover:text-gray-400 borderBottom"
-              >
-                {link.label}
-              </a>
-            ))}
+        <div className="flex justify-between w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-xl rounded-full text-gray-200 px-4 py-4 space-x-2 z-50 flex-grow md:max-w-xl">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-white md:text-base text-xs transition duration-300 hover:text-gray-400 borderBottom"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
         <div className="hidden md:flex gap-6 ml-6 z-50 justify-end items-center">
           {socialLinks.map((link) => (

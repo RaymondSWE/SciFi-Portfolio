@@ -45,7 +45,7 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-          
+
           <motion.h2
             variants={slideInFromLeft(0.5)}
             className="md:text-6xl text-2xl font-bold leading-tight mb-2"

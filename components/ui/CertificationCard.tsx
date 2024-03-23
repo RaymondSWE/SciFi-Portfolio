@@ -69,9 +69,7 @@ export const CertificationCard = ({
               >
                 See Certification
                 <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-300" />
-
               </a>
-              
             </button>
           </motion.footer>
         </motion.div>

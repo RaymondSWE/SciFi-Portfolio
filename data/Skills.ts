@@ -53,7 +53,8 @@ export const SkillsData = [
     Image: "/logo/Next.js.svg",
     width: 70,
     height: 70,
-  },{
+  },
+  {
     skillName: "Node.js",
     Image: "/logo/Node.js.svg",
     width: 70,
@@ -100,7 +101,8 @@ export const SkillsData = [
     Image: "/logo/sequelize.svg",
     width: 70,
     height: 70,
-  }, {
+  },
+  {
     skillName: "Azure",
     Image: "/logo/Azure.svg",
     width: 70,
@@ -185,7 +187,8 @@ export const SkillsData = [
     Image: "/logo/prometheus.svg",
     width: 70,
     height: 70,
-  }, {
+  },
+  {
     skillName: "VS Code",
     Image: "/logo/vscode.png",
     width: 65,
@@ -221,14 +224,14 @@ export const SkillsData = [
     Image: "/logo/intellij.svg",
     width: 70,
     height: 70,
-  },  
+  },
   {
     skillName: "Vim",
     Image: "/logo/Vim.svg",
     width: 70,
     height: 70,
   },
-  
+
   {
     skillName: "PyCharm",
     Image: "/logo/PyCharm.svg",
@@ -273,4 +276,3 @@ export const SkillsData = [
   //   height: 50,
   // },
 ];
-

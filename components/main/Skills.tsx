@@ -1,7 +1,5 @@
 "use client";
-import {
-  SkillsData,
-} from "@/data/Skills";
+import { SkillsData } from "@/data/Skills";
 import React from "react";
 import SkillSection from "../ui/SkillsGallery";
 import { BeakerIcon } from "@heroicons/react/24/solid";

@@ -27,18 +27,18 @@ const ServiceIconItem = ({
       style={{ transform: `rotate(${parseInt(id) * rotationDeg}deg)` }}
     >
       <Tooltip content={title} position="top" margin={8}>
-      <div
-        className="relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-gray-700 border border-gray-400	 rounded-xl"
-        style={{ transform: `rotate(-${parseInt(id) * rotationDeg}deg)` }}
-      >
-        <Image
-          className="m-auto"
-          width={width}
-          height={height}
-          alt={title}
-          src={icon}
-        />
-      </div>
+        <div
+          className="relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-gray-700 border border-gray-400	 rounded-xl"
+          style={{ transform: `rotate(-${parseInt(id) * rotationDeg}deg)` }}
+        >
+          <Image
+            className="m-auto"
+            width={width}
+            height={height}
+            alt={title}
+            src={icon}
+          />
+        </div>
       </Tooltip>
     </li>
   );
