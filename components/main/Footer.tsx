@@ -17,7 +17,7 @@ const Footer = () => {
       />
       <a
         href="mailto:RamanMohammed@hotmail.com"
-        className="mx-auto display-block py-3 px-8 text-lg font-semibold text-white rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 shadow-lg hover:shadow-xl button-primary"
+        className="mx-auto display-block py-3 px-8 text-lg font-semibold text-white rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 button-primary"
         onMouseEnter={() => setImageSrc("/robothappy.png")}
         onMouseLeave={() => setImageSrc("/robotnormal.png")}
       >
