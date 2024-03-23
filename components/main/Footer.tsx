@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-  const [imageSrc, setImageSrc] = useState("/robottest.png");
+  const [imageSrc, setImageSrc] = useState("/robotnormal.png");
 
   return (
     <>
@@ -18,8 +18,8 @@ const Footer = () => {
       <a
         href="mailto:RamanMohammed@hotmail.com"
         className="mx-auto display-block py-3 px-8 text-lg font-semibold text-white rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 shadow-lg hover:shadow-xl button-primary"
-        onMouseEnter={() => setImageSrc("/robottest1.png")}
-        onMouseLeave={() => setImageSrc("/robottest.png")}
+        onMouseEnter={() => setImageSrc("/robothappy.png")}
+        onMouseLeave={() => setImageSrc("/robotnoral.png")}
       >
         Contact me
       </a>
