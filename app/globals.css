@@ -13,6 +13,7 @@
   font-family: "Dancing Script", cursive;
 }
 
+
 .anton {
   font-family: "Anton", sans-serif;
 }
@@ -64,6 +65,14 @@
 }
 
 
+.borderBottom:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #7042f861;  
+  transform: scaleX(0);  
+  transition: transform 300ms ease-in-out;
+}
+.borderBottom:hover:after { transform: scaleX(1); }
 
 
 /* Custom scrollbar for Webkit (Chrome, Safari) */
