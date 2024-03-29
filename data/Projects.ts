@@ -1,5 +1,6 @@
 export const projectsData = [
   {
+    id: 1,
     src: "/project-img/csgo.png",
     title: "CSFairTrade",
     description:
@@ -47,6 +48,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 2,
     src: "/project-img/codemate.png",
     title: "CodeMate",
     description:
@@ -94,6 +96,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 3,
     src: "/project-img/snipeskins.jpg",
     title: "SnipeSkins",
     description:
@@ -140,6 +143,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 4,
     src: "/project-img/queue-student.png",
     title: "Student Queue System",
     description:
@@ -178,6 +182,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 5,
     src: "/project-img/starwars-portfolio.png",
     title: "Web portfolio",
     description:
@@ -208,6 +213,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 6,
     src: "/project-img/massageapp.png",
     title: "Bally's Massage Appointments System",
     description:
@@ -245,6 +251,7 @@ export const projectsData = [
     ],
   },
   {
+    id: 7,
     src: "/project-img/blackjack.png",
     title: "Blackjack Game",
     description:
@@ -269,6 +276,7 @@ export const projectsData = [
   },
 
   {
+    id: 8,
     src: "/project-img/webportfolio.png",
     title: "Old Web Portfolio",
     description:

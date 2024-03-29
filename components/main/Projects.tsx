@@ -17,9 +17,10 @@ const Projects = () => {
         Icon={<GlobeAltIcon />}
       />
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12">
-        {projectsData.map((project, index) => (
+        {projectsData.map((project) => (
           <ProjectCard
-            key={index}
+            id={project.id}
+            key={project.id}
             src={project.src}
             title={project.title}
             description={project.description}

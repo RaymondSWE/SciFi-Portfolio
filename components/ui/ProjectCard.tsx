@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaYoutube } from "react-icons/fa";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
-import { slideInFromTop } from "@/utils/motion";
+import { slideInFromTop, slideInWithDelay } from "@/utils/motion";
+import { useInView } from "react-intersection-observer";
 
 interface ProjectCardProps {
+  id: number;
   src: string;
   title: string;
   description: string;
@@ -22,6 +24,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
+  id,
   src,
   title,
   description,
@@ -36,6 +39,8 @@ const ProjectCard = ({
   accomplishments,
 }: ProjectCardProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const { ref, inView } = useInView({ triggerOnce: true });
+
 
   const handleMissingLink = (serviceName: string) => {
     alert(`Sorry, the ${serviceName} link is not available for this project.`);
@@ -46,8 +51,9 @@ const ProjectCard = ({
       <motion.div
         className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         initial="hidden"
+        ref={ref}
         animate="visible"
-        variants={slideInFromTop(0.8)}
+        variants={slideInWithDelay(id * 0.3)}
       >
         <div className="w-full h-48 relative">
           <Image src={src} alt={title} fill className="object-cover" />
