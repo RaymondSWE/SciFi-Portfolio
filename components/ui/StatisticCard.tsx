@@ -38,7 +38,7 @@ const StatisticCard = ({
           width={50}
           height={50}
         />
-        <h2 className="title-font font-medium text-3xl Welcome-text mt-8">
+        <h2 className="title-font font-bold text-2xl sm:text-3xl Welcome-text mt-4">
           {inView ? (
             <>
               <CountUp end={number} duration={10} />
@@ -48,7 +48,7 @@ const StatisticCard = ({
             0
           )}
         </h2>
-        <p className="text-gray-400 mt-2">{description}</p>
+        <p className="text-gray-400 mt-2 sm:text-base text-sm font-semibold">{description}</p>
       </div>
     </motion.div>
   );
