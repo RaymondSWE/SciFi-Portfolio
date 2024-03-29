@@ -40,7 +40,10 @@ export const slideInFromTop: Variants = {
   },
 };
 
-export function slideInWithDelay(delay: number, direction: "left" | "right" = "left"): Variants {
+export function slideInWithDelay(
+  delay: number,
+  direction: "left" | "right" = "left",
+): Variants {
   return {
     hidden: { x: direction === "left" ? -100 : 100, opacity: 0 },
     visible: {

@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Tooltip from "./Tooltip";
-import { motion, Variants } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
 
 interface ServiceIconItemProps {
   id: number;
@@ -23,11 +20,9 @@ const ServiceIconItem = ({
   totalCount,
 }: ServiceIconItemProps) => {
   const rotationDeg = 360 / totalCount;
-  const { ref, inView } = useInView({ triggerOnce: true });
-
 
   return (
-    <motion.li
+    <li
       key={id}
       className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
       style={{ transform: `rotate(${id * rotationDeg}deg)` }}
@@ -46,7 +41,7 @@ const ServiceIconItem = ({
           />
         </div>
       </Tooltip>
-    </motion.li>
+    </li>
   );
 };
 

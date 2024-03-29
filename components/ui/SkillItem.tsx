@@ -36,7 +36,7 @@ const SkillItem = ({
       variants={variants}
     >
       <Tooltip content={skillName} position="top" margin={2}>
-          <Image src={src} width={width} height={height} alt={skillName} />
+        <Image src={src} width={width} height={height} alt={skillName} />
       </Tooltip>
     </motion.div>
   );
