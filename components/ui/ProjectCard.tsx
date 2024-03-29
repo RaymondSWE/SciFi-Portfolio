@@ -50,10 +50,10 @@ const ProjectCard = ({
     <>
       <motion.div
         className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
-        initial="hidden"
         ref={ref}
-        animate="visible"
-        variants={slideInWithDelay(id * 0.3)}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={slideInWithDelay(id * 0.3, "right")}
       >
         <div className="w-full h-48 relative">
           <Image src={src} alt={title} fill className="object-cover" />

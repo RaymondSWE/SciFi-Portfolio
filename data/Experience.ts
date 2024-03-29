@@ -1,6 +1,6 @@
 export const ExperienceData = [
   {
-    id: "job-1",
+    id: 1,
     type: "work",
     date: "December 2022 - January 2023",
     title: "Junior Developer at Bally's Skövde",
@@ -9,7 +9,7 @@ export const ExperienceData = [
       "Participated in pair programming, handling player security and inquiries, and expanded skills in new technologies.",
   },
   {
-    id: "job-2",
+    id: 2,
     type: "work",
     date: "June 2022 - July 2022",
     title: "Junior Developer at Bally's Skövde",
@@ -18,7 +18,7 @@ export const ExperienceData = [
       "Developed a massage application, designing the database and implementing backend logic.",
   },
   {
-    id: "job-3",
+    id: 3,
     type: "work",
     date: "Jan 2022 - June 2022",
     title: "Full Stack Developer at Integrify Remote",
@@ -27,7 +27,7 @@ export const ExperienceData = [
       "Completed a bootcamp focusing on JavaScript, React.js, TypeScript, and AWS, working on real-world projects.",
   },
   {
-    id: "job-4",
+    id: 4,
     type: "work",
     date: "June 2019 - April 2022",
     title: "Truck Driver at Mathem",
@@ -36,7 +36,7 @@ export const ExperienceData = [
       "Operated delivery routes, ensuring timely and accurate deliveries.",
   },
   {
-    id: "job-5",
+    id: 5,
     type: "work",
     date: "August 2017 - June 2018",
     title: "Assembler at Volvo Cars",
@@ -45,7 +45,7 @@ export const ExperienceData = [
       "Assembled vehicle parts, adhering to quality standards and production deadlines.",
   },
   {
-    id: "job-6",
+    id: 6,
     type: "work",
     date: "May 2016 - June 2018",
     title: "Waiter at Scandic Hotels",
@@ -55,7 +55,7 @@ export const ExperienceData = [
 
   // Education Experience
   {
-    id: "edu-1",
+    id: 7,
     type: "education",
     date: "August 2021 - May 2024",
     title: "Bachelor's in Computer Science at University Skövde",
@@ -63,7 +63,7 @@ export const ExperienceData = [
     description: "Specializing in System Development.",
   },
   {
-    id: "edu-2",
+    id: 8,
     type: "education",
     date: "August 2020 - Jan 2021",
     title: "Economics Studies at University Borås",

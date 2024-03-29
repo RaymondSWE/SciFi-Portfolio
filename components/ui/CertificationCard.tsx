@@ -10,6 +10,7 @@ import {
 } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 interface CertificationCardProps {
   id: number;
@@ -22,6 +23,7 @@ interface CertificationCardProps {
 }
 
 export const CertificationCard = ({
+  id,
   name,
   date,
   description,
@@ -29,12 +31,14 @@ export const CertificationCard = ({
   borderBackground,
   CertificationLink,
 }: CertificationCardProps) => {
+  const { ref, inView } = useInView({ triggerOnce: true });
   return (
     <motion.article
       className="flex flex-wrap gap-10 mb-10 sm:px-2 px-6 "
       initial="hidden"
-      animate="visible"
+      animate={inView ? "visible" : "hidden"}
       variants={slideInFromTop(0.5)}
+      ref={ref}
     >
       <div
         className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:h-[24rem] md:max-w-[24rem] h-[20rem]  "

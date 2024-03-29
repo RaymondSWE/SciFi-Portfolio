@@ -4,7 +4,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 interface TimelineItemProps {
-  id: string;
+  id: number;
   type?: "work" | "education";
   date: string;
   title: string;
@@ -20,9 +20,11 @@ const TimelineElement = ({
   location,
   description,
 }: TimelineItemProps) => {
+  //TODO: Implement the useInView hook to animate the timeline elements
+
   return (
     <VerticalTimelineElement
-      visible={true}
+      visible
       key={id}
       date={date}
       contentStyle={{

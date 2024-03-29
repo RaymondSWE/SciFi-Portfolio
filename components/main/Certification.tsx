@@ -16,7 +16,7 @@ export const Certification = () => {
       <div className="flex flex-wrap justify-center gap-10 max-w-7xl mx-auto mt-12">
         {CertificationData.map((certification, index) => (
           <CertificationCard
-            key={index}
+            key={certification.id}
             id={certification.id}
             name={certification.name}
             date={certification.date}
