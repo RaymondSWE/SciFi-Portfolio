@@ -47,7 +47,7 @@ const ProjectCard = ({
         className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         initial="hidden"
         animate="visible"
-        variants={slideInFromTop}
+        variants={slideInFromTop(0.8)}
       >
         <div className="w-full h-48 relative">
           <Image src={src} alt={title} fill className="object-cover" />
