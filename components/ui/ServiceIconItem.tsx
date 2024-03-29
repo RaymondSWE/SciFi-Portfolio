@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Tooltip from "./Tooltip";
+import { motion, Variants } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
 
 interface ServiceIconItemProps {
-  id: string;
+  id: number;
   title: string;
   icon: string;
   width: number;
@@ -20,16 +23,19 @@ const ServiceIconItem = ({
   totalCount,
 }: ServiceIconItemProps) => {
   const rotationDeg = 360 / totalCount;
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+
   return (
-    <li
+    <motion.li
       key={id}
       className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
-      style={{ transform: `rotate(${parseInt(id) * rotationDeg}deg)` }}
+      style={{ transform: `rotate(${id * rotationDeg}deg)` }}
     >
       <Tooltip content={title} position="top" margin={8}>
         <div
           className="relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-gray-700 border border-gray-400	 rounded-xl"
-          style={{ transform: `rotate(-${parseInt(id) * rotationDeg}deg)` }}
+          style={{ transform: `rotate(-${id * rotationDeg}deg)` }}
         >
           <Image
             className="m-auto"
@@ -40,7 +46,7 @@ const ServiceIconItem = ({
           />
         </div>
       </Tooltip>
-    </li>
+    </motion.li>
   );
 };
 

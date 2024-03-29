@@ -25,7 +25,7 @@ const SkillItem = ({
 
   const variants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: index * 0.3 } },
+    visible: { opacity: 1, transition: { delay: index * 0.2 } },
   };
 
   return (

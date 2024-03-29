@@ -20,12 +20,9 @@ const Services = () => {
 
   return (
     <>
-    <motion.section
+    <section
       className="px-4 lg:px-8 xl:px-16"
       id="services"
-      initial="hidden"
-      animate="visible"
-      variants={slideInFromTop}
     >
       <SectionHeader
         title="Galactic Development Services"
@@ -33,9 +30,8 @@ const Services = () => {
         Icon={<ShoppingCartIcon />}
       />{" "}
       <div className="container mx-auto flex flex-col items-center lg:flex-row">
-        <motion.div
+        <div
           className="max-w-[25rem] lg:w-1/2"
-          variants={slideInFromLeft(0.5)}
         >
           <ul className="max-w-[22rem]">
             {ServicesData.map((service) => (
@@ -48,18 +44,20 @@ const Services = () => {
               />
             ))}
           </ul>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           className="lg:ml-auto xl:w-[38rem] lg:w-1/2 mt-4"
-          variants={slideInFromRight(0.8)}
         >
-          <p className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto">
+          <motion.p 
+          className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto"
+          
+          >
             Discover my array of provided services, crafted with precision and
             passion. My portfolio showcases my expertise in solving diverse
             technological challenges, from sleek web designs to robust backend
             systems.
-          </p>
+          </motion.p>
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-[#252134] rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-[#252134] rounded-full">
               <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-[#252134]">
@@ -93,9 +91,9 @@ const Services = () => {
               <Image src={curve2} width={162} height={76} alt="Curve 2" />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
-    </motion.section>
+    </section>
     </>
   );
 };
