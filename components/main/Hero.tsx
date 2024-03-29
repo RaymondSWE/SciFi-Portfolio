@@ -29,7 +29,7 @@ const Hero = () => {
               variants={slideInFromTop}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <div className="Welcome-text italic md:text-xl text-sm font-semibold">
+              <div className="Welcome-text italic md:text-xl text-base font-semibold">
                 <Typewriter
                   options={{
                     strings: [
@@ -58,7 +58,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             variants={slideInFromLeft(0.5)}
-            className="text-lg text-gray-400 italic my-5 max-w-[600px] text-center md:text-left"
+            className="sm:text-lg text-gray-400 italic my-5 max-w-[600px] text-center md:text-left text-base"
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
@@ -70,7 +70,7 @@ const Hero = () => {
           <motion.a
             variants={slideInFromRight(0.8)}
             href="#projects"
-            className=" md:inline-block px-6 py-2 text-lg rounded-3xl transition-colors button-primary z-20"
+            className=" md:inline-block sm:px-6 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-primary z-20"
           >
             Explore My Projects
           </motion.a>
