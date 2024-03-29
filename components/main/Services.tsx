@@ -19,6 +19,7 @@ const Services = () => {
   const totalCount = ServicesApps.length;
 
   return (
+    <>
     <motion.section
       className="px-4 lg:px-8 xl:px-16"
       id="services"
@@ -62,7 +63,7 @@ const Services = () => {
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-[#252134] rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-[#252134] rounded-full">
               <div className="w-[6rem] m-auto aspect-square p-[0.2rem] rounded-full border border-[#252134]">
-                <div className="flex items-center justify-center w-full h-full">
+                <div className="flex items-center justify-center w-full h-full z-50">
                   <Image
                     src="/baby-yoda.png"
                     width={40}
@@ -95,6 +96,7 @@ const Services = () => {
         </motion.div>
       </div>
     </motion.section>
+    </>
   );
 };
 

@@ -23,7 +23,7 @@ const Footer = () => {
       >
         Contact me
       </a>
-      <div className="flex justify-center relative z-10 -mb-12">
+      <div className="flex justify-center relative z-[-10] -mb-12">
         <Image
           src={imageSrc}
           alt="Mr. Roboto"

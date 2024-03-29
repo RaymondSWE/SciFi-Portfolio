@@ -8,6 +8,7 @@ import Footer from "@/components/main/Footer";
 import Services from "@/components/main/Services";
 import React, { useEffect } from "react";
 import { WelcomeToast } from "@/utils/Toaster";
+import Statistic from "@/components/main/Statistic";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="flex flex-col gap-12">
         <Hero />
         <Services />
+        <Statistic />
         <Skills />
         <Projects />
         <Timeline />
