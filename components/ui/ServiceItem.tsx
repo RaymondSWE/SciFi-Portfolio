@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { slideInFromTop } from "@/utils/motion";
+import { slideInFromTop, slideInFromLeft } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -19,7 +19,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      variants={slideInFromTop}
+      variants={slideInFromTop(0.2)}
     >
       <li key={id} className="mb-3">
         <div className="flex items-center">

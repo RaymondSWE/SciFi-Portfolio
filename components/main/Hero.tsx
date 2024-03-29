@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="flex items-center mb-4">
             <motion.div
               className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
-              variants={slideInFromTop}
+              variants={slideInFromTop(0.5)}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-base font-semibold">

@@ -3,11 +3,13 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { slideInFromTop, slideInWithDelay } from "@/utils/motion";
+import CountUp from "react-countup";
 
 interface StatisticCardProps {
   id: number;
   icon: string;
-  number: string;
+  number: number;
+  suffix?: string;
   description: string;
 }
 
@@ -15,6 +17,7 @@ const StatisticCard = ({
   id,
   icon,
   number,
+  suffix,
   description,
 }: StatisticCardProps) => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -36,7 +39,14 @@ const StatisticCard = ({
           height={50}
         />
         <h2 className="title-font font-medium text-3xl Welcome-text mt-8">
-          {number}
+          {inView ? (
+            <>
+              <CountUp end={number} duration={10} />
+              {suffix}
+            </>
+          ) : (
+            0
+          )}
         </h2>
         <p className="text-gray-400 mt-2">{description}</p>
       </div>
