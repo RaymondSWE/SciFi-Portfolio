@@ -31,13 +31,13 @@ export const CertificationCard = ({
 }: CertificationCardProps) => {
   return (
     <motion.article
-      className="flex flex-wrap gap-10 mb-10 px-2"
+      className="flex flex-wrap gap-10 mb-10 sm:px-2 px-6 "
       initial="hidden"
       animate="visible"
       variants={slideInFromTop}
     >
       <div
-        className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:h-[24rem] md:max-w-[24rem]"
+        className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:h-[24rem] md:max-w-[24rem] h-[20rem]  "
         style={{ backgroundImage: `url(${borderBackground})` }}
       >
         <motion.div
