@@ -24,7 +24,7 @@ const TimelineElement = ({
 
   return (
     <VerticalTimelineElement
-      visible
+      visible={true}      
       key={id}
       date={date}
       contentStyle={{

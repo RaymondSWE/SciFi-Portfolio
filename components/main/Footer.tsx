@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { FaGithub, FaLinkedinIn, FaYoutube, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import SectionHeader from "../ui/SectionHeader";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -29,13 +29,13 @@ const Footer = () => {
           alt="Mr. Roboto"
           width={250}
           height={250}
-          className="cursor-pointer object-cover"
+          className="cursor-pointer object-cover mirror"
         />
       </div>
       <footer className="w-full py-12 backdrop-blur-sm border-t border-[#645AFF] z-50">
-        <div className="container mx-auto px-4 ">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0">
-            <div className="text-white text-center lg:text-left">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between items-center lg:items-center">
+            <div className="text-white text-center lg:text-left mb-8 lg:mb-0">
               <h2 className="text-3xl font-semibold mb-2 Welcome-text cursive">
                 Raman Mohammed
               </h2>
@@ -44,35 +44,38 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/raman-mohammed/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white text-4xl hover:scale-110 transition-transform"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://github.com/RaymondSWE"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white text-4xl hover:scale-110 transition-transform"
-              >
-                <FaLinkedinIn />
-              </a>
-              <a
-                href="mailto:RamanMohammed@hotmail.com"
-                className="text-white text-4xl hover:scale-110 transition-transform"
-              >
-                <FaEnvelope />
-              </a>
-            </div>
-
-            <div className="text-center lg:text-right">
-              <p className="text-gray-400 italic">
+            <div>
+              <p className="text-gray-400 italic mb-4">
                 &copy; {year} Raman Mohammed. All Rights Reserved.
               </p>
+              <address className="flex justify-center space-x-6">
+                <a
+                  href="https://github.com/RaymondSWE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white text-4xl hover:scale-110 transition-transform mirror"
+                  aria-label="Raman Mohammed on GitHub"
+
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/raman-mohammed/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white text-4xl hover:scale-110 transition-transform mirror"
+                  aria-label="Raman Mohammed on Linkedin"
+                >
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  href="mailto:RamanMohammed@hotmail.com"
+                  className="text-white text-4xl hover:scale-110 transition-transform mirror"
+                  aria-label="Raman Mohammed on Email"
+                >
+                  <FaEnvelope />
+                </a>
+              </address>
             </div>
           </div>
         </div>

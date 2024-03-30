@@ -21,11 +21,12 @@ const socialLinks = [
     label: "LinkedIn",
     icon: <FaLinkedinIn />,
   },
+  
 ];
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] border-b-0 border-[#7042f861] w-full py-4">
+    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] border-b-0 border-[#7042f861] w-full py-4 px-12">
       <Image
         src="/main.svg"
         alt="background gradient image"
@@ -35,7 +36,7 @@ const Navbar = () => {
       <div className="flex justify-between w-full px-8">
         <div className="md:flex items-center hidden">
           <FaRocket className="text-purple-500 text-2xl mr-2" />
-          <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 cursive">
+          <span className="font-bold md:text-2xl text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 cursive">
             Raman Mohammed
           </span>
         </div>
@@ -55,7 +56,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-white text-3xl transition duration-300 hover:text-gray-400"
+              className="text-white text-2xl md:text-4xl hover:scale-110 transition-transform"
               target="_blank"
               rel="noreferrer"
             >
