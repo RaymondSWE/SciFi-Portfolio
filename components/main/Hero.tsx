@@ -41,6 +41,7 @@ const Hero = () => {
 
                     ],
                     delay: 80,
+                    deleteSpeed: 25,
                     autoStart: true,
                     loop: true,
                   }}

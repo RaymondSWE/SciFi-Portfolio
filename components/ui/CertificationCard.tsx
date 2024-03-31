@@ -52,7 +52,7 @@ export const CertificationCard = ({
             {date}
           </header>
           <div>
-            <h5 className="text-xl md:text-xl font-bold my-2 Welcome-text">
+            <h5 className="text-base md:text-xl font-bold my-2 Welcome-text">
               {name}
             </h5>
             <p className="text-sm md:text-base italic text-gray-300 mb-6">
