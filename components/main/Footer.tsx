@@ -43,12 +43,7 @@ const Footer = () => {
                 Fullstack Developer - Crafting Software solutions
               </p>
             </div>
-
-            <div>
-              <p className="text-gray-400 italic mb-4">
-                &copy; {year} Raman Mohammed. All Rights Reserved.
-              </p>
-              <address className="flex justify-center space-x-6">
+              <address className="flex justify-center space-x-8 pb-4">
                 <a
                   href="https://github.com/RaymondSWE"
                   target="_blank"
@@ -76,7 +71,6 @@ const Footer = () => {
                   <FaEnvelope />
                 </a>
               </address>
-            </div>
           </div>
         </div>
       </footer>

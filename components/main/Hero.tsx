@@ -34,11 +34,13 @@ const Hero = () => {
                 <Typewriter
                   options={{
                     strings: [
-                      "Hey there, I'm Raman Mohammed✋",
-                      "I'm a Full-Stack developer💻",
-                      "You can contact me via Linkedin or Email📫",
+                      "Hey there, I'm Raman Mohammed",
+                      "I'm a Full-Stack developer",
+                      "Based in Gothenburg, Sweden",
+                      "You can contact me via Linkedin or Email"
+
                     ],
-                    delay: 100,
+                    delay: 50,
                     autoStart: true,
                     loop: true,
                   }}
