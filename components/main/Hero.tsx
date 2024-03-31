@@ -40,7 +40,7 @@ const Hero = () => {
                       "You can contact me via Linkedin or Email"
 
                     ],
-                    delay: 50,
+                    delay: 80,
                     autoStart: true,
                     loop: true,
                   }}
