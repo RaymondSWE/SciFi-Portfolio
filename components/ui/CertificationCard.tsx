@@ -18,7 +18,7 @@ interface CertificationCardProps {
   name: string;
   date: string;
   description: string;
-  CertificationLink: string;
+  CertificationLink: string | null;
   backgroundImg: string;
   borderBackground: string;
 }
