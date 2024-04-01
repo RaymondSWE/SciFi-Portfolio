@@ -48,7 +48,9 @@ const StatisticCard = ({
             0
           )}
         </h2>
-        <p className="text-gray-400 mt-2 sm:text-base text-sm font-semibold">{description}</p>
+        <p className="text-gray-400 mt-2 sm:text-base text-sm font-semibold">
+          {description}
+        </p>
       </div>
     </motion.div>
   );

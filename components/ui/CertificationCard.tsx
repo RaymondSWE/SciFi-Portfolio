@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import { handleMissingLink } from "@/utils/Toaster";
 
 interface CertificationCardProps {
   id: number;
@@ -64,16 +65,30 @@ export const CertificationCard = ({
             className="flex justify-end items-center mt-4"
             variants={slideInFromRight(0.8)}
           >
-            <button className=" z-40">
-              <a
-                href={CertificationLink}
-                className=" flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
-                target="_blank"
-                rel="noreferrer"
-              >
-                See Certification
-                <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-300" />
-              </a>
+            <button
+              onClick={() => {
+                if (!CertificationLink) {
+                  handleMissingLink("");
+                }
+              }}
+              className="z-40"
+            >
+              {CertificationLink ? (
+                <a
+                  href={CertificationLink}
+                  className="flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  See Certification
+                  <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-300" />
+                </a>
+              ) : (
+                <span className="flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300 cursor-not-allowed">
+                  Missing Certification
+                  <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-300" />
+                </span>
+              )}
             </button>
           </motion.footer>
         </motion.div>

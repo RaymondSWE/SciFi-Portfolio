@@ -43,34 +43,33 @@ const Footer = () => {
                 Fullstack Developer - Crafting Software solutions
               </p>
             </div>
-              <address className="flex justify-center space-x-8 pb-4">
-                <a
-                  href="https://github.com/RaymondSWE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white text-4xl hover:scale-110 transition-transform mirror"
-                  aria-label="Raman Mohammed on GitHub"
-
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/raman-mohammed/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white text-4xl hover:scale-110 transition-transform mirror"
-                  aria-label="Raman Mohammed on Linkedin"
-                >
-                  <FaLinkedinIn />
-                </a>
-                <a
-                  href="mailto:RamanMohammed@hotmail.com"
-                  className="text-white text-4xl hover:scale-110 transition-transform mirror"
-                  aria-label="Raman Mohammed on Email"
-                >
-                  <FaEnvelope />
-                </a>
-              </address>
+            <address className="flex justify-center space-x-8 pb-4">
+              <a
+                href="https://github.com/RaymondSWE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-4xl hover:scale-110 transition-transform mirror"
+                aria-label="Raman Mohammed on GitHub"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/raman-mohammed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-4xl hover:scale-110 transition-transform mirror"
+                aria-label="Raman Mohammed on Linkedin"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="mailto:RamanMohammed@hotmail.com"
+                className="text-white text-4xl hover:scale-110 transition-transform mirror"
+                aria-label="Raman Mohammed on Email"
+              >
+                <FaEnvelope />
+              </a>
+            </address>
           </div>
         </div>
       </footer>

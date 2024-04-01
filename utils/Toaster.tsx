@@ -23,7 +23,6 @@ export const WelcomeToast = () => {
         style: {
           background: "rgba(0,0,0,0.4)",
           color: "#FFE81F",
-          fontFamily: "'Inter', sans-serif",
           marginTop: "100px",
           borderRadius: "20px",
           boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
@@ -33,4 +32,34 @@ export const WelcomeToast = () => {
   }, []);
 
   return null;
+};
+
+export const handleMissingLink = (serviceName: string) => {
+  toast(
+    () => (
+      <div
+        className="flex items-center"
+        style={{ fontFamily: "'Inter', sans-serif" }}
+      >
+        <div className="font-bold text-sm md:text-base Welcome-text">
+          Sorry, the {serviceName} link is not available right now.
+        </div>
+      </div>
+    ),
+    {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+      style: {
+        background: "rgba(0,0,0,0.8)",
+        color: "#FFE81F",
+        borderRadius: "20px",
+        boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
+      },
+    },
+  );
 };

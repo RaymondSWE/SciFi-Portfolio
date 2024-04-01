@@ -16,9 +16,7 @@ const Timeline = () => {
         Icon={<ScaleIcon />}
       />
 
-      <VerticalTimeline
-      animate={true}
-      >
+      <VerticalTimeline animate={true}>
         {ExperienceData.map((item) => (
           <TimelineElement
             key={item.id}

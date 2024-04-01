@@ -37,8 +37,7 @@ const Hero = () => {
                       "Hey there, I'm Raman Mohammed",
                       "I'm a Full-Stack developer",
                       "Based in Gothenburg, Sweden",
-                      "You can contact me via Linkedin or Email"
-
+                      "You can contact me via Linkedin or Email",
                     ],
                     delay: 80,
                     deleteSpeed: 25,

@@ -6,7 +6,7 @@ import Modal from "./Modal";
 import { motion } from "framer-motion";
 import { slideInFromTop, slideInWithDelay } from "@/utils/motion";
 import { useInView } from "react-intersection-observer";
-
+import { handleMissingLink } from "@/utils/Toaster";
 interface ProjectCardProps {
   id: number;
   src: string;
@@ -40,11 +40,6 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
-
-
-  const handleMissingLink = (serviceName: string) => {
-    alert(`Sorry, the ${serviceName} link is not available for this project.`);
-  };
 
   return (
     <>
@@ -84,7 +79,7 @@ const ProjectCard = ({
           ) : (
             <FaGithub
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("GitHub")}
+              onClick={() => handleMissingLink("gitHub")}
             />
           )}
 
@@ -101,7 +96,7 @@ const ProjectCard = ({
           ) : (
             <FaExternalLinkAlt
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("Live Demo")}
+              onClick={() => handleMissingLink("live demo")}
             />
           )}
 
@@ -118,7 +113,7 @@ const ProjectCard = ({
           ) : (
             <FaYoutube
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("YouTube")}
+              onClick={() => handleMissingLink("youTube")}
             />
           )}
         </div>
