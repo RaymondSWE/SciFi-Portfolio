@@ -55,7 +55,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-white text-4xl hover:scale-110 transition-transform"
+              className="text-white text-3xl hover:scale-110 transition-transform"
               target="_blank"
               rel="noreferrer"
             >
