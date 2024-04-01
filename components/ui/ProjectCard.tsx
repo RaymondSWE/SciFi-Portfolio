@@ -79,7 +79,7 @@ const ProjectCard = ({
           ) : (
             <FaGithub
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("gitHub")}
+              onClick={() => handleMissingLink("Github")}
             />
           )}
 
@@ -113,7 +113,7 @@ const ProjectCard = ({
           ) : (
             <FaYoutube
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("youTube")}
+              onClick={() => handleMissingLink("Youtube")}
             />
           )}
         </div>
