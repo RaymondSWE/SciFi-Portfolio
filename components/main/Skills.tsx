@@ -4,10 +4,28 @@ import React from "react";
 import SkillSection from "../ui/SkillsGallery";
 import { BeakerIcon } from "@heroicons/react/24/solid";
 import SectionHeader from "../ui/SectionHeader";
+import { useInView } from "react-intersection-observer";
+import { hoverSkillsAlert } from "@/utils/Toaster";
+import { motion } from "framer-motion";
+
 
 const Skills = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    onChange: (inView) => {
+      if (inView) {
+        hoverSkillsAlert();
+      }
+    }
+
+  });
+
   return (
-    <section
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+
       id="skills"
       className=" flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-4 sm:py-64"
       style={{ transform: "scale(0.9" }}
@@ -31,7 +49,7 @@ const Skills = () => {
           src="/video/death_star.mp4"
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

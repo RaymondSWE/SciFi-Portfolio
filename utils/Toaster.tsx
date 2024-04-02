@@ -58,8 +58,45 @@ export const handleMissingLink = (serviceName: string) => {
         background: "rgba(0,0,0,0.8)",
         color: "#FFE81F",
         borderRadius: "20px",
+        marginTop: "50px",
+        marginRight: "40px",
         boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
       },
     },
   );
 };
+
+
+
+export const hoverSkillsAlert = () => {
+  toast(
+    () => (
+      <div
+        className="flex items-center"
+        style={{ fontFamily: "'Inter', sans-serif" }}
+      >
+        <div className="font-bold text-sm md:text-base Welcome-text">
+          Hover over the skills logo to see their names!
+        </div>
+      </div>
+    ),
+    {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+      style: {
+        background: "rgba(0,0,0,0.8)",
+        color: "#FFE81F",
+        borderRadius: "20px",
+        marginTop: "50px",
+        marginRight: "40px",
+        boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
+      },
+    },
+  );
+};
+
