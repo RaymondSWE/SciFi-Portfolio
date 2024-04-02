@@ -41,7 +41,7 @@ export const handleMissingLink = (serviceName: string) => {
         className="flex items-center"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
-        <div className="font-bold text-sm md:text-base Welcome-text">
+        <div className=" font-semibold text-sm md:text-base Welcome-text">
           Sorry, the {serviceName} link is not available right now.
         </div>
       </div>
@@ -55,7 +55,7 @@ export const handleMissingLink = (serviceName: string) => {
       draggable: true,
       theme: "dark",
       style: {
-        background: "rgba(0,0,0,0.8)",
+        background: "rgba(0,0,0,0.4)",
         color: "#FFE81F",
         borderRadius: "20px",
         marginTop: "50px",
@@ -75,7 +75,7 @@ export const hoverSkillsAlert = () => {
         className="flex items-center"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
-        <div className="font-bold text-sm md:text-base Welcome-text">
+        <div className="font-semibold text-sm md:text-base Welcome-text">
           Hover over the skills logo to see their names!
         </div>
       </div>
@@ -89,7 +89,7 @@ export const hoverSkillsAlert = () => {
       draggable: true,
       theme: "dark",
       style: {
-        background: "rgba(0,0,0,0.8)",
+        background: "rgba(0,0,0,0.4)",
         color: "#FFE81F",
         borderRadius: "20px",
         marginTop: "50px",
