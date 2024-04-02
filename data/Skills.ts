@@ -50,7 +50,7 @@ export const SkillsData = [
 
   {
     skillName: "Next.js ",
-    Image: "/logo/Next.js.svg",
+    Image: "/logo/next.png",
     width: 70,
     height: 70,
   },
@@ -110,7 +110,7 @@ export const SkillsData = [
   },
   {
     skillName: "Github Actions & Github",
-    Image: "/logo/GitHub.svg",
+    Image: "/logo/github-desktop.svg",
     width: 70,
     height: 70,
   },
@@ -191,7 +191,7 @@ export const SkillsData = [
   {
     skillName: "VS Code",
     Image: "/logo/vscode.png",
-    width: 65,
+    width: 70,
     height: 70,
   },
 
@@ -246,13 +246,13 @@ export const SkillsData = [
   },
   {
     skillName: "Markdown",
-    Image: "/logo/Markdown.svg",
+    Image: "/logo/text-x-markdown.svg",
     width: 70,
     height: 70,
   },
   {
     skillName: "YAML",
-    Image: "/logo/YAML.svg",
+    Image: "/logo/yaml.png",
     width: 70,
     height: 70,
   },

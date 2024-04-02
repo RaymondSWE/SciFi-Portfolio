@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaGithub, FaLinkedinIn, FaRocket } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const navLinks = [
   { href: "#services", label: "Services" },
@@ -25,16 +25,15 @@ const socialLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] border-b-0 border-[#7042f861] w-full py-4">
+    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/30 bg-[#03001434] border-b-0 border-[#7042f861] w-full py-4">
       <Image
         src="/main.svg"
         alt="background gradient image"
         fill
-        className="z-[-10] object-cover opacity-80"
+        className="z-[-10] object-cover opacity-100"
       />
       <div className="flex justify-between w-full px-8">
-        <div className="md:flex items-center hidden  ml-12">
-          <FaRocket className="text-purple-500 text-2xl mr-2" />
+        <div className="md:flex items-center hidden ml-12">
           <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 cursive">
             Raman Mohammed
           </span>

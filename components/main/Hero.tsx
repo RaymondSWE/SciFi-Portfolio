@@ -9,7 +9,6 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Statistic from "./Statistic";
 
 const Hero = () => {
   return (
@@ -24,13 +23,13 @@ const Hero = () => {
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
           variants={slideInFromLeft(0.5)}
         >
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-6">
             <motion.div
               className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
               variants={slideInFromTop(0.5)}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <div className="Welcome-text italic md:text-xl text-base font-semibold">
+              <div className="Welcome-text italic md:text-xl text-base font-semibold ">
                 <Typewriter
                   options={{
                     strings: [
@@ -51,7 +50,7 @@ const Hero = () => {
 
           <motion.h2
             variants={slideInFromLeft(0.5)}
-            className="md:text-6xl text-2xl font-bold leading-tight mb-2"
+            className="md:text-6xl text-2xl font-bold leading-tight"
           >
             Building{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -61,7 +60,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             variants={slideInFromLeft(0.5)}
-            className="sm:text-lg text-gray-400 italic my-5 max-w-[600px] text-center md:text-left text-base"
+            className="sm:text-lg text-gray-400 italic my-4 max-w-[600px] text-center md:text-left text-base"
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
@@ -73,7 +72,7 @@ const Hero = () => {
           <motion.a
             variants={slideInFromRight(0.8)}
             href="#projects"
-            className=" md:inline-block sm:px-6 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-primary z-20"
+            className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-primary z-20"
           >
             Explore My Projects
           </motion.a>
