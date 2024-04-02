@@ -23,7 +23,7 @@ const Hero = () => {
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
           variants={slideInFromLeft(0.5)}
         >
-          <div className="flex items-center mb-6">
+          <div className="flex items-center sm:mb-6 mb-4">
             <motion.div
               className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
               variants={slideInFromTop(0.5)}
@@ -60,7 +60,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             variants={slideInFromLeft(0.5)}
-            className="sm:text-lg text-gray-400 italic my-4 max-w-[600px] text-center md:text-left text-base"
+            className="sm:text-lg text-gray-400 italic sm:my-4 my-2 max-w-[600px] text-center md:text-left text-base"
           >
             With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System

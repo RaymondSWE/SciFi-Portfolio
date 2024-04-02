@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import SectionHeader from "../ui/SectionHeader";
 import { HiOutlineMail } from "react-icons/hi";
+import ContactMe from "../ui/ContactMe";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -10,28 +11,6 @@ const Footer = () => {
 
   return (
     <>
-      <SectionHeader
-        title="Contact Me"
-        subtitle="Let's connect and build something amazing together!"
-        Icon={<HiOutlineMail />}
-      />
-      <a
-        href="mailto:RamanMohammed@hotmail.com"
-        className="mx-auto display-block py-3 px-8 text-lg font-semibold text-white rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 button-primary"
-        onMouseEnter={() => setImageSrc("/robothappy.png")}
-        onMouseLeave={() => setImageSrc("/robotnormal.png")}
-      >
-        Contact me
-      </a>
-      <div className="flex justify-center relative z-[-10] -mb-12">
-        <Image
-          src={imageSrc}
-          alt="Mr. Roboto"
-          width={250}
-          height={250}
-          className="cursor-pointer object-cover mirror"
-        />
-      </div>
       <footer className="w-full py-12 backdrop-blur-sm border-t border-[#645AFF] z-50">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-center">

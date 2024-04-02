@@ -9,12 +9,13 @@ import Services from "@/components/main/Services";
 import React, { useEffect } from "react";
 import { WelcomeToast } from "@/utils/Toaster";
 import Statistic from "@/components/main/Statistic";
+import ContactMe from "@/components/ui/ContactMe";
 
 export default function Home() {
   return (
     <main className="h-full w-full">
       <WelcomeToast />
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-14">
         <Hero />
         <Services />
         <Statistic />
@@ -22,6 +23,7 @@ export default function Home() {
         <Projects />
         <Timeline />
         <Certification />
+        <ContactMe />
         <Footer />
       </div>
     </main>
