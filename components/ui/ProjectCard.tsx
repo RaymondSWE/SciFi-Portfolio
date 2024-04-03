@@ -44,11 +44,11 @@ const ProjectCard = ({
   return (
     <>
       <motion.div
-        className="z-[20] flex flex-col overflow-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
+        className="z-[20] flex flex-col overflow-x-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         ref={ref}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        variants={slideInWithDelay(id * 0.3, "right")}
+        variants={slideInFromTop(0.5)}
       >
         <div className="w-full h-48 relative">
           <Image src={src} alt={title} fill className="object-cover" />
