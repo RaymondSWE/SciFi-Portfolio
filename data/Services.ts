@@ -1,25 +1,26 @@
 export const ServicesData = [
+
   {
     id: 1,
-    name: "Web Development",
+    name: "Web & API Development",
     description:
-      "I create responsive websites that are dynamic, interactive, and user friendly. I specialize in React, Next.js, and Tailwind CSS.",
+      "I build dynamic, interactive websites using React, Next.js and Tailwind CSS. I also develop scalable and secure RESTful APIs with Typescript or Java and MySQL.",
     icon: "/check.svg",
   },
   {
     id: 2,
-    name: "API Development",
-    description:
-      "I build scalable and secure RESTful APIs using Typescript or Java with MySQL. I also have experience with messaging libraries such as ZeroMQ.",
-    icon: "/check.svg",
-  },
-  {
-    id: 3,
     name: "Automated Testing",
     description:
       "I write unit, functional and snapshot tests using Jest, React Testing Library and JUnit. I also have experience with CI/CD pipelines.",
     icon: "/check.svg",
   },
+  {
+    id: 3,
+    name: "Cloud-Native Technologies",
+    description:
+      "Proficient in Kubernetes deployments and managing cloud-based applications, specializing in containerizing applications and automation. ",
+    icon: "/check.svg",
+  }
 ];
 
 export const ServicesApps = [

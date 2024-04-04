@@ -50,7 +50,7 @@ const Services = () => {
               ref={ref}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              variants={slideInFromTop(0.5)}
+              variants={slideInFromRight(0.5)}
             >
               Discover my array of provided services, crafted with precision and
               passion. My portfolio showcases my expertise in solving diverse
