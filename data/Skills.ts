@@ -134,6 +134,12 @@ export const SkillsData = [
     height: 70,
   },
   {
+    skillName: "Digital Ocean",
+    Image: "/logo/digitalocean-icon.svg",
+    width: 70,
+    height: 70,
+  },
+  {
     skillName: "Helm",
     Image: "/logo/Helm.svg",
     width: 70,
