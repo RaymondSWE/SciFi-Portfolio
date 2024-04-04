@@ -13,7 +13,7 @@ import ContactMe from "@/components/ui/ContactMe";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-full custom-cursor-area">
       <WelcomeToast />
       <div className="flex flex-col gap-14">
         <Hero />

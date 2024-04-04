@@ -15,10 +15,10 @@ interface ModalProps {
 
 const ListSection = ({ title, items }: { title: string; items: string[] }) => (
   <>
-    <h3 className="md:text-lg text-base font-bold text-[#CCD6F6] mb-2">
+    <h3 className="md:text-xl text-base font-bold text-[#CCD6F6] mb-2">
       {title}:
     </h3>
-    <ul className="text-xs list-disc pl-8 mb-4 text-gray-300">
+    <ul className="text-xs sm:text-base list-disc pl-8 mb-4 text-gray-300">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -50,7 +50,7 @@ const Modal = ({
     <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center px-6">
       <div className="bg-[rgba(33,82,243,0.1)] backdrop-blur-md p-6 rounded-3xl shadow-blue-700/40 shadow-md max-w-4xl max-h-[90vh] w-full space-y-6 overflow-y-auto custom-scrollbar">
         <div className="flex justify-between items-center">
-          <div className="text-sm anton italic text-gray-300">
+          <div className="text-sm roboto-condensed italic text-gray-300">
             <span>
               {startDate} to {endDate}
             </span>
@@ -66,7 +66,7 @@ const Modal = ({
           <h1 className="md:text-2xl text-lg font-bold m-6 text-center Welcome-text">
             {title}
           </h1>
-          <p className="text-gray-300 text-center text-sm mb-4 italic font-semibold">
+          <p className="text-gray-300 text-center text-sm sm:text-base mb-4 italic font-semibold">
             {description}
           </p>
           <ListSection title="Features" items={features || []} />

@@ -39,12 +39,12 @@ export const projectsData = [
       "Ensuring real-time data accuracy and speed.",
       "Implementing secure authentication and transaction processes with Oauth2 from Steam.",
       "Lack of knowledge in technical areas such as bash, dockers, and cloud services. But also bad practices in code and architecture.",
-      "Handling a cloud application with Infrastructure as a service (IaaS). Managing the server, database, and load balancer manuelly.",
+      "Handling a cloud application with Infrastructure as a service (IaaS). Managing the server, database, and load balancer was a challenge for me as a first project",
     ],
     accomplishments: [
       "Achieved a fullstack application with a real-time trading with Socket.io.",
       "Implemented oauth2 from Steam for secure authentication and transaction processes.",
-      "As first project, learned how to manage a cloud application with Infrastructure as a service (IaaS). Managing the server, database, and load balancer manuelly. Understood there was knowledge gaps, needed to learn bash, dockers etc. to automate the process.",
+      "As first project, learned how to manage a cloud application with Infrastructure as a service (IaaS). Managing the server, database, and load balancer. Understood there was knowledge gaps, needed deepen my knowledge in cloud-native technologies and best practices in code and architecture.",
     ],
   },
   {
@@ -89,10 +89,10 @@ export const projectsData = [
     ],
     accomplishments: [
       "Implemented a secure, scalable user authentication system with JWT in Spring Boot.",
-      "Dockerised the application for easy deployment and management via docker-compose.",
+      "Dockerised the application for easy deployment.",
       "Implemented Functionality test and Snapshot test with Jest and React Testing Library.",
       "Automated testing with Github Actions for CI/CD pipeline.",
-      "Wrote good quality code and implemented followed good practices in the project such as RESTful API, and clean code.",
+      "Wrote good quality code and implemented followed good practices in the project such as SOLID principles, design patterns, and clean code.",
     ],
   },
   {
@@ -139,7 +139,6 @@ export const projectsData = [
     accomplishments: [
       "1500 users registered and bugs was introduced and fixed.",
       "Deployed production with Bash-Scripting, utilising Dokku and Heroku.",
-      "Good GUI and UX for the users.",
     ],
   },
   {
@@ -242,7 +241,7 @@ export const projectsData = [
     challenges: [
       "Achieving integration with Bally's existing employee management systems for authentication and scheduling.",
       "Designing a user-friendly interface.",
-      "Lack of knowledge in frameworks and libraries such as Material UI and Spring Boot.",
+      "First time introduction in frameworks and libraries such as Material UI and Spring Boot.",
     ],
     accomplishments: [
       "Received some positive feedback as the code was clean and okay structured.",
