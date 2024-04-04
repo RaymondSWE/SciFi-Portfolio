@@ -27,7 +27,7 @@ const ListSection = ({ title, items }: { title: string; items: string[] }) => (
 );
 
 const TechnologyChip = ({ tech }: { tech: string }) => (
-  <div className="inline-flex items-center justify-center px-3 py-1 bg-[#0D3B66] text-gray-200 text-xs md:text-sm rounded-full shadow-md mr-2 mb-2">
+  <div className="inline-flex items-center justify-center px-3 py-1 bg-[#0D3B66]  text-gray-200 text-xs md:text-sm rounded-full shadow-md mr-2 mb-2">
     {tech}
   </div>
 );
@@ -48,7 +48,7 @@ const Modal = ({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center px-6">
-      <div className="bg-[rgba(33,82,243,0.1)] backdrop-blur-md p-6 rounded-3xl shadow-blue-700/40 shadow-md max-w-4xl max-h-[90vh] w-full space-y-6 overflow-y-auto custom-scrollbar">
+      <div className="bg-[rgba(33,82,243,0.1)] backdrop-blur-md p-6 rounded-3xl shadow-blue-700/40 border-b-2 border-[#645AFF] shadow-md max-w-4xl max-h-[90vh] w-full space-y-6 overflow-y-auto custom-scrollbar">
         <div className="flex justify-between items-center">
           <div className="text-sm roboto-condensed italic text-gray-300">
             <span>
