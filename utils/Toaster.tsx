@@ -41,7 +41,7 @@ export const handleMissingLink = (serviceName: string) => {
     () => (
       <div className="flex items-center p-4 bg-red-50 rounded-lg">
         <div className="ml-3">
-        <p className="text-xs md:text-sm font-bold text-gray-300"> 
+        <p className="text-sm md:text-lg font-bold text-gray-300"> 
             🚨 Error! 🚨
           </p>
           <p className="text-xs md:text-sm font-semibold text-gray-300"> 
@@ -81,7 +81,7 @@ export const infoToast = (header: string, text: string, position: "top-right" | 
           <p className="text-sm md:text-lg font-semibold text-yellow-300">
             {header}
           </p>
-          <p className=" text-gray-300 mt-1">
+          <p className="text-xs md:text-sm text-gray-300 mt-1">
             {text}
           </p>
         </div>
