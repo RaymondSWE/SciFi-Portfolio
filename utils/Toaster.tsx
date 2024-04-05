@@ -41,10 +41,10 @@ export const handleMissingLink = (serviceName: string) => {
     () => (
       <div className="flex items-center p-4 bg-red-50 rounded-lg">
         <div className="ml-3">
-        <p className="text-sm md:text-lg font-bold text-gray-300"> 
+        <p className="text-sm md:text-lg font-semibold text-gray-300"> 
             🚨 Error! 🚨
           </p>
-          <p className="text-xs md:text-sm font-semibold text-gray-300"> 
+          <p className="text-xs md:text-sm text-gray-300 mt-1"> 
             Sorry, the {serviceName} link is not available right now.
           </p>
         </div>
