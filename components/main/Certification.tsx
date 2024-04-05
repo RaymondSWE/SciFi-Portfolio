@@ -17,7 +17,7 @@ export const Certification = () => {
         "Continuous Learning Update!",
         "Actively pursuing certifications beyond my CS degree to deepen my tech expertise.", 
         "top-left", 
-        false);
+        true);
       }
     }
 

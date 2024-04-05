@@ -18,7 +18,7 @@ const Skills = () => {
           "Discover My Skills!", 
           "Hover over the skills icons to see the skill names!", 
           "top-right",
-          false);
+          true);
       }
     }
 

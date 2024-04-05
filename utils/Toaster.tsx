@@ -92,6 +92,7 @@ export const infoToast = (header: string, text: string, position: "top-right" | 
       autoClose: autoClose ? 5000 : false,
       closeOnClick: true,
       pauseOnHover: true,
+      hideProgressBar: true,
       draggable: true,
       theme: "dark",
       style: {
