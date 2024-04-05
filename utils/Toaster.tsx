@@ -14,7 +14,7 @@ export const WelcomeToast = () => {
       ),
       {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -34,33 +34,38 @@ export const WelcomeToast = () => {
   return null;
 };
 
+
+
 export const handleMissingLink = (serviceName: string) => {
   toast(
     () => (
-      <div
-        className="flex items-center"
-        style={{ fontFamily: "'Inter', sans-serif" }}
-      >
-        <div className=" font-semibold text-sm md:text-base Welcome-text">
-          Sorry, the {serviceName} link is not available right now.
+      <div className="flex items-center p-4 bg-red-50 rounded-lg">
+        <div className="ml-3">
+        <p className="text-xs md:text-sm font-bold text-gray-300"> 
+            🚨 Error! 🚨
+          </p>
+          <p className="text-xs md:text-sm font-semibold text-gray-300"> 
+            Sorry, the {serviceName} link is not available right now.
+          </p>
         </div>
       </div>
     ),
     {
       position: "top-right",
       autoClose: 5000,
-      hideProgressBar: false,
+      hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       theme: "dark",
       style: {
-        background: "rgba(0,0,0,0.4)",
-        color: "#FFE81F",
-        borderRadius: "20px",
-        marginTop: "50px",
-        marginRight: "40px",
-        boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
+        background: "rgba(10, 17, 25, 0.4)",
+        color: "#FBBF24",
+        width: "auto",
+        minHeight: "100px",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+        borderRadius: "10px",
+        borderLeft: "5px solid #EF4444", 
       },
     },
   );
@@ -68,35 +73,36 @@ export const handleMissingLink = (serviceName: string) => {
 
 
 
-export const hoverSkillsAlert = () => {
+export const infoToast = (header: string, text: string, position: "top-right" | "top-left" | "bottom-right" | "bottom-left" = "top-right", autoClose: boolean = false) => {
   toast(
     () => (
-      <div
-        className="flex items-center"
-        style={{ fontFamily: "'Inter', sans-serif" }}
-      >
-        <div className="font-semibold text-sm md:text-base Welcome-text">
-          Hover over the skills logo to see their names!
+      <div className="flex items-center sm:p-4 p-8">
+        <div className="ml-3">
+          <p className="text-sm md:text-lg font-semibold text-yellow-300">
+            {header}
+          </p>
+          <p className=" text-gray-300 mt-1">
+            {text}
+          </p>
         </div>
       </div>
     ),
     {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
+      position,
+      autoClose: autoClose ? 5000 : false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       theme: "dark",
       style: {
-        background: "rgba(0,0,0,0.4)",
-        color: "#FFE81F",
-        borderRadius: "20px",
-        marginTop: "50px",
-        marginRight: "40px",
-        boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
+        background: "rgba(10, 17, 25, 0.4)",
+        color: "#FBBF24",
+        width: "auto",
+        minHeight: "100px",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+        borderRadius: "10px",
+        borderLeft: "5px solid #FBBF24",
       },
-    },
+    }
   );
 };
-

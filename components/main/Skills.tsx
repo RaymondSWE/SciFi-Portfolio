@@ -5,7 +5,7 @@ import SkillSection from "../ui/SkillsGallery";
 import { BeakerIcon } from "@heroicons/react/24/solid";
 import SectionHeader from "../ui/SectionHeader";
 import { useInView } from "react-intersection-observer";
-import { hoverSkillsAlert } from "@/utils/Toaster";
+import { infoToast } from "@/utils/Toaster";
 import { motion } from "framer-motion";
 
 
@@ -14,7 +14,11 @@ const Skills = () => {
     triggerOnce: true,
     onChange: (inView) => {
       if (inView) {
-        hoverSkillsAlert();
+        infoToast(
+          "Discover My Skills!", 
+          "Hover over the skills icons to see the skill names!", 
+          "top-right",
+          false);
       }
     }
 

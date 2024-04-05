@@ -4,10 +4,31 @@ import { CertificationCard } from "../ui/CertificationCard";
 import SectionHeader from "../ui/SectionHeader";
 import { AcademicCapIcon } from "@heroicons/react/24/solid";
 import { CertificationData } from "@/data/Certification";
+import { useInView } from "react-intersection-observer";
+import { infoToast } from "@/utils/Toaster";
+import { motion } from "framer-motion";
 
 export const Certification = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    onChange: (inView) => {
+      if (inView) {
+        infoToast(
+        "Continuous Learning Update!",
+        "Actively pursuing certifications beyond my CS degree to deepen my tech expertise.", 
+        "top-left", 
+        false);
+      }
+    }
+
+  });
   return (
-    <section id="certifications">
+    <motion.section id="certifications"
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+    
+    >
       <SectionHeader
         title="Intergalactic Qualifications"
         subtitle="A constellation of certifications spanning the tech universe"
@@ -27,6 +48,6 @@ export const Certification = () => {
           />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
