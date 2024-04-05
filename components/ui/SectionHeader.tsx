@@ -24,7 +24,7 @@ const SectionHeader = ({ title, subtitle, Icon }: SectionHeaderProps) => {
           className:
             "text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse",
         })}
-        <p className="text-lg md:text-2xl roboto-condensed text-gray-300">{subtitle}</p>
+        <p className="text-lg md:text-2xl roboto-condensed text-gray-400">{subtitle}</p>
       </div>
     </motion.div>
   );
