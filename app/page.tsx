@@ -10,12 +10,14 @@ import React, { useEffect } from "react";
 import { WelcomeToast } from "@/utils/Toaster";
 import Statistic from "@/components/main/Statistic";
 import ContactMe from "@/components/ui/ContactMe";
+import { TracingBeam } from "@/components/ui/TracingBeam";
 
 export default function Home() {
   return (
-    <main className="h-full w-full custom-cursor-area">
+    <main className="h-full w-full">
       <WelcomeToast />
       <div className="flex flex-col gap-14">
+      <TracingBeam className="max-w-full" >
         <Hero />
         <Services />
         <Statistic />
@@ -23,9 +25,10 @@ export default function Home() {
         <Projects />
         <Timeline />
         <Certification />
+        </TracingBeam>
         <ContactMe />
         <Footer />
-      </div>
+  </div>
     </main>
   );
 }

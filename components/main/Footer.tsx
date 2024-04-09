@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
@@ -11,6 +13,7 @@ const Footer = () => {
 
   return (
     <>
+      
       <footer className="w-full py-12 backdrop-blur-sm border-t border-[#645AFF] z-50">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-center">

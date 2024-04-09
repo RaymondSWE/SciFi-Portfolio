@@ -11,6 +11,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.tracingBeamCustomStyles {
+  position: absolute; /* or 'fixed' depending on your layout */
+  left: 0;
+  top: 0;
+  height: 100%; /* Adjust as needed */
+  z-index: 10; /* Higher than other elements that could overlap */
+  background-color: #fff; /* or any color for visibility */
+}
+
 .cursive {
   font-family: "Dancing Script", cursive;
 }

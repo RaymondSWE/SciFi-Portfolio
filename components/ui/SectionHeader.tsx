@@ -14,7 +14,7 @@ const SectionHeader = ({ title, subtitle, Icon }: SectionHeaderProps) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="text-center "
+      className="text-center mt-4"
     >
       <h1 className="text-2xl orbitron md:text-5xl italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400 leading-tight">
         {title}
