@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.18",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
+    "clsx": "^2.1.0",
     "next": "14.1",
     "react": "^18",
     "react-countup": "^6.5.3",
@@ -20,6 +21,7 @@
     "react-toastify": "^10.0.5",
     "react-tooltip": "^5.26.3",
     "react-vertical-timeline-component": "^3.6.0",
+    "tailwind-merge": "^2.2.2",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
@@ -32,7 +34,7 @@
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.18.0",
     "maath": "^0.10.4",
     "postcss": "^8",
     "react-intersection-observer": "^9.5.2",

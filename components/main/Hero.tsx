@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
@@ -58,17 +59,13 @@ const Hero = () => {
             </span>{" "}
             with code
           </motion.h2>
-          <motion.p
-            variants={slideInFromLeft(0.5)}
-            className="sm:text-lg text-gray-400 italic sm:my-4 my-2 max-w-[600px] text-center md:text-left text-base"
-          >
-            With over three years of development experience and a
+            <TextGenerateEffect words="With over three years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
             Development, I specialize in Java, React.js, TypeScript, Node.js,
             MySQL, Azure, and more. Passionate about building scalable and
             reliable distributed systems, continuously learning to tackle new
-            challenges in software infrastructure.
-          </motion.p>
+            challenges in software infrastructure." 
+            />          
           <motion.a
             variants={slideInFromRight(0.8)}
             href="#projects"
