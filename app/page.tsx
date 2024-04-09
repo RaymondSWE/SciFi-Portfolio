@@ -17,7 +17,6 @@ export default function Home() {
     <main className="h-full w-full">
       <WelcomeToast />
       <div className="flex flex-col gap-14">
-      <TracingBeam className="max-w-full" >
         <Hero />
         <Services />
         <Statistic />
@@ -25,10 +24,9 @@ export default function Home() {
         <Projects />
         <Timeline />
         <Certification />
-        </TracingBeam>
         <ContactMe />
         <Footer />
-  </div>
+      </div>
     </main>
   );
 }
