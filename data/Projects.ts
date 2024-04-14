@@ -304,4 +304,42 @@ export const projectsData = [
       "First web portfolio that was used to visualize my skills and projects.",
     ],
   },
+  {
+    "id": 9,
+    "src": "/project-img/grafana.png",
+    "title": "Kubernetes Scaling Analysis: A Performance and Cost Comparison",
+    "description": "A comprehensive analysis of vertical and horizontal scaling strategies in cloud-native applications within Kubernetes environments, using metrics and Service Level Objectives (SLOs) to understand impacts on performance and cost-effectiveness under various load conditions.",
+    "sourceUrl": null,
+    "youtubeUrl": null,
+    "githubUrl": "https://github.com/RaymondSWE/Thesis",
+    "startDate": "2022-01-01",
+    "endDate": "2023-12-31",
+    "technologyStack": [
+        "Kubernetes",
+        "Minikube",
+        "Kind",
+        "Digital Ocean Kubernetes",
+        "Google Compute Engine",
+        "Prometheus",
+        "Grafana",
+        "YAML",
+    ],
+    "features": [
+        "Detailed comparison of scaling strategies.",
+        "Performance analysis under various loads with and without a load balancer.",
+        "Real-time visualization of performance metrics in Grafana."
+    ],
+    "challenges": [
+        "Accurately simulating real-world load conditions.",
+        "Integrating complex metrics with Prometheus and Grafana.",
+        "Adapting Kubernetes resource limits for each service, as resource of the cluster was limited.",
+        "New technology stack to learn with Kubernetes, Minikube, Kind ad Prometheus/Grafana."
+    ],
+    "accomplishments": [
+        "Provided insights into the most effective scaling strategies for Kubernetes.",
+        "Successfully managed complex cloud infrastructure and monitored it via Prometheus and Grafana.",
+        "Developed and shared a comprehensive set of SLOs for Kubernetes performance benchmarking."
+    ]
+}
+
 ];
