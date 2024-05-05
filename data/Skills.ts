@@ -55,6 +55,25 @@ export const SkillsData = [
     height: 70,
   },
   {
+    skillName: "Redux ",
+    Image: "/logo/Redux.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "Yarn ",
+    Image: "/logo/Yarn.svg",
+    width: 70,
+    height: 70,
+  },
+  {
+    skillName: "NPM ",
+    Image: "/logo/Npm.svg",
+    width: 70,
+    height: 70,
+  },
+
+  {
     skillName: "Node.js",
     Image: "/logo/Node.js.svg",
     width: 70,
