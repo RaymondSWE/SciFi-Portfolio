@@ -208,7 +208,7 @@ export const SkillsData = [
     height: 70,
   },
   {
-    skillName: "VS Code",
+    skillName: "VSCode",
     Image: "/logo/vscode.png",
     width: 70,
     height: 70,
