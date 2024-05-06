@@ -80,7 +80,7 @@ const Hero = () => {
           variants={slideInFromRight(0.8)}
           className="w-full md:w-1/2 px-4 mt-6 md:mt-0 flex justify-center items-center"
         >
-          <div className="relative w-[250px] h-[250px] md:w-[450px] md:h-[450px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-lg shadow-blue-700/60">
+          <div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-lg shadow-blue-700/60">
             <Image
               src="/ramanbild.png"
               alt="Raman Mohammed Image"
