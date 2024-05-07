@@ -110,6 +110,12 @@ export const SkillsData = [
     height: 70,
   },
   {
+    skillName: "MongoDB",
+    Image: "/logo/mongodb.svg",
+    width: 70,
+    height: 70,
+  },
+  {
     skillName: "Prisma",
     Image: "/logo/prisma.webp",
     width: 70,
