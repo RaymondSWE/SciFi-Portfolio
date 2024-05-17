@@ -312,8 +312,8 @@ export const projectsData = [
     "sourceUrl": null,
     "youtubeUrl": null,
     "githubUrl": "https://github.com/RaymondSWE/Thesis",
-    "startDate": "2022-01-01",
-    "endDate": "2023-12-31",
+    "startDate": "2024-01-01",
+    "endDate": "2024-05-21",
     "technologyStack": [
         "Kubernetes",
         "Minikube",
