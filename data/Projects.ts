@@ -7,7 +7,7 @@ export const projectsData = [
       "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market.",
     sourceUrl: "https://csfairtrade-frontend.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=fYdAn0O2g0Q",
-    githubUrl: null,
+    githubUrl: "https://github.com/RaymondSWE/CSFairtrade/tree/main/server",
     startDate: "2021-12-25",
     endDate: "2023-06-01",
     technologyStack: [
