@@ -306,7 +306,7 @@ export const projectsData = [
   },
   {
     "id": 9,
-    "src": "/project-img/grafana.png",
+    "src": "/project-img/cluster.png",
     "title": "Kubernetes Scaling Analysis: A Performance and Cost Comparison",
     "description": "A comprehensive analysis of vertical and horizontal scaling strategies in cloud-native applications within Kubernetes environments, using metrics and Service Level Objectives (SLOs) to understand impacts on performance and cost-effectiveness under various load conditions.",
     "sourceUrl": null,
