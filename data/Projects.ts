@@ -55,9 +55,9 @@ export const projectsData = [
       "A dynamic platform designed to enhance collaboration among students in the tech field, facilitating the sharing of ideas, project development, and networking opportunities.",
     sourceUrl: "https://codecomrades.vercel.app/",
     youtubeUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/RaymondSWE/codecomrades",
     startDate: "2023-11-23",
-    endDate: "Ongoing",
+    endDate: "ONGOING",
     technologyStack: [
       "Java",
       "Typescript",
