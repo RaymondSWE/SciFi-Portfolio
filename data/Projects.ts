@@ -147,7 +147,7 @@ export const projectsData = [
     title: "Student Queue System",
     description:
       "Developed an Event-driven queue system for students and supervisors with ZeroMQ, Spring Boot, and Python.",
-    sourceUrl: "https://www.youtube.com/watch?v=m-omLSKbUtc",
+    sourceUrl: null,
     githubUrl:
       "https://github.com/RaymondSWE/Queue-system---Event-Driven-Architecture",
     youtubeUrl: "https://www.youtube.com/watch?v=m-omLSKbUtc",

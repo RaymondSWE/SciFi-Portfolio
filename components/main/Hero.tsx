@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center h-auto md:h-[75vh] lg:h-[85vh] py-4 px-4 mt-12 md:mt-0 text-white"
+      className="flex items-center h-auto md:h-[75vh] lg:h-[85vh] py-2 px-2 text-white"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div
@@ -68,13 +68,12 @@ const Hero = () => {
             One of my ongoing projects involves developing a vehicle monitoring system that uses IoT and embedded systems 
             to provide real-time diagnostics and predictive maintenance alerts for cars." 
             />          
-          <motion.a
-            variants={slideInFromRight(0.8)}
+          <a
             href="#projects"
             className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-3d-primary z-20"
           >
             Explore My Projects
-          </motion.a>
+          </a>
         </motion.div>
         <motion.div
           initial="hidden"
