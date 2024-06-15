@@ -25,12 +25,12 @@ const socialLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row bg-[#03001434] border-b-0 border-[#7042f861] w-full py-4">
+    <nav className="flex flex-row bg-[#03001434] border-b-2 border-[#7042f861] w-full py-4">
       <Image
         src="/main.svg"
         alt="background gradient image"
         fill
-        className="z-[-10] object-cover opacity-100"
+        className="z-[-10] object-cover opacity-80"
       />
       <div className="flex justify-between w-full px-8">
         <div className="md:flex items-center hidden ml-12">
