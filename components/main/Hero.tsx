@@ -65,8 +65,7 @@ const Hero = () => {
             MySQL, Azure, and more. Passionate about building scalable and
             reliable distributed systems, continuously learning to tackle new
             challenges in software infrastructure. Currently, I am also trying to learn and build projects within embedded systems and IoT.
-            One of my ongoing projects involves developing a vehicle monitoring system that uses IoT and embedded systems 
-            to provide real-time diagnostics and predictive maintenance alerts for cars." 
+            " 
             />          
           <a
             href="#projects"
