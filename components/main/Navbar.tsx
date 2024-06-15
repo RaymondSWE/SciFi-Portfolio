@@ -25,7 +25,7 @@ const socialLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row shadow-lg shadow-[#2A0E61]/30 bg-[#03001434] border-b-0 border-[#7042f861] w-full py-4">
+    <nav className="flex flex-row bg-[#03001434] border-b-0 border-[#7042f861] w-full py-4">
       <Image
         src="/main.svg"
         alt="background gradient image"

@@ -16,11 +16,11 @@ const ContactMe = () => {
       <div className="flex flex-col items-center -mt-12">
         <a
           href="mailto:RamanMohammed@hotmail.com"
-          className="py-3 px-10 text-lg font-semibold text-white rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 button-primary"
+          className="py-3 px-10 text-lg font-semibold text-white rounded-full cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 button-3d-primary"
           onMouseEnter={() => setImageSrc("/robothappy.png")}
           onMouseLeave={() => setImageSrc("/robotnormal.png")}
         >
-          Contact me
+          Hover over me!
         </a>
         <div className="relative z-10 mt-8 -mb-14 mirror">
           <Image
