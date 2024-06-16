@@ -338,7 +338,7 @@ export const projectsData = [
     "accomplishments": [
         "Provided my insights into scaling strategies for Kubernetes.",
         "Successfully managed cloud infrastructure and monitored it via Prometheus and Grafana.",
-        "Developed and shared a set of SLOs for Kubernetes performance benchmarking."
+        "Developed and shared a set of Service-Level Objectives (SLOs) for Kubernetes performance benchmarking."
     ]
 }
 
