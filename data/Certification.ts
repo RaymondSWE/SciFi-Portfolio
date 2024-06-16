@@ -24,7 +24,7 @@ export const CertificationData = [
   {
     id: 3,
     name: "Cypress -Modern Automation Testing",
-    date: "Ongoing",
+    date: "In Progress",
     description:
       "Master Cypress for web automation, including UI and API testing, with this comprehensive course. Covers JavaScript basics, Cypress framework design, and integration testing.",
     CertificationLink: null,
@@ -46,7 +46,7 @@ export const CertificationData = [
   {
     id: 5,
     name: "Microsoft Azure: From Zero to Hero",
-    date: "Ongoing",
+    date: "In Progress",
     description:
       "This certification, will transition from basic cloud concepts to mastering advanced Azure services and architectural designs. ",
     CertificationLink: null,
@@ -56,7 +56,7 @@ export const CertificationData = [
   {
     id: 6,
     name: "Spring Boot 3, Spring 6 & Hibernate for Beginners",
-    date: "Ongoing",
+    date: "In Progress",
     description:
       "Include Spring Boot 3, Spring 6, and Hibernate. Learn core concepts, REST APIs, MVC, Security, JPA, and more with hands-on projects. ",
     CertificationLink: null,

@@ -100,7 +100,7 @@ export const projectsData = [
     src: "/project-img/snipeskins.jpg",
     title: "SnipeSkins",
     description:
-      "A comprehensive trading platform designed for Rust in-game skins. SnipeSkins aims to provide user friendly experience for trading digital assets.",
+      "A trading platform designed for Rust in-game skins. SnipeSkins aims to provide user friendly experience for trading digital assets.",
     sourceUrl: "https://snipeskins.com/",
     youtubeUrl: null,
     githubUrl: null,
