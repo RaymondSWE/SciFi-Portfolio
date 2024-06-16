@@ -4,10 +4,10 @@ export const projectsData = [
     src: "/project-img/csgo.png",
     title: "CSFairTrade",
     description:
-      "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market.",
+     "A shopping & trading platform offering a user-friendly environment for trading Counter-Strike: Global Offensive and Counter-Strike 2 skins.",
     sourceUrl: "https://csfairtrade-frontend.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=fYdAn0O2g0Q",
-    githubUrl: "https://github.com/RaymondSWE/CSFairtrade/tree/main/server",
+    githubUrl: "https://github.com/RaymondSWE/CSFairtrade",
     startDate: "2021-12-25",
     endDate: "2023-06-01",
     technologyStack: [
@@ -31,20 +31,20 @@ export const projectsData = [
       "Framer Motion",
     ],
     features: [
-      "Real-time trading engine for instant transactions.",
+      "Real-time trading for instant transactions.",
       "Market analysis tools for pricing insights.",
       "Inventory management for users to track and trade their CS virtuell items efficiently.",
     ],
     challenges: [
       "Ensuring real-time data accuracy and speed.",
-      "Implementing secure authentication and transaction processes with Oauth2 from Steam.",
-      "Lack of knowledge in technical areas such as bash, dockers, and cloud services. But also bad practices in code and architecture.",
-      "Handling a cloud application with Infrastructure as a service (IaaS). Managing the server, database, and load balancer was a challenge for me as a first project",
+      "Implementing secure authentication with Oauth2 from Steam..",
+      "Lack of knowledge in technical areas such as bash, dockers, and other cloud-native technologies. But also bad practices in code and architecture.",
+      "Managing a cloud application and handling infrastructure for the first time.",
     ],
     accomplishments: [
-      "Achieved a fullstack application with a real-time trading with Socket.io.",
-      "Implemented oauth2 from Steam for secure authentication and transaction processes.",
-      "As first project, learned how to manage a cloud application with Infrastructure as a service (IaaS). Managing the server, database, and load balancer. Understood there was knowledge gaps, needed deepen my knowledge in cloud-native technologies and best practices in code and architecture.",
+      "Built a full-stack application with real-time trading.",
+      "Implemented secure authentication and transaction processes.",
+      "Learned how to manage cloud infrastructure and improved my knowledge in cloud-native technologies.",
     ],
   },
   {
@@ -52,7 +52,7 @@ export const projectsData = [
     src: "/project-img/codemate.png",
     title: "CodeMate",
     description:
-      "A dynamic platform designed to enhance collaboration among students in the tech field, facilitating the sharing of ideas, project development, and networking opportunities.",
+    "A platform to enhance collaboration among tech students, allowing them to share ideas, develop projects, and network.",
     sourceUrl: "https://codecomrades.vercel.app/",
     youtubeUrl: null,
     githubUrl: "https://github.com/RaymondSWE/codecomrades",
@@ -85,14 +85,13 @@ export const projectsData = [
       "A collaboration platform for tech students, facilitating project sharing, networking, and investor engagement.",
     ],
     challenges: [
-      "Integrating a diverse tech stack and ensuring secure, scalable user authentication were complex tasks.",
+      "Integrating a diverse tech stack and ensuring secure, scalable user authentication.",
     ],
     accomplishments: [
-      "Implemented a secure, scalable user authentication system with JWT in Spring Boot.",
-      "Dockerised the application for easy deployment.",
-      "Implemented Functionality test and Snapshot test with Jest and React Testing Library.",
-      "Automated testing with Github Actions for CI/CD pipeline.",
-      "Wrote good quality code and implemented followed good practices in the project such as SOLID principles, design patterns, and clean code.",
+      "Implemented a secure, scalable user authentication system with JWT.",
+      "Dockerized the application for easy deployment.",
+      "Automated testing with Github Actions for CI/CD.",
+      "Followed good coding practices like SOLID principles and design patterns.",
     ],
   },
   {
@@ -134,10 +133,11 @@ export const projectsData = [
     ],
     challenges: [
       "Introduction to PaaS and automate deployment to production with Bash-Scripting, utilising Dokku and Heroku.",
-      "Serverless function were introduced to me and I had to learn how to use it for the project.",
+      "Adapting to serverless functions for the first time.",
+      
     ],
     accomplishments: [
-      "1500 users registered and bugs was introduced and fixed.",
+      "Few thousands users registered and bugs was introduced and fixed.",
       "Deployed production with Bash-Scripting, utilising Dokku and Heroku.",
     ],
   },
@@ -146,7 +146,7 @@ export const projectsData = [
     src: "/project-img/queue-student.png",
     title: "Student Queue System",
     description:
-      "Developed an Event-driven queue system for students and supervisors with ZeroMQ, Spring Boot, and Python.",
+      "Developed an Event-driven queue system for students and supervisors with ZeroMQ, Spring Boot, and Python as a school project.",
     sourceUrl: null,
     githubUrl:
       "https://github.com/RaymondSWE/Queue-system---Event-Driven-Architecture",
@@ -177,7 +177,7 @@ export const projectsData = [
       "Creating an UI that accommodates diverse user needs and workflows.",
     ],
     accomplishments: [
-      "Received positive feedback from both students and supervisors for ease of use and efficiency.",
+      "Received positive feedback from supervisors for ease of use and efficiency.",
     ],
   },
   {
@@ -185,7 +185,7 @@ export const projectsData = [
     src: "/project-img/starwars-portfolio.png",
     title: "Web portfolio",
     description:
-      "My webportfolio with star wars theme, designed to be showcase of my skills, experiences, and projects.",
+    "A Star Wars-themed web portfolio showcasing my skills, experiences, and projects.",
     sourceUrl: "https://www.ramanmohammed.com/",
     youtubeUrl: null,
     githubUrl: "https://github.com/RaymondSWE/Raymond-Portfolio-V2",
@@ -201,6 +201,7 @@ export const projectsData = [
     features: [
       "Utilised Three.JS for a 3D Star Wars universe, allowing users to navigate through projects as if traveling through space.",
       "Dynamic content loading with Framer Motion for smooth, visually captivating transitions between portfolio sections.",
+      "Integrated Vercel analytics for tracking visitor engagement.",
     ],
     challenges: [
       "Integrating 3D graphics without compromising site performance and load times.",
@@ -235,16 +236,18 @@ export const projectsData = [
       "IntellJ",
     ],
     features: [
-      "GUI booking interface for employees to schedule, modify, and manage massage appointments.",
-      "Administrative functionality for appointment oversight and management.",
+      "Internal massage appointment application for employees.",
+      "CMS system for masseuses to create, modify, and delete appointments.",
+      "Booking system for employees to schedule and reschedule their appointments.",
     ],
     challenges: [
-      "Achieving integration with Bally's existing employee management systems for authentication and scheduling.",
+      "Achieving integration with Bally's existing employee management systems for authentication and scheduling with Okta's API.",
       "Designing a user-friendly interface.",
       "First time introduction in frameworks and libraries such as Material UI and Spring Boot.",
     ],
     accomplishments: [
-      "Received some positive feedback as the code was clean and okay structured.",
+      "Received positive feedback as the code was clean and okay structured. Showing a willingness not only to make system work, but also to make it maintainable and understandable code for future developers.",
+      "The application is used by future students as summer internships adding more functionality and features.",
       "Learned a lot about Liquibase, Spring Boot and React.",
       "The code could have been further improved with more knowledge such as the atom-design principe within frontend or the use of Global Exception Handler in Spring Boot.",
     ],
