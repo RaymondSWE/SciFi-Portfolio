@@ -16,7 +16,7 @@ interface ProjectCardProps {
   sourceUrl: string | null;
   youtubeUrl: string | null;
   startDate: string;
-  endDate: string;
+  endDate: string | null;
   technologyStack: string[];
   features?: string[];
   challenges?: string[];

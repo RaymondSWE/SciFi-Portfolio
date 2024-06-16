@@ -4,7 +4,7 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   startDate: string;
-  endDate: string;
+  endDate: string | null;
   technologyStack: string[];
   description: string;
   title: string;
