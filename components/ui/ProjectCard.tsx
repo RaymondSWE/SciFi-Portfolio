@@ -53,7 +53,7 @@ const ProjectCard = ({
         <div className="w-full h-48 relative">
           <Image src={src} alt={title} fill className="object-cover" />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />
-          {endDate === "ONGOING" && (
+          {endDate === null && (
             <div className="absolute top-2 left-2 bg-gradient-to-r from-purple-500 to-indigo-500 shadow-md text-white text-xs font-bold py-1 px-2 rounded">
               In Progress
             </div>

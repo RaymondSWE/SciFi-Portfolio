@@ -57,7 +57,7 @@ export const projectsData = [
     youtubeUrl: null,
     githubUrl: "https://github.com/RaymondSWE/codecomrades",
     startDate: "2023-11-23",
-    endDate: "ONGOING",
+    endDate: null,
     technologyStack: [
       "Java",
       "Typescript",
