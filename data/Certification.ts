@@ -2,7 +2,7 @@ export const CertificationData = [
   {
     id: 1,
     name: "Docker: with Kubernetes + Docker Swarm",
-    date: "01/23/2024",
+    date: "23/01/2024",
     description:
       "Comprehensive guide to using Docker, Compose, and Kubernetes. Includes CI/CD examples, orchestration tool management, container creation, and workflow optimization.",
     CertificationLink:
