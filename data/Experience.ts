@@ -15,7 +15,7 @@ export const ExperienceData = [
     title: "Junior Developer at Bally's Skövde",
     location: "Skövde, Sweden",
     description:
-      "Developed a massage application, designing the database and implementing backend logic.",
+      "Developed a internal application, designing the database and implementing backend logic. That is still used by the company today.",
   },
   {
     id: 3,

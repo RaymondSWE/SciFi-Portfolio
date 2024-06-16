@@ -49,11 +49,11 @@ export const CertificationCard = ({
           className="flex flex-col justify-between h-full  relative z-2 p-[2.4rem] "
           variants={slideInFromLeft(0.5)}
         >
-          <header className="absolute top-0 left-0 mt-4 ml-6 text-sm cursive text-gray-400">
+          <header className="absolute top-4 left-6 text-sm text-white bg-gradient-to-r from-purple-500 to-indigo-500 py-1 px-2 rounded-full shadow-md opacity-80">
             {date}
           </header>
           <div>
-            <h5 className="text-base md:text-xl font-bold my-2 Welcome-text">
+            <h5 className="text-base md:text-xl mt-4 font-bold mb-2 Welcome-text">
               {name}
             </h5>
             <p className="text-sm md:text-base italic text-gray-300 mb-6">
