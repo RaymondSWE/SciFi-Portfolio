@@ -116,7 +116,7 @@ export const projectsData = [
       "Docker",
       "Steam Modules",
       "Postman",
-      "HTTPS",
+      "SSL",
       "Github",
       "Heroku",
       "Serverless Functions",
@@ -230,7 +230,6 @@ export const projectsData = [
       "Spring Boot",
       "Liquibase",
       "Scrum",
-      "HTTP",
       "Gitlab",
       "VsCode",
       "IntellJ",
@@ -246,9 +245,8 @@ export const projectsData = [
       "First time introduction in frameworks and libraries such as Material UI and Spring Boot.",
     ],
     accomplishments: [
-      "Received positive feedback as the code was clean and okay structured. Showing a willingness not only to make system work, but also to make it maintainable and understandable code for future developers.",
-      "The application is used by future students as summer internships adding more functionality and features.",
-      "Learned a lot about Liquibase, Spring Boot and React.",
+      "Received positive feedback for clean and well-structured code, showing a strong willingness to learn and create maintainable and understandable code for future developers.",
+      "The application is used by future students as summer internships, who add more functionality and features.",
       "The code could have been further improved with more knowledge such as the atom-design principe within frontend or the use of Global Exception Handler in Spring Boot.",
     ],
   },
@@ -333,15 +331,14 @@ export const projectsData = [
         "Real-time visualization of performance metrics in Grafana."
     ],
     "challenges": [
-        "Accurately simulating real-world load conditions.",
-        "Integrating complex metrics with Prometheus and Grafana.",
-        "Adapting Kubernetes resource limits for each service, as resource of the cluster was limited.",
-        "New technology stack to learn with Kubernetes, Minikube, Kind ad Prometheus/Grafana."
+        "Data visualisation with Prometheus and Grafana.",
+        "Adapting Kubernetes resource limits for each pods, as resource of the cluster was limited.",
+        "New technology stack to learn with Kubernetes, Minikube, Kind and Prometheus/Grafana."
     ],
     "accomplishments": [
-        "Provided insights into the most effective scaling strategies for Kubernetes.",
-        "Successfully managed complex cloud infrastructure and monitored it via Prometheus and Grafana.",
-        "Developed and shared a comprehensive set of SLOs for Kubernetes performance benchmarking."
+        "Provided my insights into scaling strategies for Kubernetes.",
+        "Successfully managed cloud infrastructure and monitored it via Prometheus and Grafana.",
+        "Developed and shared a set of SLOs for Kubernetes performance benchmarking."
     ]
 }
 
