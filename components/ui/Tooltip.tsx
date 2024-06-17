@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 interface TooltipProps {
-  content: string; 
+  content: React.ReactNode;
   children: React.ReactElement; 
   position: "top" | "right" | "bottom" | "left";
   margin?: number; 
