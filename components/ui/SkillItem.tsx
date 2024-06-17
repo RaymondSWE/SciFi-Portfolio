@@ -31,6 +31,13 @@ const SkillItem = ({
   };
 
   const progressBarWidth = `${(skillLevel / 5) * 100}%`;
+  const skillComments = [
+    "Padawan learner (Level 1)",
+    "Youngling (Level 2)",
+    "Jedi Knight (Level 3)",
+    "Jedi Master (Level 4)",
+    "Yoda level (Level 5)"
+  ];
 
   return (
     <motion.div
@@ -39,8 +46,8 @@ const SkillItem = ({
       animate={inView ? "visible" : "hidden"}
       variants={variants}
     >
-      <Tooltip content={skillName} position="top" margin={2}>
-        <Image src={src} width={width} height={height} alt={skillName} className="object-contain h-[70px] w-[80px]"/>
+      <Tooltip content={`${skillName}:  ${skillComments[skillLevel - 1]}`} position="top">
+      <Image src={src} width={width} height={height} alt={skillName} className="object-contain h-[70px] w-[80px]"/>
       </Tooltip>
       <div className="w-[80px] h-[5px] bg-[#e59cff61] mt-4 rounded-full">
         <div
