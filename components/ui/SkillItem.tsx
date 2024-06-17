@@ -12,6 +12,7 @@ interface SkillItemProps {
   height: number;
   index: number;
   skillName: string;
+  skillLevel: number;
 }
 
 const SkillItem = ({
@@ -20,6 +21,7 @@ const SkillItem = ({
   height,
   index,
   skillName,
+  skillLevel,
 }: SkillItemProps) => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
@@ -27,6 +29,8 @@ const SkillItem = ({
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { delay: index * 0.2 } },
   };
+
+  const progressBarWidth = `${(skillLevel / 5) * 100}%`;
 
   return (
     <motion.div
@@ -38,6 +42,12 @@ const SkillItem = ({
       <Tooltip content={skillName} position="top" margin={2}>
         <Image src={src} width={width} height={height} alt={skillName} className="object-contain h-[70px] w-[80px]"/>
       </Tooltip>
+      <div className="w-[80px] h-[5px] bg-[#e59cff61] mt-4 rounded-full">
+        <div
+          className="h-full bg-[#ba9cff] rounded-full"
+          style={{ width: progressBarWidth }}
+        />
+      </div>
     </motion.div>
   );
 };
