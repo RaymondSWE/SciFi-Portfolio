@@ -62,9 +62,8 @@ const Hero = () => {
             <TextGenerateEffect words="With over four years of development experience and a
             Bachelor&apos;s in Computer Science specializing in System
             Development, I specialize in Java, React.js, TypeScript, Containerisation,
-            MySQL, Azure, and more. Passionate about building scalable and
-            reliable distributed systems, continuously learning to tackle new
-            challenges in software infrastructure. Currently, I am also trying to learn and build projects within embedded systems and IoT.
+            MySQL, Azure, and more. I love building scalable and
+            reliable distributed systems and I'm always eager to learn something new. Right now, I am trying to learn and build projects within embedded systems and IoT.
             " 
             />          
           <a
@@ -85,7 +84,7 @@ const Hero = () => {
               src="/ramanbild.png"
               alt="Raman Mohammed Image"
               fill
-              className=" ml-5 opacity-80 object-cover"
+              className=" ml-5 opacity-90 "
             />
           </div>
         </motion.div>
