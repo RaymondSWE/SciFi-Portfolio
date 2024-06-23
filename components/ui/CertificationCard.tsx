@@ -76,7 +76,7 @@ export const CertificationCard = ({
               {CertificationLink ? (
                 <a
                   href={CertificationLink}
-                  className="flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300"
+                  className="flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300 hover:text-white transform hover:scale-105 transition-transform duration-300"
                   target="_blank"
                   rel="noreferrer"
                 >

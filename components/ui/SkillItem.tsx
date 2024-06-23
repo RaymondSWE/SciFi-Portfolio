@@ -36,7 +36,7 @@ const SkillItem = ({
     "Youngling (Level 2)",
     "Jedi Knight (Level 3)",
     "Jedi Master (Level 4)",
-    "Yoda level (Level 5)"
+    "Yoda level (Level 5)",
   ];
 
   const formattedContent = (
@@ -53,7 +53,13 @@ const SkillItem = ({
       variants={variants}
     >
       <Tooltip content={formattedContent} position="top">
-      <Image src={src} width={width} height={height} alt={skillName} className="object-contain h-[70px] w-[80px]"/>
+        <Image
+          src={src}
+          width={width}
+          height={height}
+          alt={skillName}
+          className="object-contain h-[70px] w-[80px]"
+        />
       </Tooltip>
       <div className="w-[80px] h-[5px] bg-[#e59cff61] mt-4 rounded-full">
         <div

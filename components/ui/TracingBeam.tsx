@@ -36,14 +36,14 @@ export const TracingBeam = ({
     {
       stiffness: 500,
       damping: 90,
-    }
+    },
   );
   const y2 = useSpring(
     useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
     {
       stiffness: 500,
       damping: 90,
-    }
+    },
   );
 
   return (
@@ -51,7 +51,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
     >
-      <div className="absolute -left-6 md:left-24 top-3">
+      <div className="absolute -left-20 md:-left-40 top-24">
         <motion.div
           transition={{
             duration: 0.2,

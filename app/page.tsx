@@ -11,6 +11,7 @@ import { WelcomeToast } from "@/utils/Toaster";
 import Statistic from "@/components/main/Statistic";
 import ContactMe from "@/components/ui/ContactMe";
 import { TracingBeam } from "@/components/ui/TracingBeam";
+import Blog from "@/components/main/Blog";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WelcomeToast />
       <div className="flex flex-col gap-14">
         <Hero />
+        <Blog />
         <Services />
         <Statistic />
         <Skills />
