@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center h-auto md:h-[75vh] lg:h-[85vh] py-2 px-2 mt-4 md:mt-0 text-white"
+      className="flex items-center h-auto md:min-h-[65vh] lg:min-h-[75vh] py-2 px-2 mt-4 md:mt-0 text-white"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div
@@ -59,13 +59,14 @@ const Hero = () => {
             </span>{" "}
             with code
           </motion.h2>
-            <TextGenerateEffect words="With over four years of development experience and a
-            Bachelor&apos;s in Computer Science specializing in System
+          <TextGenerateEffect
+            words="With over four years of development experience and a
+            Bachelor's in Computer Science specializing in System
             Development, I specialize in Java, React.js, TypeScript, Containerisation,
             MySQL, Azure, and more. I love building scalable and
             reliable distributed systems and I'm always eager to learn something new. Right now, I am trying to learn and build projects within embedded systems and IoT.
-            " 
-            />          
+            "
+          />
           <a
             href="#projects"
             className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-3d-primary z-20"

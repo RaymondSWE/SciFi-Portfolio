@@ -14,20 +14,20 @@ export const Certification = () => {
     onChange: (inView) => {
       if (inView) {
         infoToast(
-        "Continuous Learning Update!",
-        "Actively pursuing certifications beyond my CS degree to deepen my tech expertise.", 
-        "top-left", 
-        true);
+          "Continuous Learning Update!",
+          "Actively pursuing certifications beyond my CS degree to deepen my tech expertise.",
+          "top-left",
+          true,
+        );
       }
-    }
-
+    },
   });
   return (
-    <motion.section id="certifications"
+    <motion.section
+      id="certifications"
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-    
     >
       <SectionHeader
         title="Intergalactic Qualifications"

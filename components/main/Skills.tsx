@@ -8,20 +8,19 @@ import { useInView } from "react-intersection-observer";
 import { infoToast } from "@/utils/Toaster";
 import { motion } from "framer-motion";
 
-
 const Skills = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     onChange: (inView) => {
       if (inView) {
         infoToast(
-          "Discover My Skills!", 
-          "Hover over the skills icons to see the skill names!", 
+          "Discover My Skills!",
+          "Hover over the skills icons to see the skill names!",
           "top-right",
-          true);
+          true,
+        );
       }
-    }
-
+    },
   });
 
   return (
@@ -29,7 +28,6 @@ const Skills = () => {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-
       id="skills"
       className=" flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-4 sm:py-64"
       style={{ transform: "scale(0.9" }}

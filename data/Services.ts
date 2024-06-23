@@ -1,5 +1,4 @@
 export const ServicesData = [
-
   {
     id: 1,
     name: "Web & API Development",
@@ -20,7 +19,7 @@ export const ServicesData = [
     description:
       "Proficient in Kubernetes deployments and managing cloud-based applications, specializing in containerizing applications and automation. ",
     icon: "/check.svg",
-  }
+  },
 ];
 
 export const ServicesApps = [

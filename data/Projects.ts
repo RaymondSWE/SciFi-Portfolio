@@ -4,7 +4,7 @@ export const projectsData = [
     src: "/project-img/csgo.png",
     title: "CSFairTrade",
     description:
-     "A shopping & trading platform offering a user-friendly environment for trading Counter-Strike: Global Offensive and Counter-Strike 2 skins.",
+      "A shopping & trading platform offering a user-friendly environment for trading Counter-Strike: Global Offensive and Counter-Strike 2 skins.",
     sourceUrl: "https://csfairtrade-frontend.vercel.app/",
     youtubeUrl: "https://www.youtube.com/watch?v=fYdAn0O2g0Q",
     githubUrl: "https://github.com/RaymondSWE/CSFairtrade",
@@ -52,7 +52,7 @@ export const projectsData = [
     src: "/project-img/codemate.png",
     title: "CodeMate",
     description:
-    "A platform to enhance collaboration among tech students, allowing them to share ideas, develop projects, and network.",
+      "A platform to enhance collaboration among tech students, allowing them to share ideas, develop projects, and network.",
     sourceUrl: "https://codecomrades.vercel.app/",
     youtubeUrl: null,
     githubUrl: "https://github.com/RaymondSWE/codecomrades",
@@ -134,7 +134,6 @@ export const projectsData = [
     challenges: [
       "Introduction to PaaS and automate deployment to production with Bash-Scripting, utilising Dokku and Heroku.",
       "Adapting to serverless functions for the first time.",
-      
     ],
     accomplishments: [
       "Few thousands users registered and bugs was introduced and fixed.",
@@ -185,7 +184,7 @@ export const projectsData = [
     src: "/project-img/starwars-portfolio.png",
     title: "Web portfolio",
     description:
-    "A Star Wars-themed web portfolio showcasing my skills, experiences, and projects.",
+      "A Star Wars-themed web portfolio showcasing my skills, experiences, and projects.",
     sourceUrl: "https://www.ramanmohammed.com/",
     youtubeUrl: null,
     githubUrl: "https://github.com/RaymondSWE/Raymond-Portfolio-V2",
@@ -306,40 +305,40 @@ export const projectsData = [
     ],
   },
   {
-    "id": 9,
-    "src": "/project-img/cluster.png",
-    "title": "Kubernetes Scaling Analysis: A Performance and Cost Comparison",
-    "description": "A comprehensive analysis of vertical and horizontal scaling strategies in cloud-native applications within Kubernetes environments, using metrics and Service Level Objectives (SLOs) to understand impacts on performance and cost-effectiveness under various load conditions.",
-    "sourceUrl": null,
-    "youtubeUrl": null,
-    "githubUrl": "https://github.com/RaymondSWE/Thesis",
-    "startDate": "2024-01-01",
-    "endDate": "2024-05-21",
-    "technologyStack": [
-        "Kubernetes",
-        "Minikube",
-        "Kind",
-        "Digital Ocean Kubernetes",
-        "Google Compute Engine",
-        "Prometheus",
-        "Grafana",
-        "YAML",
+    id: 9,
+    src: "/project-img/cluster.png",
+    title: "Kubernetes Scaling Analysis: A Performance and Cost Comparison",
+    description:
+      "A comprehensive analysis of vertical and horizontal scaling strategies in cloud-native applications within Kubernetes environments, using metrics and Service Level Objectives (SLOs) to understand impacts on performance and cost-effectiveness under various load conditions.",
+    sourceUrl: null,
+    youtubeUrl: null,
+    githubUrl: "https://github.com/RaymondSWE/Thesis",
+    startDate: "2024-01-01",
+    endDate: "2024-05-21",
+    technologyStack: [
+      "Kubernetes",
+      "Minikube",
+      "Kind",
+      "Digital Ocean Kubernetes",
+      "Google Compute Engine",
+      "Prometheus",
+      "Grafana",
+      "YAML",
     ],
-    "features": [
-        "Detailed comparison of scaling strategies.",
-        "Performance analysis under various loads with and without a load balancer.",
-        "Real-time visualization of performance metrics in Grafana."
+    features: [
+      "Detailed comparison of scaling strategies.",
+      "Performance analysis under various loads with and without a load balancer.",
+      "Real-time visualization of performance metrics in Grafana.",
     ],
-    "challenges": [
-        "Data visualisation with Prometheus and Grafana.",
-        "Adapting Kubernetes resource limits for each pods, as resource of the cluster was limited.",
-        "New technology stack to learn with Kubernetes, Minikube, Kind and Prometheus/Grafana."
+    challenges: [
+      "Data visualisation with Prometheus and Grafana.",
+      "Adapting Kubernetes resource limits for each pods, as resource of the cluster was limited.",
+      "New technology stack to learn with Kubernetes, Minikube, Kind and Prometheus/Grafana.",
     ],
-    "accomplishments": [
-        "Provided my insights into scaling strategies for Kubernetes.",
-        "Successfully managed cloud infrastructure and monitored it via Prometheus and Grafana.",
-        "Developed and shared a set of Service-Level Objectives (SLOs) for Kubernetes performance benchmarking."
-    ]
-}
-
+    accomplishments: [
+      "Provided my insights into scaling strategies for Kubernetes.",
+      "Successfully managed cloud infrastructure and monitored it via Prometheus and Grafana.",
+      "Developed and shared a set of Service-Level Objectives (SLOs) for Kubernetes performance benchmarking.",
+    ],
+  },
 ];

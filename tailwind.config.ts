@@ -6,7 +6,7 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [    
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,7 +15,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         scroll: {
@@ -26,15 +27,13 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    addVariablesForColors,
-  ],
+  plugins: [addVariablesForColors],
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({

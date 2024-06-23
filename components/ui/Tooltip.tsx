@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 interface TooltipProps {
   content: React.ReactNode;
-  children: React.ReactElement; 
+  children: React.ReactElement;
   position: "top" | "right" | "bottom" | "left";
-  margin?: number; 
+  margin?: number;
 }
 
 const Tooltip = ({ content, children, position, margin = 8 }: TooltipProps) => {
