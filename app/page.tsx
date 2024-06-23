@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <main className="h-full w-full">
       <WelcomeToast />
-      <div className="flex flex-col gap-14">
+      <div className="flex flex-col gap-12 md:gap-24 lg:gap-32">
         <Hero />
         <Blog />
         <Services />
         <Statistic />
-        <Skills />
+        <Skills /> 
         <Projects />
         <Timeline />
         <Certification />

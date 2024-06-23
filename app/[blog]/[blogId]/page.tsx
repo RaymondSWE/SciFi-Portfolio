@@ -1,15 +1,14 @@
 "use client";
 import { useRouter } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { TracingBeam } from '@/components/ui/TracingBeam';
-import {usePostData} from './usePostData';
+import { usePostData } from './usePostData';
 
 interface BlogPageProps {
   params: {
     blogId: number;
   };
 }
-
 
 const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
   const { blogId } = params;
@@ -28,7 +27,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
     <TracingBeam>
       <div className="flex flex-col items-center justify-center py-10 px-5">
         <div className="mt-12 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-          <h1 className="md:text-3xl text-3xl lg:text-7xl font-bold text-center Welcome-text relative z-20 mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-center Welcome-text relative z-20 mb-6">
             {post.title}
           </h1>
           <div className="w-[40rem] h-10 relative">
@@ -47,8 +46,16 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
               <span>{post.date}</span>
               <span>{post.author}</span>
             </div>
+            {post.paragraphOne && <p className="mb-4">{post.paragraphOne}</p>}
+            {post.subtitle && (
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold Welcome-text relative mb-2">
+              {post.subtitle}
+            </h2>
+          )}
+            {post.paragraphTwo && <p className="mb-4">{post.paragraphTwo}</p>}
+            {post.paragraphThree && <p className="mb-4">{post.paragraphThree}</p>}
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-            </div>
+          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-30 rounded-lg blur"></div>
         </article>
         <button

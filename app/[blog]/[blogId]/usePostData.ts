@@ -4,9 +4,13 @@ import { useRouter } from 'next/navigation';
 interface PostData {
   id: number;
   title: string;
+  subtitle?: string;
   author: string;
   date: string;
   contentHtml: string;
+  paragraphOne?: string;
+  paragraphTwo?: string;
+  paragraphThree?: string;
 }
 
 export const usePostData = (blogId: number) => {

@@ -11,8 +11,8 @@ const Timeline = () => {
   return (
     <section id="Timeline">
       <SectionHeader
-        title="Stellar Journeys: From Novice to Nebula"
-        subtitle="Documenting the celestial voyage of learning and leading."
+        title="Professional Journey"
+        subtitle="A Chronological Overview of My Career."
         Icon={<ScaleIcon />}
       />
 

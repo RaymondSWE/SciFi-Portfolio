@@ -34,8 +34,8 @@ const Skills = () => {
     >
       <div className="w-full h-auto flex flex-col items-center justify-center">
         <SectionHeader
-          title="Skills Nebula"
-          subtitle="A cosmic cloud of abilities, where each particle is a skill honed through time and experience."
+          title="Technical Proficiencies"
+          subtitle="A List of My Skills"
           Icon={<BeakerIcon />}
         />
       </div>
