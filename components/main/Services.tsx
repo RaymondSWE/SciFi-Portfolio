@@ -25,8 +25,8 @@ const Services = () => {
     <>
       <section className="px-4 lg:px-8 xl:px-16" id="services">
         <SectionHeader
-          title="Galactic Development Services"
-          subtitle="Engineering your software products from Coruscant to the Outer Rim."
+          title="What I Offer"
+          subtitle="My Expertise in Development and Design"
           Icon={<ShoppingCartIcon />}
         />{" "}
         <div className="container mx-auto flex flex-col items-center lg:flex-row">

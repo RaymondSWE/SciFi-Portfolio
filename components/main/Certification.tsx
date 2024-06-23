@@ -30,8 +30,8 @@ export const Certification = () => {
       animate={inView ? "visible" : "hidden"}
     >
       <SectionHeader
-        title="Intergalactic Qualifications"
-        subtitle="A constellation of certifications spanning the tech universe"
+        title="Qualifications"
+        subtitle="Certifications and Awards I Have Earned"
         Icon={<AcademicCapIcon />}
       />
       <div className="flex flex-wrap justify-center gap-10 max-w-7xl mx-auto mt-12">
