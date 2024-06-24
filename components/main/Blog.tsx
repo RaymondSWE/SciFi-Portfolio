@@ -9,7 +9,7 @@ const Blog = () => {
     <div>
       <SectionHeader title="My Developer Diary" subtitle="My Exploration into Technology and Developments" Icon={< PencilSquareIcon/>} />
       <div className="flex justify-center items-center w-full h-full z-40">
-        <InfiniteMovingCards items={blogData} speed="slow" />
+        <InfiniteMovingCards items={blogData} speed="fast" />
       </div>
     </div>
   );

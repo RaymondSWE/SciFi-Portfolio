@@ -121,13 +121,13 @@ export const InfiniteMovingCards = ({
               </div>
             </blockquote>
             <div className="absolute bottom-4 right-4 z-20">
-              <button
-                onClick={() => router.push(`/blog/${item.id}`)}
+            <a
+                href={`/blog/${item.id}`}
                 className="flex items-center font-code text-xs font-bold uppercase tracking-wider text-gray-300 hover:text-white transform hover:scale-105 transition-transform duration-300"
               >
                 Read More
                 <ArrowRightCircleIcon className="h-5 w-5 ml-2 text-gray-300" />
-              </button>
+              </a>
             </div>
           </li>
         ))}

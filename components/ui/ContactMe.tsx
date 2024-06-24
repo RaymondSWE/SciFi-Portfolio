@@ -22,7 +22,7 @@ const ContactMe = () => {
         >
           Hover over me!
         </a>
-        <div className="relative z-10 mt-8 -mb-14 mirror">
+        <div className="relative z-10 mt-8 -mb-32 mirror">
           <Image
             src={imageSrc}
             alt="Mr. Roboto"

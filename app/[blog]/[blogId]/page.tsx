@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 import { TracingBeam } from '@/components/ui/TracingBeam';
 import { usePostData } from './usePostData';
+import Loader from '@/components/ui/Loader';
 
 interface BlogPageProps {
   params: {
@@ -16,7 +17,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
   const { post, loading, error } = usePostData(blogId);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loader/>;
   }
 
   if (error || !post) {
