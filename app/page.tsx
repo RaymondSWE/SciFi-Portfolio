@@ -6,11 +6,10 @@ import Timeline from "@/components/main/Timeline";
 import { Certification } from "@/components/main/Certification";
 import Footer from "@/components/main/Footer";
 import Services from "@/components/main/Services";
-import React, { useEffect } from "react";
+import React from "react";
 import { WelcomeToast } from "@/utils/Toaster";
 import Statistic from "@/components/main/Statistic";
 import ContactMe from "@/components/ui/ContactMe";
-import { TracingBeam } from "@/components/ui/TracingBeam";
 import Blog from "@/components/main/Blog";
 
 export default function Home() {

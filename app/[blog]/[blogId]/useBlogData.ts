@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-interface PostData {
+interface BlogData {
   id: number;
   title: string;
   subtitle?: string;
@@ -13,8 +13,8 @@ interface PostData {
   paragraphThree?: string;
 }
 
-export const usePostData = (blogId: number) => {
-  const [post, setPost] = useState<PostData | null>(null);
+export const useBlogData = (blogId: number) => {
+  const [blog, setBlog] = useState<BlogData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
@@ -22,10 +22,10 @@ export const usePostData = (blogId: number) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/posts/${blogId}`);
+        const response = await fetch(`/api/blog/${blogId}`);
         if (response.ok) {
-          const postData: PostData = await response.json();
-          setPost(postData);
+          const blogData: BlogData = await response.json();
+          setBlog(blogData);
         } else {
           router.push('/404');
         }
@@ -39,5 +39,5 @@ export const usePostData = (blogId: number) => {
     fetchData();
   }, [blogId, router]);
 
-  return { post, loading, error };
+  return { blog, loading, error };
 };
