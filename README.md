@@ -12,6 +12,9 @@ Welcome to my **Star Wars Themed Personal Portfolio**! This project showcases my
 Check out the live demo [here](https://new-webportfolio.vercel.app)
 
 
+## 🚨 Forking this repo
+People have contacted me asking if they can use this code for their website. Usually, the answer is yes, as long as they give **proper credit**. I believe in keeping my site **open source**, but I want to discourage **plagiarism**. It's disheartening when people copy others' work without acknowledging the original developer. I myself put a lot of effort into building and designing this version of my website, and I'm proud of it! I only ask that you don't claim this work as your own. Thank you for visiting my portfolio! And if you find it helpful, please give this repository a star. ⭐
+
 ## 🛠️ Tech Stack
 
 - **Next.js**
@@ -29,8 +32,6 @@ All images used in this project are sourced from [Unsplash](https://unsplash.com
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
-
 1. Fork the repository.
 2. Create a new branch.
 3. Make your changes.
@@ -41,6 +42,4 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for details.
 
----
 
-Thank you for visiting my portfolio! Don't forget to ⭐ this repository if you find it useful.
