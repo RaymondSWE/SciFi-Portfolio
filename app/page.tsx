@@ -18,13 +18,13 @@ export default function Home() {
       <WelcomeToast />
       <div className="flex flex-col gap-12 md:gap-24 lg:gap-32">
         <Hero />
-        <Blog />
         <Services />
         <Statistic />
         <Skills /> 
         <Projects />
         <Timeline />
         <Certification />
+        <Blog />
         <ContactMe />
         <Footer />
       </div>

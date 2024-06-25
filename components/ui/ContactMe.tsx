@@ -12,6 +12,7 @@ const ContactMe = () => {
         title="Contact Me"
         subtitle="Let's connect and build something amazing together!"
         Icon={<HiOutlineMail />}
+        className="-mb-14"
       />
       <div className="flex flex-col items-center -mt-12">
         <a
@@ -22,7 +23,7 @@ const ContactMe = () => {
         >
           Hover over me!
         </a>
-        <div className="relative z-10 mt-8 -mb-32 mirror">
+        <div className="relative z-10 mt-8 md:-mb-32 -mb-12 mirror">
           <Image
             src={imageSrc}
             alt="Mr. Roboto"

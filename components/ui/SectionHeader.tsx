@@ -6,15 +6,16 @@ interface SectionHeaderProps {
   title: string;
   subtitle: string;
   Icon: ReactElement;
+  className?: string;
 }
 
-const SectionHeader = ({ title, subtitle, Icon }: SectionHeaderProps) => {
+const SectionHeader = ({ title, subtitle, Icon, className = "", }: SectionHeaderProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="text-center mt-4"
+      className={`text-center mt-4 ${className}`}
     >
       <h1 className="text-2xl orbitron md:text-5xl italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400 leading-tight">
         {title}
