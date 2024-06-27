@@ -12,7 +12,7 @@ const ContactMe = () => {
         title="Contact Me"
         subtitle="Let's connect and build something amazing together!"
         Icon={<HiOutlineMail />}
-        className="-mb-14"
+        className="md:-mb-16"
       />
       <div className="flex flex-col items-center -mt-12">
         <a
