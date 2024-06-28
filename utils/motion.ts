@@ -1,4 +1,4 @@
-import { Variants } from "framer-motion";
+import { Variants } from 'framer-motion';
 
 export function slideInFromLeft(delay: number) {
   return {
@@ -44,10 +44,10 @@ export function slideInFromTop(delay: number) {
 
 export function slideInWithDelay(
   delay: number,
-  direction: "left" | "right" = "left",
+  direction: 'left' | 'right' = 'left',
 ): Variants {
   return {
-    hidden: { x: direction === "left" ? -100 : 100, opacity: 0 },
+    hidden: { x: direction === 'left' ? -100 : 100, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { TracingBeam } from '@/components/ui/TracingBeam';
@@ -17,7 +17,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
   const { blog, loading, error } = useBlogData(blogId);
 
   if (loading) {
-    return <Loader/>;
+    return <Loader />;
   }
 
   if (error || !blog) {
@@ -49,12 +49,14 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
             </div>
             {blog.paragraphOne && <p className="mb-4">{blog.paragraphOne}</p>}
             {blog.subtitle && (
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold Welcome-text relative mb-2">
-              {blog.subtitle}
-            </h2>
-          )}
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold Welcome-text relative mb-2">
+                {blog.subtitle}
+              </h2>
+            )}
             {blog.paragraphTwo && <p className="mb-4">{blog.paragraphTwo}</p>}
-            {blog.paragraphThree && <p className="mb-4">{blog.paragraphThree}</p>}
+            {blog.paragraphThree && (
+              <p className="mb-4">{blog.paragraphThree}</p>
+            )}
             <div dangerouslySetInnerHTML={{ __html: blog.contentHtml }} />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-30 rounded-lg blur"></div>

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 interface TooltipProps {
   content: React.ReactNode;
   children: React.ReactElement;
-  position: "top" | "right" | "bottom" | "left";
+  position: 'top' | 'right' | 'bottom' | 'left';
   margin?: number;
 }
 
@@ -16,16 +16,16 @@ const Tooltip = ({ content, children, position, margin = 8 }: TooltipProps) => {
   const getPositionClasses = (position: string, margin: number) => {
     const marginValue = `${margin}`;
     switch (position) {
-      case "top":
+      case 'top':
         return `bottom-full mb-${marginValue}`;
-      case "right":
+      case 'right':
         return `left-full ml-${marginValue}`;
-      case "bottom":
+      case 'bottom':
         return `top-full mt-${marginValue}`;
-      case "left":
+      case 'left':
         return `right-full mr-${marginValue}`;
       default:
-        return "";
+        return '';
     }
   };
 

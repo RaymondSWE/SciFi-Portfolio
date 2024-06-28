@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import TimelineElement from "../ui/TimelineElement";
-import { ExperienceData } from "@/data/Experience";
-import { motion } from "framer-motion";
-import { ScaleIcon } from "@heroicons/react/24/solid";
-import SectionHeader from "../ui/SectionHeader";
+'use client';
+import React from 'react';
+import { VerticalTimeline } from 'react-vertical-timeline-component';
+import TimelineElement from '../ui/TimelineElement';
+import { ExperienceData } from '@/data/Experience';
+import { motion } from 'framer-motion';
+import { ScaleIcon } from '@heroicons/react/24/solid';
+import SectionHeader from '../ui/SectionHeader';
 
 const Timeline = () => {
   return (
@@ -20,7 +20,7 @@ const Timeline = () => {
         {ExperienceData.map((item) => (
           <TimelineElement
             key={item.id}
-            type={item.type as "work" | "education" | undefined}
+            type={item.type as 'work' | 'education' | undefined}
             id={item.id}
             date={item.date}
             title={item.title}

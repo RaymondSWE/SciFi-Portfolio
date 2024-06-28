@@ -1,6 +1,6 @@
-import Image from "next/image";
-import React, { useEffect } from "react";
-import { toast } from "react-toastify";
+import Image from 'next/image';
+import React, { useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 export const WelcomeToast = () => {
   useEffect(() => {
@@ -13,19 +13,19 @@ export const WelcomeToast = () => {
         </div>
       ),
       {
-        position: "top-center",
+        position: 'top-center',
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        theme: "dark",
+        theme: 'dark',
         style: {
-          background: "rgba(0,0,0,0.4)",
-          color: "#FFE81F",
-          marginTop: "100px",
-          borderRadius: "20px",
-          boxShadow: "0 0 10px 5px rgba(0,0,0,0.5)",
+          background: 'rgba(0,0,0,0.4)',
+          color: '#FFE81F',
+          marginTop: '100px',
+          borderRadius: '20px',
+          boxShadow: '0 0 10px 5px rgba(0,0,0,0.5)',
         },
       },
     );
@@ -49,21 +49,21 @@ export const handleMissingLink = (serviceName: string) => {
       </div>
     ),
     {
-      position: "top-right",
+      position: 'top-right',
       autoClose: 5000,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
-      theme: "dark",
+      theme: 'dark',
       style: {
-        background: "rgba(10, 17, 25, 0.4)",
-        color: "#FBBF24",
-        width: "auto",
-        minHeight: "100px",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-        borderRadius: "10px",
-        borderLeft: "5px solid #EF4444",
+        background: 'rgba(10, 17, 25, 0.4)',
+        color: '#FBBF24',
+        width: 'auto',
+        minHeight: '100px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        borderRadius: '10px',
+        borderLeft: '5px solid #EF4444',
       },
     },
   );
@@ -73,10 +73,10 @@ export const infoToast = (
   header: string,
   text: string,
   position:
-    | "top-right"
-    | "top-left"
-    | "bottom-right"
-    | "bottom-left" = "top-right",
+    | 'top-right'
+    | 'top-left'
+    | 'bottom-right'
+    | 'bottom-left' = 'top-right',
   autoClose: boolean = false,
 ) => {
   toast(
@@ -97,15 +97,15 @@ export const infoToast = (
       pauseOnHover: true,
       hideProgressBar: true,
       draggable: true,
-      theme: "dark",
+      theme: 'dark',
       style: {
-        background: "rgba(10, 17, 25, 0.4)",
-        color: "#FBBF24",
-        width: "auto",
-        minHeight: "100px",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-        borderRadius: "10px",
-        borderLeft: "5px solid #FBBF24",
+        background: 'rgba(10, 17, 25, 0.4)',
+        color: '#FBBF24',
+        width: 'auto',
+        minHeight: '100px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        borderRadius: '10px',
+        borderLeft: '5px solid #FBBF24',
       },
     },
   );

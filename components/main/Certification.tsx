@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import { CertificationCard } from "../ui/CertificationCard";
-import SectionHeader from "../ui/SectionHeader";
-import { AcademicCapIcon } from "@heroicons/react/24/solid";
-import { CertificationData } from "@/data/Certification";
-import { useInView } from "react-intersection-observer";
-import { infoToast } from "@/utils/Toaster";
-import { motion } from "framer-motion";
+'use client';
+import React from 'react';
+import { CertificationCard } from '../ui/CertificationCard';
+import SectionHeader from '../ui/SectionHeader';
+import { AcademicCapIcon } from '@heroicons/react/24/solid';
+import { CertificationData } from '@/data/Certification';
+import { useInView } from 'react-intersection-observer';
+import { infoToast } from '@/utils/Toaster';
+import { motion } from 'framer-motion';
 
 export const Certification = () => {
   const { ref, inView } = useInView({
@@ -14,9 +14,9 @@ export const Certification = () => {
     onChange: (inView) => {
       if (inView) {
         infoToast(
-          "Continuous Learning Update!",
-          "Actively pursuing certifications beyond my CS degree to deepen my tech expertise.",
-          "top-left",
+          'Continuous Learning Update!',
+          'Actively pursuing certifications beyond my CS degree to deepen my tech expertise.',
+          'top-left',
           true,
         );
       }
@@ -27,7 +27,7 @@ export const Certification = () => {
       id="certifications"
       ref={ref}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
     >
       <SectionHeader
         title="Qualifications"

@@ -1,12 +1,12 @@
-"use client";
-import Image from "next/image";
-import React, { useState } from "react";
-import { FaGithub, FaExternalLinkAlt, FaYoutube } from "react-icons/fa";
-import Modal from "./Modal";
-import { motion } from "framer-motion";
-import { slideInFromTop, slideInWithDelay } from "@/utils/motion";
-import { useInView } from "react-intersection-observer";
-import { handleMissingLink } from "@/utils/Toaster";
+'use client';
+import Image from 'next/image';
+import React, { useState } from 'react';
+import { FaGithub, FaExternalLinkAlt, FaYoutube } from 'react-icons/fa';
+import Modal from './Modal';
+import { motion } from 'framer-motion';
+import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
+import { useInView } from 'react-intersection-observer';
+import { handleMissingLink } from '@/utils/Toaster';
 interface ProjectCardProps {
   id: number;
   src: string;
@@ -47,7 +47,7 @@ const ProjectCard = ({
         className="z-[20] flex flex-col overflow-x-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         ref={ref}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        animate={inView ? 'visible' : 'hidden'}
         variants={slideInFromTop(0.5)}
       >
         <div className="w-full h-48 relative">
@@ -84,7 +84,7 @@ const ProjectCard = ({
           ) : (
             <FaGithub
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("Github")}
+              onClick={() => handleMissingLink('Github')}
             />
           )}
 
@@ -101,7 +101,7 @@ const ProjectCard = ({
           ) : (
             <FaExternalLinkAlt
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("live demo")}
+              onClick={() => handleMissingLink('live demo')}
             />
           )}
 
@@ -118,7 +118,7 @@ const ProjectCard = ({
           ) : (
             <FaYoutube
               className="text-white text-xl opacity-50 cursor-not-allowed"
-              onClick={() => handleMissingLink("Youtube")}
+              onClick={() => handleMissingLink('Youtube')}
             />
           )}
         </div>

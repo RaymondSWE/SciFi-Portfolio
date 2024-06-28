@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import React from "react";
-import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
-import ClipPath from "./ClipPath";
+import React from 'react';
+import { ArrowRightCircleIcon } from '@heroicons/react/24/solid';
+import ClipPath from './ClipPath';
 import {
   slideInFromRight,
   slideInFromLeft,
   slideInFromTop,
-} from "@/utils/motion";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { useInView } from "react-intersection-observer";
-import { handleMissingLink } from "@/utils/Toaster";
+} from '@/utils/motion';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
+import { handleMissingLink } from '@/utils/Toaster';
 
 interface CertificationCardProps {
   id: number;
@@ -37,7 +37,7 @@ export const CertificationCard = ({
     <motion.article
       className="flex flex-wrap gap-10 mb-10 sm:px-2 px-6 "
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
       variants={slideInFromTop(0.5)}
       ref={ref}
     >
@@ -68,7 +68,7 @@ export const CertificationCard = ({
             <button
               onClick={() => {
                 if (!CertificationLink) {
-                  handleMissingLink("");
+                  handleMissingLink('');
                 }
               }}
               className="z-40"
@@ -94,7 +94,7 @@ export const CertificationCard = ({
         </motion.div>
         <div
           className="absolute inset-0.5  z-20"
-          style={{ clipPath: "url(#certification)" }}
+          style={{ clipPath: 'url(#certification)' }}
         >
           <div className="absolute inset-0 opacity-10 transition-opacity hover:opacity-30 z-50">
             {backgroundImg && (

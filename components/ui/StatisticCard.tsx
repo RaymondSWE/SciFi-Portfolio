@@ -1,9 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import { motion, Variants } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { slideInFromTop, slideInWithDelay } from "@/utils/motion";
-import CountUp from "react-countup";
+import Image from 'next/image';
+import React from 'react';
+import { motion, Variants } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
+import CountUp from 'react-countup';
 
 interface StatisticCardProps {
   id: number;
@@ -26,7 +26,7 @@ const StatisticCard = ({
     <motion.div
       ref={ref}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
       variants={slideInWithDelay(id * 0.3)}
       className="relative p-4 md:w-1/4 sm:w-1/2 w-full"
     >

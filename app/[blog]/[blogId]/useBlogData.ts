@@ -33,7 +33,7 @@ export const useBlogData = (blogId: number) => {
         setError('Failed to load post.');
         router.push('/404');
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
     fetchData();

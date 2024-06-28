@@ -7,7 +7,10 @@ import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export async function GET(req: NextRequest, { params }: { params: { blogId: string } }) {
+export async function GET(
+  req: NextRequest,
+  { params }: { params: { blogId: string } },
+) {
   const { blogId } = params;
 
   try {
@@ -16,7 +19,9 @@ export async function GET(req: NextRequest, { params }: { params: { blogId: stri
 
     const matterResult = matter(fileContents);
 
-    const processedContent = await remark().use(html).process(matterResult.content);
+    const processedContent = await remark()
+      .use(html)
+      .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
     return NextResponse.json({

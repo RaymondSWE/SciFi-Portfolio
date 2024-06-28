@@ -1,13 +1,13 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   motion,
   useTransform,
   useScroll,
   useVelocity,
   useSpring,
-} from "framer-motion";
-import { cn } from "@/utils/cn";
+} from 'framer-motion';
+import { cn } from '@/utils/cn';
 
 export const TracingBeam = ({
   children,
@@ -19,7 +19,7 @@ export const TracingBeam = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ['start start', 'end start'],
   });
 
   const contentRef = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
+      className={cn('relative w-full max-w-4xl mx-auto h-full', className)}
     >
       <div className="absolute -left-20 md:-left-40 top-24">
         <motion.div
@@ -60,8 +60,8 @@ export const TracingBeam = ({
           animate={{
             boxShadow:
               scrollYProgress.get() > 0
-                ? "none"
-                : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                ? 'none'
+                : 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
           }}
           className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
         >
@@ -72,9 +72,9 @@ export const TracingBeam = ({
             }}
             animate={{
               backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
+                scrollYProgress.get() > 0 ? 'white' : 'var(--emerald-500)',
               borderColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+                scrollYProgress.get() > 0 ? 'white' : 'var(--emerald-600)',
             }}
             className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
           />

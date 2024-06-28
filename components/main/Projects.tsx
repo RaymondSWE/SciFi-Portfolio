@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import ProjectCard from "../ui/ProjectCard";
-import { projectsData } from "@/data/Projects";
-import { GlobeAltIcon } from "@heroicons/react/24/solid";
-import SectionHeader from "../ui/SectionHeader";
+'use client';
+import React from 'react';
+import ProjectCard from '../ui/ProjectCard';
+import { projectsData } from '@/data/Projects';
+import { GlobeAltIcon } from '@heroicons/react/24/solid';
+import SectionHeader from '../ui/SectionHeader';
 
 const Projects = () => {
   return (

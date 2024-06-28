@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface ModalProps {
   isOpen: boolean;
@@ -52,7 +52,7 @@ const Modal = ({
         <div className="flex justify-between items-center">
           <div className="text-sm roboto-condensed italic text-gray-300">
             <span>
-              {startDate} to {endDate === null ? "In Progress" : endDate}
+              {startDate} to {endDate === null ? 'In Progress' : endDate}
             </span>
           </div>
           <button

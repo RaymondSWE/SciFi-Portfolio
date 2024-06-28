@@ -1,12 +1,12 @@
-"use client";
-import { SkillsData } from "@/data/Skills";
-import React from "react";
-import SkillSection from "../ui/SkillsGallery";
-import { BeakerIcon } from "@heroicons/react/24/solid";
-import SectionHeader from "../ui/SectionHeader";
-import { useInView } from "react-intersection-observer";
-import { infoToast } from "@/utils/Toaster";
-import { motion } from "framer-motion";
+'use client';
+import { SkillsData } from '@/data/Skills';
+import React from 'react';
+import SkillSection from '../ui/SkillsGallery';
+import { BeakerIcon } from '@heroicons/react/24/solid';
+import SectionHeader from '../ui/SectionHeader';
+import { useInView } from 'react-intersection-observer';
+import { infoToast } from '@/utils/Toaster';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   const { ref, inView } = useInView({
@@ -14,9 +14,9 @@ const Skills = () => {
     onChange: (inView) => {
       if (inView) {
         infoToast(
-          "Discover My Skills!",
-          "Hover over the skills icons to see the skill names!",
-          "top-right",
+          'Discover My Skills!',
+          'Hover over the skills icons to see the skill names!',
+          'top-right',
           true,
         );
       }
@@ -27,10 +27,10 @@ const Skills = () => {
     <motion.section
       ref={ref}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
       id="skills"
       className=" flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-4 sm:py-64"
-      style={{ transform: "scale(0.9" }}
+      style={{ transform: 'scale(0.9' }}
     >
       <div className="w-full h-auto flex flex-col items-center justify-center">
         <SectionHeader

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Image from "next/image";
-import Tooltip from "./Tooltip";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+import Tooltip from './Tooltip';
 
 interface SkillItemProps {
   src: string;
@@ -32,11 +32,11 @@ const SkillItem = ({
 
   const progressBarWidth = `${(skillLevel / 5) * 100}%`;
   const skillComments = [
-    "Padawan learner (Level 1)",
-    "Youngling (Level 2)",
-    "Jedi Knight (Level 3)",
-    "Jedi Master (Level 4)",
-    "Yoda level (Level 5)",
+    'Padawan learner (Level 1)',
+    'Youngling (Level 2)',
+    'Jedi Knight (Level 3)',
+    'Jedi Master (Level 4)',
+    'Yoda level (Level 5)',
   ];
 
   const formattedContent = (
@@ -49,7 +49,7 @@ const SkillItem = ({
     <motion.div
       ref={ref}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
       variants={variants}
     >
       <Tooltip content={formattedContent} position="top">

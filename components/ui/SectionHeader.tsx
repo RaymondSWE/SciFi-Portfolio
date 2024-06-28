@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { ReactElement } from "react";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ReactElement } from 'react';
 
 interface SectionHeaderProps {
   title: string;
@@ -9,7 +9,12 @@ interface SectionHeaderProps {
   className?: string;
 }
 
-const SectionHeader = ({ title, subtitle, Icon, className = "", }: SectionHeaderProps) => {
+const SectionHeader = ({
+  title,
+  subtitle,
+  Icon,
+  className = '',
+}: SectionHeaderProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -23,7 +28,7 @@ const SectionHeader = ({ title, subtitle, Icon, className = "", }: SectionHeader
       <div className="m-4 flex justify-center items-center ">
         {React.cloneElement(Icon, {
           className:
-            "text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse",
+            'text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse',
         })}
         <p className="text-lg md:text-2xl roboto-condensed text-gray-400">
           {subtitle}

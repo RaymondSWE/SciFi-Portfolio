@@ -1,21 +1,21 @@
-"use client";
-import { ServicesApps, ServicesData } from "@/data/Services";
-import React from "react";
-import Image from "next/image";
-import SectionHeader from "../ui/SectionHeader";
-import { ShoppingCartIcon } from "@heroicons/react/24/solid";
-import ServiceItem from "../ui/ServiceItem";
-import ServiceIconItem from "../ui/ServiceIconItem";
+'use client';
+import { ServicesApps, ServicesData } from '@/data/Services';
+import React from 'react';
+import Image from 'next/image';
+import SectionHeader from '../ui/SectionHeader';
+import { ShoppingCartIcon } from '@heroicons/react/24/solid';
+import ServiceItem from '../ui/ServiceItem';
+import ServiceIconItem from '../ui/ServiceIconItem';
 import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
   slideInWithDelay,
-} from "@/utils/motion";
-import { motion, Variants } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import curve1 from "@/public/curve-1.svg";
-import curve2 from "@/public/curve-2.svg";
+} from '@/utils/motion';
+import { motion, Variants } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import curve1 from '@/public/curve-1.svg';
+import curve2 from '@/public/curve-2.svg';
 
 const Services = () => {
   const totalCount = ServicesApps.length;
@@ -28,7 +28,7 @@ const Services = () => {
           title="What I Offer"
           subtitle="My Expertise in Development and Design"
           Icon={<ShoppingCartIcon />}
-        />{" "}
+        />{' '}
         <div className="container mx-auto flex flex-col items-center lg:flex-row">
           <div className="max-w-[25rem] lg:w-1/2">
             <ul className="max-w-[22rem]">
@@ -49,7 +49,7 @@ const Services = () => {
               className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto"
               ref={ref}
               initial="hidden"
-              animate={inView ? "visible" : "hidden"}
+              animate={inView ? 'visible' : 'hidden'}
               variants={slideInFromLeft(0.5)}
             >
               Discover my array of provided services, crafted with precision and

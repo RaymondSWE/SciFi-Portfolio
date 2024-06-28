@@ -1,21 +1,35 @@
-"use client";
-import Typewriter from "typewriter-effect";
-import React from "react";
-import { motion } from "framer-motion";
+'use client';
+import Typewriter from 'typewriter-effect';
+import React from 'react';
+import { motion } from 'framer-motion';
 import {
   slideInFromTop,
   slideInFromRight,
   slideInFromLeft,
-} from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
-import { TextGenerateEffect } from "../ui/TextGenerateEffect";
+} from '@/utils/motion';
+import { SparklesIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
+import { TextGenerateEffect } from '../ui/TextGenerateEffect';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+
+const socialLinks = [
+  {
+    href: 'https://github.com/RaymondSWE',
+    label: 'GitHub',
+    icon: <FaGithub />,
+  },
+  {
+    href: 'https://linkedin.com/in/raman-mohammed',
+    label: 'LinkedIn',
+    icon: <FaLinkedinIn />,
+  },
+];
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center h-auto md:min-h-[70vh] lg:min-h-[80vh] py-2 px-2 mt-4 md:mt-0 text-white"
+      className="flex items-center h-auto md:min-h-[70vh] lg:min-h-[80vh] py-2 px-2 mt-8 md:mt-0 text-white"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div
@@ -36,8 +50,8 @@ const Hero = () => {
                     strings: [
                       "Hey there, I'm Raman Mohammed",
                       "I'm a Full-Stack developer",
-                      "Based in Gothenburg, Sweden",
-                      "You can contact me via Linkedin or Email",
+                      'Based in Gothenburg, Sweden',
+                      'You can contact me via Linkedin or Email',
                     ],
                     delay: 80,
                     deleteSpeed: 25,
@@ -53,10 +67,10 @@ const Hero = () => {
             variants={slideInFromLeft(0.5)}
             className="md:text-6xl text-2xl font-bold leading-tight"
           >
-            Building{" "}
+            Building{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               cool stuff
-            </span>{" "}
+            </span>{' '}
             with code
           </motion.h2>
           <TextGenerateEffect
@@ -67,12 +81,27 @@ const Hero = () => {
             reliable distributed systems and I'm always eager to learn something new. Right now, I am trying to learn and build projects within embedded systems and IoT.
             "
           />
-          <a
-            href="#projects"
-            className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-3d-primary z-20"
-          >
-            Explore My Projects
-          </a>
+          <div className="flex flex-col md:flex-row items-center mt-4  z-20">
+            <a
+              href="#projects"
+              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-3d-primary"
+            >
+              Explore My Projects
+            </a>
+            <div className="flex gap-4 md:gap-6 justify-center md:justify-end items-center mt-6 md:mt-0 md:ml-6">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-white text-2xl md:text-4xl hover:scale-110 transition-transform"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
         </motion.div>
         <motion.div
           initial="hidden"

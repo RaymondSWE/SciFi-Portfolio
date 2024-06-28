@@ -1,6 +1,6 @@
-import React from "react";
-import StatisticCard from "../ui/StatisticCard";
-import { statisticsData } from "../../data/Statistic";
+import React from 'react';
+import StatisticCard from '../ui/StatisticCard';
+import { statisticsData } from '../../data/Statistic';
 
 const Statistic = () => {
   return (

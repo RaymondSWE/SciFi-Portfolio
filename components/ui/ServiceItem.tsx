@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import { slideInFromTop, slideInFromLeft } from "@/utils/motion";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from 'react';
+import Image from 'next/image';
+import { slideInFromTop, slideInFromLeft } from '@/utils/motion';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface ServiceData {
   id: number;
@@ -18,7 +18,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
       className="flex flex-col items-center mb-10 md:mb-14 bg-[rgba(33,149,243,0.07)] rounded-lg shadow-lg shadow-blue-700/20 p-4"
       ref={ref}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
+      animate={inView ? 'visible' : 'hidden'}
       variants={slideInFromTop(0.2)}
     >
       <li key={id} className="mb-3">
