@@ -41,12 +41,8 @@ const Navbar = () => {
         fill
         className="z-[-10] object-cover opacity-70"
       />
-      <div
-        className={`fixed top-16 left-0 w-full flex justify-center px-8 z-50 transition-transform duration-300 ${
-          showNavbar ? 'translate-y-0' : '-translate-y-full'
-        } ${'md:-translate-y-20 sm:-translate-y-16'}`}
-      >
-        <div className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-xl rounded-full text-gray-200 px-2 py-3 space-x-2 md:space-x-4 z-50 md:max-w-xl">
+      <div className={`fixed w-full flex justify-center px-8 z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full -translate-y-20'}`}>
+      <div className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-xl rounded-full text-gray-200 px-2 py-3 space-x-2 md:space-x-4 z-50 md:max-w-xl">
           {navLinks.map((link) => (
             <Link
               key={link.href}
