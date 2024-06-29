@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <>
       <footer className="w-full py-12 backdrop-blur-sm border-t border-[#645AFF] z-50">
@@ -14,8 +16,11 @@ const Footer = () => {
                 Raman Mohammed
               </h2>
               <p className="text-gray-400 italic">
-                Fullstack Developer - Crafting Software solutions
+                Fullstack Developer
               </p>
+              <p className="text-gray-400 text-sm mt-4">
+              © {currentYear} All rights reserved.
+            </p>
             </div>
             <address className="flex justify-center space-x-8 pb-4">
               <a
