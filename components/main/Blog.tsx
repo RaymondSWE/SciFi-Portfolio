@@ -1,6 +1,5 @@
 import React from 'react';
 import { InfiniteMovingCards } from '../ui/infiniteMovingCards';
-import { blogData } from '@/data/Blog';
 import SectionHeader from '../ui/SectionHeader';
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
 import { useAllBlogData } from '@/hooks/useAllBlogData';
