@@ -3,8 +3,11 @@ import { InfiniteMovingCards } from '../ui/infiniteMovingCards';
 import { blogData } from '@/data/Blog';
 import SectionHeader from '../ui/SectionHeader';
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
+import { useAllBlogData } from '@/hooks/useAllBlogData';
 
 const Blog = () => {
+  const { blogs, loading, error } = useAllBlogData();
+
   return (
     <div>
       <SectionHeader
@@ -13,7 +16,7 @@ const Blog = () => {
         Icon={<PencilSquareIcon />}
       />
       <div className="flex justify-center items-center w-full h-full z-40">
-        <InfiniteMovingCards items={blogData} speed="fast" />
+        <InfiniteMovingCards items={blogs} speed="normal" />
       </div>
     </div>
   );

@@ -11,6 +11,9 @@ interface BlogData {
   paragraphOne?: string;
   paragraphTwo?: string;
   paragraphThree?: string;
+  paragraphFour?: string;
+  paragraphFive?: string;
+
 }
 
 export const useBlogData = (blogId: number) => {

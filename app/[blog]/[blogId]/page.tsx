@@ -28,7 +28,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
     <TracingBeam>
       <div className="flex flex-col items-center justify-center py-10 px-5">
         <div className="mt-12 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-center Welcome-text relative z-20 mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center Welcome-text  z-20 mb-6">
             {blog.title}
           </h1>
           <div className="w-[40rem] h-10 relative">
@@ -42,20 +42,26 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
           </div>
         </div>
         <article className="relative bg-[#1a1a2e]/60 backdrop-blur-md rounded-lg shadow-lg p-6 text-white max-w-4xl mx-auto">
-          <div className="relative z-10 text-base leading-7">
+          <div className="z-10 leading-7">
             <div className="flex justify-between mb-4 text-sm text-gray-400">
               <span>{blog.date}</span>
               <span>{blog.author}</span>
             </div>
-            {blog.paragraphOne && <p className="mb-4">{blog.paragraphOne}</p>}
+            {blog.paragraphOne && <p className="mb-4 font-semibold">{blog.paragraphOne}</p>}
             {blog.subtitle && (
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold Welcome-text relative mb-2">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold Welcome-text  mb-2">
                 {blog.subtitle}
               </h2>
             )}
             {blog.paragraphTwo && <p className="mb-4">{blog.paragraphTwo}</p>}
             {blog.paragraphThree && (
               <p className="mb-4">{blog.paragraphThree}</p>
+            )}
+            {blog.paragraphFour && (
+              <p className="mb-4">{blog.paragraphFour}</p>
+            )}
+            {blog.paragraphFive && (
+              <p className="mb-4">{blog.paragraphFive}</p>
             )}
             <div dangerouslySetInnerHTML={{ __html: blog.contentHtml }} />
           </div>
