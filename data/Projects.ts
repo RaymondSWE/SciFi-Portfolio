@@ -223,7 +223,7 @@ export const projectsData = [
     src: '/project-img/massageapp.png',
     title: "Bally's Massage Appointments System",
     description:
-      "Developed an appointment management system for Bally's employees, providing a system for their daily massage appointments.",
+      "Developed an web appointment management system for Bally's employees, providing a system for their daily massage appointments.",
     sourceUrl: 'https://massage.silverspin.com/',
     youtubeUrl: null,
     githubUrl: null,
@@ -261,7 +261,7 @@ export const projectsData = [
     src: '/project-img/blackjack.png',
     title: 'Blackjack Game',
     description:
-      'A desktop version of the Blackjack card game, developed to transform the game rules into logic and implement it in Java.',
+      'A desktop game of the Blackjack card game, developed to transform the game rules into logic and implement it in Java.',
     sourceUrl: null,
     youtubeUrl: null,
     githubUrl: 'https://github.com/RaymondSWE/Blackjack-game',
