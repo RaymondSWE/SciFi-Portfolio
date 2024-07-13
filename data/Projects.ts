@@ -4,7 +4,7 @@ export const projectsData = [
     src: '/project-img/csgo.png',
     title: 'CSFairTrade',
     description:
-      'A shopping & trading platform offering a user-friendly environment for trading Counter-Strike: Global Offensive and Counter-Strike 2 skins.',
+      'A web application for shopping & trading platform offering a user-friendly environment for trading Counter-Strike: Global Offensive and Counter-Strike 2 skins.',
     sourceUrl: 'https://csfairtrade-frontend.vercel.app/',
     youtubeUrl: 'https://www.youtube.com/watch?v=fYdAn0O2g0Q',
     githubUrl: 'https://github.com/RaymondSWE/CSFairtrade',
@@ -52,7 +52,7 @@ export const projectsData = [
     src: '/project-img/codemate.png',
     title: 'CodeMate',
     description:
-      'A platform to enhance collaboration among tech students, allowing them to share ideas, develop projects, and network.',
+      'A web application to enhance collaboration among tech students, allowing them to share ideas, develop projects, and network.',
     sourceUrl: 'https://codecomrades.vercel.app/',
     youtubeUrl: null,
     githubUrl: 'https://github.com/RaymondSWE/codecomrades',
@@ -99,7 +99,7 @@ export const projectsData = [
     src: '/project-img/snipeskins.jpg',
     title: 'SnipeSkins',
     description:
-      'A trading platform designed for Rust in-game skins. SnipeSkins aims to provide user friendly experience for trading digital assets.',
+      'A web application for Rust virtualization skins, offering seamless cryptocurrency payments. SnipeSkins delivers a user-friendly platform for traing digital assets from the game Rust.',
     sourceUrl: 'https://snipeskins.com/',
     youtubeUrl: null,
     githubUrl: null,
@@ -145,7 +145,7 @@ export const projectsData = [
     src: '/project-img/queue-student.png',
     title: 'Student Queue System',
     description:
-      'Developed an Event-driven queue system for students and supervisors with ZeroMQ, Spring Boot, and Python as a school project.',
+      'Developed a desktop application for students and supervisors using ZeroMQ, Spring Boot, and Python. Praised by my professor for its solid architecture and clean code.',
     sourceUrl: null,
     githubUrl:
       'https://github.com/RaymondSWE/Queue-system---Event-Driven-Architecture',
@@ -196,6 +196,13 @@ export const projectsData = [
       'Three.JS',
       'Next.JS',
       'Typescript',
+      'Aceternity UI',
+      'Vercel',
+      'Vercel Analytics',
+      'Github',
+      'Serverless Functions',
+      'Dependabot',
+      
     ],
     features: [
       'Utilised Three.JS for a 3D Star Wars universe, allowing users to navigate through projects as if traveling through space.',
