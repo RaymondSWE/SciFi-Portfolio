@@ -316,7 +316,7 @@ export const projectsData = [
     src: '/project-img/cluster.png',
     title: 'Kubernetes Scaling Analysis: A Performance and Cost Comparison',
     description:
-      'A comprehensive analysis of vertical and horizontal scaling strategies in cloud-native applications within Kubernetes environments, using metrics and Service Level Objectives (SLOs) to understand impacts on performance and cost-effectiveness under various load conditions.',
+      'A analysis of scaling strategies in Kubernetes environments, using metrics and SLOs to evaluate performance and cost-effectiveness under various load conditions.',
     sourceUrl: null,
     youtubeUrl: null,
     githubUrl: 'https://github.com/RaymondSWE/Thesis',
