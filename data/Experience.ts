@@ -57,10 +57,10 @@ export const ExperienceData = [
   {
     id: 7,
     type: 'education',
-    date: 'August 2021 - May 2024',
-    title: "Bachelor's in Computer Science at University Skövde",
-    location: 'Skövde, Sweden',
-    description: 'Specializing in System Development.',
+    date: 'August 2021 - May 2026',
+    title: "Master of Science (M.Sc.) in Computer Science at University of Gothenburg",
+    location: 'Gothenburg, Sweden',
+    description: 'Specializing in software engineering and program analysis',
   },
   {
     id: 8,
