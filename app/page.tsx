@@ -24,7 +24,7 @@ export default function Home() {
         <Projects />
         <Timeline />
         <Certification />
-        <Blog />
+        {/* <Blog /> */}
         <ContactMe />
         <Footer />
       </div>
