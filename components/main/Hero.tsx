@@ -78,7 +78,7 @@ const Hero = () => {
             Bachelor's in Computer Science specializing in System
             Development, I specialize in Java, React.js, TypeScript, Containerisation,
             MySQL, Azure, and more. I love building scalable and
-            reliable distributed systems and I'm always eager to learn something new. Right now, I am trying to learn and build projects within embedded systems. I am eager to contribute with my skills and grow with a team. 
+            reliable distributed systems and I'm always eager to learn something new. I am eager to contribute with my skills and grow with a team. 
             "
           />
           <div className="flex flex-col md:flex-row items-center mt-4  z-20">
