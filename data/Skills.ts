@@ -132,7 +132,7 @@ export const SkillsData = [
     Image: '/logo/MySQL.svg',
     width: 70,
     height: 70,
-    skillLevel: 4,
+    skillLevel: 3,
   },
   {
     id: 17,
@@ -140,12 +140,20 @@ export const SkillsData = [
     Image: '/logo/mongodb.svg',
     width: 70,
     height: 70,
-    skillLevel: 4,
+    skillLevel: 3,
+  },
+  {
+    id: 18,
+    skillName: 'PostgreSQL',
+    Image: '/logo/Postgresql.svg',
+    width: 70,
+    height: 70,
+    skillLevel: 3,
   },
 
   // DevOps and Cloud
   {
-    id: 18,
+    id: 19,
     skillName: 'Docker',
     Image: '/logo/Docker.svg',
     width: 80,
@@ -153,7 +161,7 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 19,
+    id: 20,
     skillName: 'Kubernetes',
     Image: '/logo/kubernetes.svg',
     width: 70,
@@ -163,7 +171,7 @@ export const SkillsData = [
 
   // Operating Systems
   {
-    id: 20,
+    id: 21,
     skillName: 'Ubuntu',
     Image: '/logo/ubuntu.png',
     width: 70,
@@ -171,7 +179,7 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 21,
+    id: 22,
     skillName: 'Linux',
     Image: '/logo/linux.png',
     width: 70,
@@ -179,7 +187,7 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 22,
+    id: 23,
     skillName: 'Postman',
     Image: '/logo/postman.png',
     width: 70,
@@ -187,7 +195,7 @@ export const SkillsData = [
     skillLevel: 4,
   },
   {
-    id: 23,
+    id: 24,
     skillName: 'Jest',
     Image: '/logo/Jest.svg',
     width: 70,
@@ -197,7 +205,7 @@ export const SkillsData = [
 
   // Markup and Data Formats
   {
-    id: 24,
+    id: 25,
     skillName: 'JSON',
     Image: '/logo/JSON.svg',
     width: 70,
@@ -205,7 +213,7 @@ export const SkillsData = [
     skillLevel: 5,
   },
   {
-    id: 25,
+    id: 26,
     skillName: 'Markdown',
     Image: '/logo/text-x-markdown.svg',
     width: 70,
