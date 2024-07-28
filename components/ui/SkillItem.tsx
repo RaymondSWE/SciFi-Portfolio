@@ -41,7 +41,7 @@ const SkillItem = ({
 
   const formattedContent = (
     <span>
-      <strong>{skillName}:</strong> {skillComments[skillLevel - 1]}
+      <strong>{skillName}</strong>
     </span>
   );
 
@@ -61,12 +61,12 @@ const SkillItem = ({
           className="object-contain h-[70px] w-[80px]"
         />
       </Tooltip>
-      <div className="w-[80px] h-[5px] bg-[#e59cff61] mt-4 rounded-full">
+      {/* <div className="w-[80px] h-[5px] bg-[#e59cff61] mt-4 rounded-full">
         <div
           className="h-full bg-[#ba9cff] rounded-full"
           style={{ width: progressBarWidth }}
         />
-      </div>
+      </div> */}
     </motion.div>
   );
 };
