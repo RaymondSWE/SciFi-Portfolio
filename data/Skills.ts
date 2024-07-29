@@ -220,4 +220,12 @@ export const SkillsData = [
     height: 70,
     skillLevel: 5,
   },
+  {
+    id: 27,
+    skillName: 'DigitalOcean',
+    Image: '/logo/digitalocean-icon.svg',
+    width: 70,
+    height: 70,
+    skillLevel: 5,
+  },
 ];

@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
-import Tooltip from './Tooltip';
+import { AnimatedTooltip } from './AnimatedTooltip';
 
 interface SkillItemProps {
   src: string;
@@ -30,7 +30,6 @@ const SkillItem = ({
     visible: { opacity: 1, transition: { delay: index * 0.2 } },
   };
 
-  const progressBarWidth = `${(skillLevel / 5) * 100}%`;
   const skillComments = [
     'Padawan learner (Level 1)',
     'Youngling (Level 2)',
@@ -39,11 +38,13 @@ const SkillItem = ({
     'Yoda level (Level 5)',
   ];
 
-  const formattedContent = (
-    <span>
-      <strong>{skillName}</strong>
-    </span>
-  );
+  const items = [
+    {
+      id: index,
+      name: skillName,
+      designation: skillComments[skillLevel - 1],
+    },
+  ];
 
   return (
     <motion.div
@@ -52,21 +53,16 @@ const SkillItem = ({
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
     >
-      <Tooltip content={formattedContent} position="top">
-        <Image
-          src={src}
-          width={width}
-          height={height}
-          alt={skillName}
-          className="object-contain h-[70px] w-[80px]"
-        />
-      </Tooltip>
-      {/* <div className="w-[80px] h-[5px] bg-[#e59cff61] mt-4 rounded-full">
-        <div
-          className="h-full bg-[#ba9cff] rounded-full"
-          style={{ width: progressBarWidth }}
-        />
-      </div> */}
+      <AnimatedTooltip items={items}>
+        <div>
+          <Image
+            src={src}
+            width={width}
+            height={height}
+            alt={skillName}
+          />
+        </div>
+      </AnimatedTooltip>
     </motion.div>
   );
 };
