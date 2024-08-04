@@ -220,6 +220,8 @@ export const SkillsData = [
     height: 70,
     skillLevel: 5,
   },
+
+  // Cloud Providers
   {
     id: 27,
     skillName: 'DigitalOcean',
