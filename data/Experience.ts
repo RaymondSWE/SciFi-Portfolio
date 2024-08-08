@@ -60,15 +60,7 @@ export const ExperienceData = [
     date: 'August 2021 - May 2026',
     title: "Master of Science (M.Sc.) in Computer Science at University of Gothenburg",
     location: 'Gothenburg, Sweden',
-    description: 'Specializing in software engineering and program analysis',
+    description: 'Specializing in software engineering. Extra Courses: Basic Marketing, Accounting basics and techniques, Systems and organization theory',
   },
-  {
-    id: 8,
-    type: 'education',
-    date: 'August 2020 - Jan 2021',
-    title: 'Economics Studies at University Borås',
-    location: 'Borås, Sweden',
-    description:
-      'Studied Economics for one term before deciding to pursue other interests.',
-  },
+
 ];
