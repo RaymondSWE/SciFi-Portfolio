@@ -44,7 +44,7 @@ const ProjectCard = ({
   return (
     <>
       <motion.div
-        className="z-[20] flex flex-col overflow-x-hidden rounded-lg shadow-lg shadow-blue-700/20 bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
+        className="z-[20] flex flex-col overflow-x-hidden rounded-lg bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}

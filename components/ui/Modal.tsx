@@ -63,7 +63,7 @@ const Modal = ({
           </button>
         </div>
         <div>
-          <h1 className="md:text-2xl text-lg font-bold m-6 text-center Welcome-text">
+          <h1 className="md:text-2xl text-lg font-bold m-2 text-center Welcome-text">
             {title}
           </h1>
           <p className="text-gray-300 text-center text-sm sm:text-base mb-4 italic font-semibold">
