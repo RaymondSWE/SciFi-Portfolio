@@ -37,7 +37,7 @@ export const ExperienceData = [
     date: 'August 2021 - May 2024',
     title: "Bachelor of Science (B.Sc.) in Computer Science at University of Skövde",
     location: 'Skövde, Sweden',
-    description: 'Specializing in software engineering. Extra Courses: Basic Marketing, Accounting basics and techniques, Systems and organization theory',
+    description: 'Specializing in software engineering. Extra Courses: Basic Marketing, Accounting basics and techniques, Systems and organization theory. Thesis was about scaling strategies and deployment in cloud-native applications, an analysis of scaling strategies.',
   },
   {
     id: 6,
