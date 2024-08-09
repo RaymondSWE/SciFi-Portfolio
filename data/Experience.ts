@@ -49,19 +49,19 @@ export const ExperienceData = [
   },
   {
     id: 7,
-    type: 'education',
-    date: 'May 2016 - June 2019',
-    title: 'High School Diploma at Gymnasieakademin',
-    location: 'Gothenburg, Sweden',
-    description: 'Natural Science Program',
-  },
-  {
-    id: 8,
     type: 'work',
     date: 'August 2017 - June 2018',
     title: 'Assembler at Volvo Cars',
     location: 'Gothenburg, Sweden',
     description: 'Assembled vehicle parts, adhering to quality standards and production deadlines.',
+  },
+  {
+    id: 8,
+    type: 'education',
+    date: 'May 2016 - June 2019',
+    title: 'High School Diploma at Gymnasieakademin',
+    location: 'Gothenburg, Sweden',
+    description: 'Natural Science Program',
   },
   {
     id: 9,
