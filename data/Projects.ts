@@ -184,10 +184,10 @@ export const projectsData = [
     src: '/project-img/starwars-portfolio.png',
     title: 'Web portfolio',
     description:
-      'A Star Wars-themed web portfolio showcasing my skills, experiences, and projects.',
+      'A space-themed web portfolio showcasing my skills, experiences, and projects.',
     sourceUrl: 'https://www.ramanmohammed.com/',
     youtubeUrl: null,
-    githubUrl: 'https://github.com/RaymondSWE/Raymond-Portfolio-V2',
+    githubUrl: 'https://github.com/RaymondSWE/SciFi-Portfolio',
     startDate: '2024-02-15',
     endDate: '2024-03-09',
     technologyStack: [
@@ -205,7 +205,7 @@ export const projectsData = [
       
     ],
     features: [
-      'Utilised Three.JS for a 3D Star Wars universe, allowing users to navigate through projects as if traveling through space.',
+      'Utilised Three.JS for a 3D space-themed universe, allowing users to navigate through projects as if traveling through space.',
       'Dynamic content loading with Framer Motion for smooth, visually captivating transitions between portfolio sections.',
       'Integrated Vercel analytics for tracking visitor engagement.',
     ],
