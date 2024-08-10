@@ -1,11 +1,11 @@
-# Star Wars Themed Portfolio
+# Sci-fi Themed Portfolio
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/RaymondSWE/StarWars-Portfolio/actions)
 [![GitHub stars](https://img.shields.io/github/stars/RaymondSWE/StarWars-Portfolio)](https://github.com/RaymondSWE/StarWars-Portfolio/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/RaymondSWE/StarWars-Portfolio)](https://github.com/RaymondSWE/StarWars-Portfolio/network)
 [![GitHub license](https://img.shields.io/github/license/RaymondSWE/StarWars-Portfolio)](https://github.com/RaymondSWE/StarWars-Portfolio/blob/main/LICENSE)
 
-Welcome to my **Star Wars Themed Personal Portfolio**! This project showcases my skills, projects, services, certifications, and more, all in a visually engaging, interactive, and mobile-friendly manner.
+Welcome to my **Sci-fi Themed Personal Portfolio**! This project showcases my skills, projects, services, certifications, and more, all in a visually engaging, interactive, and mobile-friendly manner.
 
 ## 🚀 Demo
 
