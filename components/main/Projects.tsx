@@ -7,16 +7,19 @@ import SectionHeader from '../ui/SectionHeader';
 
 const Projects = () => {
   return (
-    <div
+    <section
       className="flex flex-col items-center justify-center py-20 space-y-8"
       id="projects"
+      aria-labelledby="projects-section-header"
     >
       <SectionHeader
         title="My Work Portfolio"
         subtitle="Showcasing My Projects and Contributions"
         Icon={<GlobeAltIcon />}
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12"
+      aria-label="Project list"
+      >
         {projectsData.map((project) => (
           <ProjectCard
             id={project.id}
@@ -36,7 +39,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
