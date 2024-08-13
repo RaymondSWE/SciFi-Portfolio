@@ -46,14 +46,17 @@ const ProjectCard = ({
   return (
     <>
       <motion.div
+        data-attribute-id={id}
         className="z-[20] flex flex-col overflow-x-hidden rounded-lg bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={slideInFromTop(0.5)}
+        aria-labelledby={`project-title-${id}`}
+        tabIndex={0}
       >
         <div className="w-full h-48 relative">
-          <Image src={src} alt={title} fill className="object-cover" />
+          <Image src={src} alt={`Image of ${title}`} fill className="object-cover" />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />
           {endDate === null && (
             <div className="absolute top-2 left-2 bg-gradient-to-r from-purple-500 to-indigo-500 shadow-md text-white text-xs font-bold py-1 px-2 rounded">
@@ -63,7 +66,10 @@ const ProjectCard = ({
         </div>
 
         <div className="flex-grow p-4">
-          <h1 className="text-xl font-bold text-center Welcome-text">
+          <h1 
+          className="text-xl font-bold text-center Welcome-text"
+          id={`project-title-${id}`}
+          >
             {title}
           </h1>
           <p className="mt-2 text-sm text-gray-300 italic text-center">
@@ -78,7 +84,7 @@ const ProjectCard = ({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label={`View ${title} on GitHub`}
               className="text-white text-xl"
             >
               <FaGithub />
@@ -87,6 +93,7 @@ const ProjectCard = ({
             <FaGithub
               className="text-white text-xl opacity-50 cursor-not-allowed"
               onClick={() => handleMissingLink('Github')}
+              aria-hidden="true"
             />
           )}
 
@@ -95,7 +102,7 @@ const ProjectCard = ({
               href={sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Source Link"
+              aria-label={`View ${title} live demo`}
               className="text-white text-xl"
             >
               <FaExternalLinkAlt />
@@ -104,6 +111,7 @@ const ProjectCard = ({
             <FaExternalLinkAlt
               className="text-white text-xl opacity-50 cursor-not-allowed"
               onClick={() => handleMissingLink('live demo')}
+              aria-hidden="true"
             />
           )}
 
@@ -112,7 +120,7 @@ const ProjectCard = ({
               href={youtubeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="YouTube"
+              aria-label={`Watch ${title} on YouTube`}
               className="text-white text-2xl "
             >
               <FaYoutube />
@@ -121,6 +129,7 @@ const ProjectCard = ({
             <FaYoutube
               className="text-white text-xl opacity-50 cursor-not-allowed"
               onClick={() => handleMissingLink('Youtube')}
+              aria-hidden="true"
             />
           )}
         </div>
@@ -128,6 +137,7 @@ const ProjectCard = ({
         <button
           onClick={() => setModalOpen(true)}
           className="text-center text-sm text-white py-2 button-primary transition-colors rounded-b-lg"
+          aria-label={`View more details about ${title}`}
         >
           View Details
         </button>
