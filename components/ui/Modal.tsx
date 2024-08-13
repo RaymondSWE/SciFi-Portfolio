@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface ModalProps {
+  id: number;
   isOpen: boolean;
   onClose: () => void;
   startDate: string;

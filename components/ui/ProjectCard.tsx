@@ -1,12 +1,14 @@
 'use client';
+
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaYoutube } from 'react-icons/fa';
 import Modal from './Modal';
 import { motion } from 'framer-motion';
-import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
+import { slideInFromTop } from '@/utils/motion';
 import { useInView } from 'react-intersection-observer';
 import { handleMissingLink } from '@/utils/Toaster';
+
 interface ProjectCardProps {
   id: number;
   src: string;
@@ -135,6 +137,7 @@ const ProjectCard = ({
       <Modal
         isOpen={isModalOpen}
         onClose={() => setModalOpen(false)}
+        id={id}
         startDate={startDate}
         endDate={endDate}
         technologyStack={technologyStack}
@@ -148,4 +151,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
+export default memo(ProjectCard);

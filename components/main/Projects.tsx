@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { memo } from 'react';
 import ProjectCard from '../ui/ProjectCard';
 import { projectsData } from '@/data/Projects';
 import { GlobeAltIcon } from '@heroicons/react/24/solid';
@@ -40,4 +40,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default memo(Projects);
