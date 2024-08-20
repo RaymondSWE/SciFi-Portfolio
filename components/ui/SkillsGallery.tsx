@@ -3,7 +3,7 @@ import SkillItem from './SkillItem';
 
 interface Skill {
   id: number;
-  Image: string;
+  image: string;
   width: number;
   height: number;
   skillName: string;
@@ -22,7 +22,7 @@ const SkillsGallery = ({ skillsData }: SkillsGalleryProps) => {
         <SkillItem
           key={skill.id}
           id={skill.id}
-          src={skill.Image}
+          src={skill.image}
           width={skill.width}
           height={skill.height}
           skillName={skill.skillName}

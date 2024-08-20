@@ -42,7 +42,7 @@ const SkillItem = ({
     {
       id: id,
       name: skillName,
-      designation: skillComments[skillLevel - 1],
+      designation: skillComments[skillLevel - 1] || 'Unknown Level',
     },
   ];
 
