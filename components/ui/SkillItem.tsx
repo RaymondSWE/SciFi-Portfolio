@@ -7,19 +7,19 @@ import Image from 'next/image';
 import { AnimatedTooltip } from './AnimatedTooltip';
 
 interface SkillItemProps {
+  id: number;
   src: string;
   width: number;
   height: number;
-  index: number;
   skillName: string;
   skillLevel: number;
 }
 
 const SkillItem = ({
+  id,
   src,
   width,
   height,
-  index,
   skillName,
   skillLevel,
 }: SkillItemProps) => {
@@ -27,7 +27,7 @@ const SkillItem = ({
 
   const variants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: index * 0.2 } },
+    visible: { opacity: 1, transition: { delay: id * 0.2 } },
   };
 
   const skillComments = [
@@ -40,7 +40,7 @@ const SkillItem = ({
 
   const items = [
     {
-      id: index,
+      id: id,
       name: skillName,
       designation: skillComments[skillLevel - 1],
     },

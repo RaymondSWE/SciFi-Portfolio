@@ -21,10 +21,10 @@ const SkillsGallery = ({ skillsData }: SkillsGalleryProps) => {
       {skillsData.map((skill) => (
         <SkillItem
           key={skill.id}
+          id={skill.id}
           src={skill.Image}
           width={skill.width}
           height={skill.height}
-          index={skill.id}
           skillName={skill.skillName}
           skillLevel={skill.skillLevel}
         />
