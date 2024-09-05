@@ -3,7 +3,7 @@ export const ExperienceData = [
     id: 1,
     type: 'education',
     date: 'August 2024 - May 2026',
-    title: "Master of Science (M.Sc.) in Computer Science at University of Gothenburg",
+    title: "Master of Science (M.Sc.) in Software engineering and technology at Chalmers University of Technology",
     location: 'Gothenburg, Sweden',
     description: 'Specializing in software engineering.',
   },
