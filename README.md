@@ -30,14 +30,6 @@ People have contacted me asking if they can use this code for their website. Usu
 
 All images used in this project are sourced from [Unsplash](https://unsplash.com), [Adobe Stock](https://stock.adobe.com), or [Pixabay](https://pixabay.com), ensuring compliance with licensing terms.
 
-## 🤝 Contributing
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Submit a pull request.
-
-
 ## 📄 License
 
 This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for details.
