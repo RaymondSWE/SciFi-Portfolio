@@ -153,6 +153,7 @@ const ProjectCard = ({
         technologyStack={technologyStack}
         description={description}
         title={title}
+        imageSrc={src}
         features={features}
         challenges={challenges}
         accomplishments={accomplishments}

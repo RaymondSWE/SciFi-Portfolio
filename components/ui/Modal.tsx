@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface ModalProps {
@@ -9,6 +10,7 @@ interface ModalProps {
   technologyStack: string[];
   description: string;
   title: string;
+  imageSrc?: string;
   features?: string[];
   challenges?: string[];
   accomplishments?: string[];
@@ -41,6 +43,7 @@ const Modal = ({
   technologyStack,
   description,
   title,
+  imageSrc,
   features,
   challenges,
   accomplishments,
@@ -62,6 +65,17 @@ const Modal = ({
           >
             Close
           </button>
+        </div>
+        <div className="flex justify-center">
+          { imageSrc && (
+            <Image
+              src={imageSrc}
+              alt={`Image of ${title}`}
+              width={400}
+              height={400}
+              className="w-full md:w-2/3 h-auto object-cover rounded-lg max-h-64 md:max-h-96"
+            />
+          )}
         </div>
         <div>
           <h1 className="md:text-2xl text-lg font-bold m-2 text-center Welcome-text">

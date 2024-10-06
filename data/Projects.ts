@@ -347,5 +347,33 @@ export const projectsData = [
       'Successfully managed cloud infrastructure and monitored it via Prometheus and Grafana.',
       'Developed and shared a set of Service-Level Objectives (SLOs) for Kubernetes performance benchmarking.',
     ],
-  },
+  }, 
+  {
+    id: 10,
+    src: '/project-img/validation-app.png',
+    title: 'Validation-Focused Web Application',
+    description:
+      'A web app for validating JSON data with client-side (Zod) and server-side (Spring Boot) validation. It features internationalization, reusable forms, and responsive design.',
+    sourceUrl: null,
+    youtubeUrl: "https://www.youtube.com/watch?v=xgjgKXiGaOE",
+    githubUrl: 'https://github.com/RaymondSWE/ServiceJSONData',
+    startDate: '2024-01-10',
+    endDate: '2024-03-15',
+    technologyStack: [
+      'Next.js', 'TypeScript', 'Zod', 'Spring Boot', 'Redux', 'TailwindCSS', 'React Hook Form', 'Docker', 'MySQL'
+    ],
+    features: [
+      'Client and server-side validation.',
+      'Internationalization and responsive design.',
+      'ClerkAuth for secure authentication.',
+      'Reusable forms and global state management with Redux.',
+    ],
+    challenges: [
+      'Integrating seamless validation on both client and server.',
+      'Managing multi-language support.',
+    ],
+    accomplishments: [
+      'Implemented robust validation and built scalable, reusable components.',
+    ],
+  }
 ];
