@@ -13,7 +13,6 @@ interface BlogData {
   paragraphThree?: string;
   paragraphFour?: string;
   paragraphFive?: string;
-
 }
 
 export const useBlogData = (blogId: number) => {

@@ -56,7 +56,12 @@ const ProjectCard = ({
         tabIndex={0}
       >
         <div className="w-full h-48 relative">
-          <Image src={src} alt={`Image of ${title}`} fill className="object-cover" />
+          <Image
+            src={src}
+            alt={`Image of ${title}`}
+            fill
+            className="object-cover"
+          />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />
           {endDate === null && (
             <div className="absolute top-2 left-2 bg-gradient-to-r from-purple-500 to-indigo-500 shadow-md text-white text-xs font-bold py-1 px-2 rounded">
@@ -66,9 +71,9 @@ const ProjectCard = ({
         </div>
 
         <div className="flex-grow p-4">
-          <h1 
-          className="text-xl font-bold text-center Welcome-text"
-          id={`project-title-${id}`}
+          <h1
+            className="text-xl font-bold text-center Welcome-text"
+            id={`project-title-${id}`}
           >
             {title}
           </h1>

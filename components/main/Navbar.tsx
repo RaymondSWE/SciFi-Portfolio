@@ -10,7 +10,6 @@ const navLinks = [
   { href: '#projects', label: 'Projects' },
   { href: '#Timeline', label: 'Experience' },
   { href: '#certifications', label: 'Certifications' },
-
 ];
 
 const Navbar = () => {
@@ -42,16 +41,20 @@ const Navbar = () => {
         fill
         className="z-[-10] object-cover "
       />
-      <div         className={`fixed w-full flex justify-center px-8 z-50 transition-transform duration-300 ${
+      <div
+        className={`fixed w-full flex justify-center px-8 z-50 transition-transform duration-300 ${
           showNavbar ? 'translate-y-0' : '-translate-y-80'
-        }`}>
-      <div className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-sm rounded-3xl px-4 py-3 
-      space-x-2 md:space-x-8 z-50 md:max-w-2xl ">
+        }`}
+      >
+        <div
+          className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-2xl rounded-3xl px-6 py-4 
+      space-x-2 md:space-x-8 z-50 md:max-w-2xl "
+        >
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-white md:text-lg lg:text-xl text-xs transition duration-300 hover:text-gray-300 borderBottom"
+              className="text-white md:text-lg lg:text-xl text-xs transition duration-300 hover:text-gray-400 borderBottom"
             >
               {link.label}
             </Link>

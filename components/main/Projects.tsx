@@ -17,8 +17,9 @@ const Projects = () => {
         subtitle="Showcasing My Projects and Contributions"
         Icon={<GlobeAltIcon />}
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12"
-      aria-label="Project list"
+      <div
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12"
+        aria-label="Project list"
       >
         {projectsData.map((project) => (
           <ProjectCard

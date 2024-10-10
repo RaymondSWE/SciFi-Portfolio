@@ -47,7 +47,9 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
               <span>{blog.date}</span>
               <span>{blog.author}</span>
             </div>
-            {blog.paragraphOne && <p className="mb-4 font-semibold">{blog.paragraphOne}</p>}
+            {blog.paragraphOne && (
+              <p className="mb-4 font-semibold">{blog.paragraphOne}</p>
+            )}
             {blog.subtitle && (
               <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold Welcome-text  mb-2">
                 {blog.subtitle}
@@ -57,12 +59,8 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
             {blog.paragraphThree && (
               <p className="mb-4">{blog.paragraphThree}</p>
             )}
-            {blog.paragraphFour && (
-              <p className="mb-4">{blog.paragraphFour}</p>
-            )}
-            {blog.paragraphFive && (
-              <p className="mb-4">{blog.paragraphFive}</p>
-            )}
+            {blog.paragraphFour && <p className="mb-4">{blog.paragraphFour}</p>}
+            {blog.paragraphFive && <p className="mb-4">{blog.paragraphFive}</p>}
             <div dangerouslySetInnerHTML={{ __html: blog.contentHtml }} />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-30 rounded-lg blur"></div>

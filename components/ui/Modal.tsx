@@ -67,7 +67,7 @@ const Modal = ({
           </button>
         </div>
         <div className="flex justify-center">
-          { imageSrc && (
+          {imageSrc && (
             <Image
               src={imageSrc}
               alt={`Image of ${title}`}
