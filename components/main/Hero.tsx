@@ -110,12 +110,14 @@ const Hero = () => {
           className="w-full md:w-1/2 px-4 mt-6 md:mt-0 flex justify-center items-center"
         >
           <div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-lg shadow-blue-700/60">
-            <Image
-              src="/ramanbild.png"
-              alt="Raman Mohammed Image"
-              fill
-              className=" ml-5 opacity-90 "
-            />
+          <Image
+            src="/ramanbild.webp" 
+            alt="Raman Mohammed Image"
+            fill
+            className=" ml-5 opacity-90"
+            priority 
+            quality={75} 
+          />
           </div>
         </motion.div>
       </div>
