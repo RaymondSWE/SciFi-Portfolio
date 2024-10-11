@@ -91,10 +91,11 @@ const NebulaBackground = () => {
       nebula.position[0] += nebula.speedX;
       nebula.position[1] += nebula.speedY;
 
-      if (meshRefs.current[i]) {
-        meshRefs.current[i].position.set(nebula.position[0], nebula.position[1], nebula.position[2]);
+      const mesh = meshRefs.current[i];
+      if (mesh) {
+        mesh.position.set(nebula.position[0], nebula.position[1], nebula.position[2]);
       }
-
+      
       if (nebula.position[0] > 5 || nebula.position[0] < -5) nebula.speedX *= -1;
       if (nebula.position[1] > 5 || nebula.position[1] < -5) nebula.speedY *= -1;
     });
