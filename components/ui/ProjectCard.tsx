@@ -92,7 +92,7 @@ const ProjectCard = ({
             onClick={(e) => e.stopPropagation()} 
           >
             <FaGithub className="text-xl" />
-            <span className="text-xs mt-0">Github Link</span>
+            <span className="text-xs mt-0">Github</span>
           </a>
         ) : (
           <div
@@ -115,7 +115,7 @@ const ProjectCard = ({
             onClick={(e) => e.stopPropagation()} 
           >
             <FaExternalLinkAlt className="text-xl" />
-            <span className="text-xs mt-0">Demo</span>
+            <span className="text-xs mt-0">Live Demo</span>
           </a>
         ) : (
           <div
@@ -138,7 +138,7 @@ const ProjectCard = ({
             onClick={(e) => e.stopPropagation()} 
           >
             <FaYoutube className="text-xl" />
-            <span className="text-xs mt-0">Youtube Link</span>
+            <span className="text-xs mt-0">Youtube</span>
           </a>
         ) : (
           <div
