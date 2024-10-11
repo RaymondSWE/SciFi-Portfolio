@@ -34,7 +34,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex flex-row w-full py-6 md:py-6">
+    <nav className="flex flex-row w-full py-6">
       <Image
         src="/main.svg"
         alt="background gradient image"
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="text-white md:text-lg lg:text-xl text-xs transition duration-300 hover:text-gray-400 borderBottom"
+              className="text-white md:text-base lg:text-lg text-xs transition duration-300 hover:text-gray-400 borderBottom"
             >
               {link.label}
             </Link>
