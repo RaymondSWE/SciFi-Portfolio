@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center h-auto md:min-h-[70vh] lg:min-h-[80vh] py-2 px-2 mt-8 md:mt-0 text-white"
+      className="flex items-center h-auto md:min-h-[70vh] lg:min-h-[80vh] py-2 px-2 mt-12 text-white"
     >
       <div className="container mx-auto flex flex-wrap items-center">
         <motion.div

@@ -48,13 +48,13 @@ const Navbar = () => {
       >
         <div
           className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-2xl rounded-3xl px-6 py-4 
-      space-x-2 md:space-x-8 z-50 md:max-w-2xl "
+      space-x-2 md:space-x-8 z-50 md:max-w-xl sm:max-w-md sm:space-x-4 "
         >
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-white md:text-base lg:text-lg text-xs transition duration-300 hover:text-gray-400 borderBottom"
+              className="text-white sm:text-base md:text-base lg:text-lg text-xs transition duration-300 hover:text-gray-400 borderBottom"
             >
               {link.label}
             </Link>
