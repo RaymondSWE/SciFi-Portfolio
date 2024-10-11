@@ -18,7 +18,7 @@ const Projects = () => {
         Icon={<GlobeAltIcon />}
       />
       <div
-        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12"
         aria-label="Project list"
       >
         {projectsData.map((project) => (

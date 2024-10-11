@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import React, { useState, memo } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaYoutube } from 'react-icons/fa';
@@ -47,20 +45,23 @@ const ProjectCard = ({
     <>
       <motion.div
         data-attribute-id={id}
-        className="z-[20] flex flex-col overflow-x-hidden rounded-lg bg-[#1A1A2E] backdrop-blur-[12px] border border-[#343a40] max-w-xs mx-auto"
+        className="group z-10 flex flex-col overflow-hidden rounded-lg bg-[#030014] border border-[#24282c] hover:scale-110 hover:shadow-lg cursor-pointer max-w-sm mx-auto relative"
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={slideInFromTop(0.5)}
         aria-labelledby={`project-title-${id}`}
         tabIndex={0}
+        
       >
-        <div className="w-full h-48 relative">
+        
+        <div className="w-full h-48 relative p-2">
           <Image
             src={src}
             alt={`Image of ${title}`}
             fill
-            className="object-cover"
+            className="object-cover rounded-lg z-20"
+            onClick={() => setModalOpen(true)}
           />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />
           {endDate === null && (
@@ -72,7 +73,7 @@ const ProjectCard = ({
 
         <div className="flex-grow p-4">
           <h1
-            className="text-xl font-bold text-center Welcome-text"
+            className="text-lg font-bold text-center text-white"
             id={`project-title-${id}`}
           >
             {title}
@@ -82,24 +83,28 @@ const ProjectCard = ({
           </p>
         </div>
 
-        {/* Icons container */}
-        <div className="flex justify-around items-center p-4 bg-[#14141f]">
-          {githubUrl ? (
+        <div className="z-20 flex justify-around items-center p-4 bg-gradient-to-b from-[#3c087e1f] to-[#3c087e6b] shadow-inner">
+        {githubUrl ? (
             <a
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View ${title} on GitHub`}
-              className="text-white text-xl"
+              className="flex flex-col items-center text-white z-20"
+              onClick={(e) => e.stopPropagation()} 
             >
-              <FaGithub />
+              <FaGithub className="text-2xl" />
+              <span className="text-xs mt-1">Github Link</span>
             </a>
           ) : (
-            <FaGithub
-              className="text-white text-xl opacity-50 cursor-not-allowed"
+            <div
+              className="flex flex-col items-center text-white opacity-50 cursor-not-allowed"
               onClick={() => handleMissingLink('Github')}
               aria-hidden="true"
-            />
+            >
+              <FaGithub className="text-2xl" />
+              <span className="text-xs mt-1">N/A</span>
+            </div>
           )}
 
           {sourceUrl ? (
@@ -108,16 +113,23 @@ const ProjectCard = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View ${title} live demo`}
-              className="text-white text-xl"
+              className="flex flex-col items-center text-white"
+              onClick={(e) => e.stopPropagation()} 
             >
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt className="text-2xl" />
+              <span className="text-xs mt-1">Live Demo</span>
             </a>
           ) : (
-            <FaExternalLinkAlt
-              className="text-white text-xl opacity-50 cursor-not-allowed"
+            <div
+              className="flex flex-col items-center text-white opacity-50 cursor-not-allowed"
               onClick={() => handleMissingLink('live demo')}
               aria-hidden="true"
-            />
+            >
+              <FaExternalLinkAlt className="text-2xl" />
+              <span className="text-xs mt-1">
+                N/A
+              </span>
+            </div>
           )}
 
           {youtubeUrl ? (
@@ -126,28 +138,32 @@ const ProjectCard = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Watch ${title} on YouTube`}
-              className="text-white text-2xl "
+              className="flex flex-col items-center text-white"
+              onClick={(e) => e.stopPropagation()} 
             >
-              <FaYoutube />
+              <FaYoutube className="text-2xl" />
+              <span className="text-xs mt-1">Youtube Link</span>
             </a>
           ) : (
-            <FaYoutube
-              className="text-white text-xl opacity-50 cursor-not-allowed"
+            <div
+              className="flex flex-col items-center text-white opacity-50 cursor-not-allowed"
               onClick={() => handleMissingLink('Youtube')}
               aria-hidden="true"
-            />
+            >
+              <FaYoutube className="text-2xl" />
+              <span className="text-xs mt-1">
+                N/A
+              </span>
+            </div>
           )}
         </div>
 
-        <button
-          onClick={() => setModalOpen(true)}
-          className="text-center text-sm text-white py-2 button-primary transition-colors rounded-b-lg"
-          aria-label={`View more details about ${title}`}
-        >
-          View Details
-        </button>
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="text-white bg-black bg-opacity-50 rounded-lg px-4 py-2">
+        Click the image to view details
+        </span>
+      </div>
       </motion.div>
-
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}
