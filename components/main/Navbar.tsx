@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import StarsCanvas from '@/components/main/StarBackground';
+import { StarIcon, NoSymbolIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
@@ -14,6 +16,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
+  const [showStars, setShowStars] = useState(true); 
   let lastScrollY = 0;
 
   const handleScroll = () => {
@@ -34,34 +37,47 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex flex-row w-full py-6">
-      <Image
-        src="/main.svg"
-        alt="background gradient image"
-        fill
-        className="z-[-10] object-cover "
-      />
-      <div
-        className={`fixed w-full flex justify-center px-8 z-50 transition-transform duration-300 ${
-          showNavbar ? 'translate-y-0' : '-translate-y-80'
-        }`}
-      >
+    <>
+      <nav className="flex flex-row w-full py-6">
+        <Image
+          src="/main.svg"
+          alt="background gradient image"
+          fill
+          className="z-[-10] object-cover "
+        />
         <div
-          className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-2xl rounded-3xl px-6 py-4 
-      space-x-2 md:space-x-8 z-50 md:max-w-xl sm:max-w-md sm:space-x-4 "
+          className={`fixed w-full flex justify-center px-8 z-50 transition-transform duration-300 ${
+            showNavbar ? 'translate-y-0' : '-translate-y-80'
+          }`}
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-white sm:text-base md:text-base lg:text-lg text-xs transition duration-300 hover:text-gray-400 borderBottom"
+          <div
+            className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-2xl rounded-3xl px-6 py-4 
+        space-x-2 md:space-x-8 z-50 md:max-w-2xl sm:max-w-lg  sm:space-x-4 "
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-white sm:text-base md:text-base lg:text-lg text-xs transition duration-300 hover:text-gray-400 borderBottom"
+              >
+                {link.label}
+              </Link>
+            ))}
+             <button
+              onClick={() => setShowStars(!showStars)}
+              className="text-white transition duration-300 hover:text-gray-400 borderBottom"
             >
-              {link.label}
-            </Link>
-          ))}
+              {showStars ? (
+                <StarIcon className="h-4 w-4 sm:w-6 sm:h-6 text-white" aria-hidden="true" /> 
+              ) : (
+                <NoSymbolIcon className="h-4 w-4 sm:w-6 sm:h-6 text-white" aria-hidden="true" /> 
+              )}
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <StarsCanvas show={showStars} />
+    </>
   );
 };
 
