@@ -45,7 +45,7 @@ const ProjectCard = ({
     <>
       <motion.div
         data-attribute-id={id}
-        className="group z-10 flex flex-col overflow-hidden rounded-lg bg-[#030014] border border-[#24282c] hover:scale-110 hover:shadow-lg  max-w-sm mx-auto relative"
+        className="group z-10 flex flex-col overflow-hidden rounded-lg bg-[#030014] border border-[#24282c] hover:scale-110 hover:shadow-lg  max-w-xs mx-auto relative"
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
