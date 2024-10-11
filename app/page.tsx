@@ -23,7 +23,6 @@ export default function Home() {
         <Projects />
         <Timeline />
         <Certification />
-        {/* <Blog /> */}
         <ContactMe />
         <Footer />
       </div>
