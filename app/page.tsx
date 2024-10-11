@@ -10,7 +10,6 @@ import React from 'react';
 import { WelcomeToast } from '@/utils/Toaster';
 import Statistic from '@/components/main/Statistic';
 import ContactMe from '@/components/ui/ContactMe';
-import Blog from '@/components/main/Blog';
 
 export default function Home() {
   return (
