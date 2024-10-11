@@ -99,7 +99,7 @@ export const projectsData = [
     src: '/project-img/snipeskins.jpg',
     title: 'SnipeSkins',
     description:
-      'A web application for Rust virtualization skins, offering seamless cryptocurrency payments. SnipeSkins delivers a user-friendly platform for traing digital assets from the game Rust.',
+      'A web application for Rust virtualization skins, offering cryptocurrency payments. SnipeSkins delivers a user-friendly platform for traing digital assets from the game Rust.',
     sourceUrl: 'https://snipeskins.com/',
     youtubeUrl: null,
     githubUrl: null,
@@ -376,11 +376,13 @@ export const projectsData = [
       'Reusable forms and global state management with Redux.',
     ],
     challenges: [
-      'Integrating seamless validation on both client and server.',
+      'Integrating validation on both client and server.',
       'Managing multi-language support.',
     ],
     accomplishments: [
-      'Implemented robust validation and built scalable, reusable components.',
+      'Implemented client and server validation and built scalable, reusable components.',
+      'Integrated ClerkAuth for secure authentication.',
+      'Internationalized the app for multiple languages.',
     ],
   },
 ];

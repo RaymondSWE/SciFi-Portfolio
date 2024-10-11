@@ -45,7 +45,7 @@ const ProjectCard = ({
     <>
       <motion.div
         data-attribute-id={id}
-        className="group z-10 flex flex-col overflow-hidden rounded-lg bg-[#030014] border border-[#24282c] hover:scale-110 hover:shadow-lg cursor-pointer max-w-sm mx-auto relative"
+        className="group z-10 flex flex-col overflow-hidden rounded-lg bg-[#030014] border border-[#24282c] hover:scale-110 hover:shadow-lg  max-w-sm mx-auto relative"
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
@@ -60,7 +60,7 @@ const ProjectCard = ({
             src={src}
             alt={`Image of ${title}`}
             fill
-            className="object-cover z-20"
+            className="object-cover z-20 cursor-pointer"
             onClick={() => setModalOpen(true)}
           />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />
