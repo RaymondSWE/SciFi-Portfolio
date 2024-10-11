@@ -60,7 +60,7 @@ const ProjectCard = ({
             src={src}
             alt={`Image of ${title}`}
             fill
-            className="object-cover rounded-lg z-20"
+            className="object-cover z-20"
             onClick={() => setModalOpen(true)}
           />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />
