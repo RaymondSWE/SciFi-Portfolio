@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-center">
             <div className="text-white text-center lg:text-left mb-8 lg:mb-0">
-              <h2 className="text-3xl font-semibold mb-2 Welcome-text cursive">
+              <h2 className="text-3xl font-semibold mb-2 Welcome-text">
                 Raman Mohammed
               </h2>
               <p className="text-gray-400 italic">Fullstack Developer</p>
