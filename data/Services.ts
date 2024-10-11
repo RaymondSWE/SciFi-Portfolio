@@ -15,9 +15,9 @@ export const ServicesData = [
   },
   {
     id: 3,
-    name: 'Cloud-Native Technologies',
+    name: 'Cloud Deployment Basics',
     description:
-      'Proficient in Kubernetes deployments and managing cloud-based applications, specializing in containerizing applications and automation. ',
+      'Familiar with deploying web applications to cloud platforms and using Docker for containerization.',
     icon: '/check.svg',
   },
 ];
