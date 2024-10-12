@@ -35,7 +35,7 @@ export const CertificationCard = ({
   const { ref, inView } = useInView({ triggerOnce: true });
   return (
     <motion.article
-      className="flex flex-wrap gap-10 mb-10 sm:px-2 px-6 "
+      className="flex flex-wrap gap-10 mb-10 sm:px-2 px-6 backdrop-blur-md "
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={slideInFromTop(0.5)}

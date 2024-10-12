@@ -15,7 +15,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
   const { ref, inView } = useInView({ triggerOnce: true });
   return (
     <motion.div
-      className="flex flex-col items-center mb-10 md:mb-14 bg-[rgba(33,149,243,0.07)] rounded-lg shadow-lg shadow-blue-700/20 p-4"
+      className="flex flex-col items-center mb-10 md:mb-14 bg-[rgba(33,149,243,0.07)] rounded-lg shadow-lg shadow-blue-700/20 p-4 backdrop-blur-sm"
       ref={ref}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}

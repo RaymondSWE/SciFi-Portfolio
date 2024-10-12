@@ -28,7 +28,7 @@ const StatisticCard = ({
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={slideInWithDelay(id * 0.3)}
-      className="relative p-4 md:w-1/4 sm:w-1/2 w-full"
+      className="relative p-4 md:w-1/4 sm:w-1/2 w-full backdrop-blur-sm"
     >
       <div className="border-b-2 border-[#645AFF] p-4 text-center bg-[rgba(33,149,243,0.05)] rounded-lg">
         <Image
