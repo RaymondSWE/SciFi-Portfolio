@@ -74,11 +74,9 @@ const Hero = () => {
             with code
           </motion.h2>
           <TextGenerateEffect
-            words="With over four years of development experience and a
-            Bachelor's in Computer Science specializing in System
-            Development, I specialize in Java, React.js, TypeScript, Containerisation,
-            MySQL, Azure, and more. I love building scalable and
-            reliable distributed systems and I'm always eager to learn something new. I am eager to contribute with my skills and grow with a team. 
+            words="I'm a self-motivated software developer with 4+ years of experience in desktop and web applications. 
+            I have a Bachelor's in Computer Science and am pursuing a Master's in Software Engineering at Chalmers to keep learning new skills while searching for a great workplace to contribute to. I specialize in Java, React, TypeScript, Docker, MySQL, and Spring. 
+            I'm looking to join a friendly team where I can continue to grow. 
             "
           />
           <div className="flex flex-col md:flex-row items-center mt-4  z-20">
@@ -109,14 +107,14 @@ const Hero = () => {
           variants={slideInFromRight(0.8)}
           className="w-full md:w-1/2 px-4 mt-6 md:mt-0 flex justify-center items-center"
         >
-          <div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-[12px] border-2 border-[#645AFF] flex justify-center items-center shadow-lg shadow-blue-700/60">
+          <div className="relative rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-xl border-1 border-gray-900 flex justify-center items-center shadow-sm shadow-gray-600 w-[300px] h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
             <Image
-              src="/ramanbild.webp"
+              src="/happy-ray.png"
               alt="Raman Mohammed Image"
-              fill
-              className=" ml-5 opacity-90"
+              width={250}
+              height={250}
+              className="opacity-90 mb-4 filter grayscale contrast-45"
               priority
-              quality={75}
             />
           </div>
         </motion.div>

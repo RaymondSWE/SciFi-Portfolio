@@ -16,7 +16,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
-  const [showStars, setShowStars] = useState(true); 
+  const [showStars, setShowStars] = useState(true);
   let lastScrollY = 0;
 
   const handleScroll = () => {
@@ -51,7 +51,7 @@ const Navbar = () => {
           }`}
         >
           <div
-            className="flex justify-center w-full bg-[#03001442] border border-[#7042f861] backdrop-blur-2xl rounded-3xl px-6 py-4 
+            className="flex justify-center w-full bg-[#03001442] border border-gray-900 backdrop-blur-3xl rounded-2xl px-6 py-4 
         space-x-2 md:space-x-8 z-50 md:max-w-2xl sm:max-w-lg  sm:space-x-4 "
           >
             {navLinks.map((link) => (
@@ -63,14 +63,20 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-             <button
+            <button
               onClick={() => setShowStars(!showStars)}
               className="text-white transition duration-300 hover:text-gray-400 borderBottom"
             >
               {showStars ? (
-                <StarIcon className="h-4 w-4 sm:w-6 sm:h-6 text-white" aria-hidden="true" /> 
+                <StarIcon
+                  className="h-4 w-4 sm:w-6 sm:h-6 text-white"
+                  aria-hidden="true"
+                />
               ) : (
-                <NoSymbolIcon className="h-4 w-4 sm:w-6 sm:h-6 text-white" aria-hidden="true" /> 
+                <NoSymbolIcon
+                  className="h-4 w-4 sm:w-6 sm:h-6 text-white"
+                  aria-hidden="true"
+                />
               )}
             </button>
           </div>

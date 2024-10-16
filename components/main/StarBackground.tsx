@@ -21,13 +21,16 @@ const StarBackground = (props: any) => {
   const ref3: any = useRef();
 
   const [cluster1] = useState(() =>
-    random.inSphere(new Float32Array(2500), { radius: 1 }) 
+    random.inSphere(new Float32Array(2500), { radius: 1 }),
   );
   const [cluster2] = useState(() =>
-    random.inSphere(new Float32Array(1000), { radius: 1.5, center: [2, 2, 0] }) 
+    random.inSphere(new Float32Array(1000), { radius: 1.5, center: [2, 2, 0] }),
   );
   const [cluster3] = useState(() =>
-    random.inSphere(new Float32Array(500), { radius: 1.8, center: [-2, -1, 1] }) 
+    random.inSphere(new Float32Array(500), {
+      radius: 1.8,
+      center: [-2, -1, 1],
+    }),
   );
 
   useFrame((state, delta) => {
@@ -41,7 +44,13 @@ const StarBackground = (props: any) => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref1} positions={cluster1} stride={3} frustumCulled {...props}>
+      <Points
+        ref={ref1}
+        positions={cluster1}
+        stride={3}
+        frustumCulled
+        {...props}
+      >
         <PointMaterial
           transparent
           color="$fff"
@@ -50,7 +59,13 @@ const StarBackground = (props: any) => {
           depthWrite={false}
         />
       </Points>
-      <Points ref={ref2} positions={cluster2} stride={3} frustumCulled {...props}>
+      <Points
+        ref={ref2}
+        positions={cluster2}
+        stride={3}
+        frustumCulled
+        {...props}
+      >
         <PointMaterial
           transparent
           color="$fff"
@@ -59,7 +74,13 @@ const StarBackground = (props: any) => {
           depthWrite={false}
         />
       </Points>
-      <Points ref={ref3} positions={cluster3} stride={3} frustumCulled {...props}>
+      <Points
+        ref={ref3}
+        positions={cluster3}
+        stride={3}
+        frustumCulled
+        {...props}
+      >
         <PointMaterial
           transparent
           color="$fff"
@@ -81,7 +102,7 @@ const NebulaBackground = () => {
       scale: Math.random() * 0.4 + 0.2,
       speedX: (Math.random() - 0.5) * 0.002,
       speedY: (Math.random() - 0.5) * 0.002,
-    }))
+    })),
   );
 
   const meshRefs = useRef<(THREE.Mesh | null)[]>([]);
@@ -93,11 +114,17 @@ const NebulaBackground = () => {
 
       const mesh = meshRefs.current[i];
       if (mesh) {
-        mesh.position.set(nebula.position[0], nebula.position[1], nebula.position[2]);
+        mesh.position.set(
+          nebula.position[0],
+          nebula.position[1],
+          nebula.position[2],
+        );
       }
-      
-      if (nebula.position[0] > 5 || nebula.position[0] < -5) nebula.speedX *= -1;
-      if (nebula.position[1] > 5 || nebula.position[1] < -5) nebula.speedY *= -1;
+
+      if (nebula.position[0] > 5 || nebula.position[0] < -5)
+        nebula.speedX *= -1;
+      if (nebula.position[1] > 5 || nebula.position[1] < -5)
+        nebula.speedY *= -1;
     });
   });
 
@@ -107,7 +134,11 @@ const NebulaBackground = () => {
         <mesh
           key={index}
           ref={(el) => (meshRefs.current[index] = el)}
-          position={[nebula.position[0], nebula.position[1], nebula.position[2]]}
+          position={[
+            nebula.position[0],
+            nebula.position[1],
+            nebula.position[2],
+          ]}
           scale={[nebula.scale, nebula.scale, 1]}
         >
           <planeGeometry args={[1, 1]} />
