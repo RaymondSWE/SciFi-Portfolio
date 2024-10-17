@@ -105,15 +105,14 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={slideInFromRight(0.8)}
-          className="w-full md:w-1/2 px-4 mt-6 md:mt-0 flex justify-center items-center"
+          className="w-full md:w-1/2 px-4 mt-12 md:mt-2 flex justify-center items-center"
         >
-          <div className="relative rounded-full overflow-hidden bg-[#ffffff08] backdrop-blur-xl border-1 border-gray-900 flex justify-center items-center shadow-sm shadow-gray-600 w-[300px] h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
+          <div className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-gray-900 flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[350px] lg:w-[300px] lg:h-[400px]">
             <Image
-              src="/happy-ray.png"
+              src="/happy-raman.jpg"
               alt="Raman Mohammed Image"
-              width={250}
-              height={250}
-              className="opacity-90 mb-4 filter grayscale contrast-45"
+              layout="fill"
+              className="object-cover object-bottom filter grayscale contrast-65 opacity-90"
               priority
             />
           </div>
