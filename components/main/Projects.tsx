@@ -4,17 +4,17 @@ import ProjectCard from '../ui/ProjectCard';
 import { projectsData } from '@/data/Projects';
 import { GlobeAltIcon } from '@heroicons/react/24/solid';
 import SectionHeader from '../ui/SectionHeader';
-import { ProjectCategory } from '@/types';
+import { ProjectCategories } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 
 const Projects = () => {
   const projectsCategories = [
-    ProjectCategory.WebApplication,
-    ProjectCategory.DesktopApplication,
-    ProjectCategory.DevOps,
+    ProjectCategories.WebApplication,
+    ProjectCategories.DesktopApplication,
+    ProjectCategories.DevOps,
   ];
 
-  const filterProjectsByCategory = (category: ProjectCategory) => {
+  const filterProjectsByCategory = (category: ProjectCategories) => {
     return projectsData.filter((project) => project.category === category);
   };
 
@@ -30,10 +30,10 @@ const Projects = () => {
         Icon={<GlobeAltIcon />}
       />
 
-      <Tabs defaultValue={ProjectCategory.WebApplication}>
+      <Tabs defaultValue={ProjectCategories.WebApplication}>
         <div className="flex justify-center">
           <TabsList className="inline-flex mb-4 mt-[-24px]">
-            {projectsCategories.map((category: ProjectCategory) => (
+            {projectsCategories.map((category: ProjectCategories) => (
               <TabsTrigger key={category} value={category}>
                 {category}
               </TabsTrigger>

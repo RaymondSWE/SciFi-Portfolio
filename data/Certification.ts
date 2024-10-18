@@ -23,7 +23,7 @@ export const CertificationData = [
   },
   {
     id: 3,
-    name: 'Cypress -Modern Automation Testing',
+    name: 'Cypress - Automation Testing',
     date: 'In Progress',
     description:
       'Master Cypress for web automation, including UI and API testing, with this comprehensive course. Covers JavaScript basics, Cypress framework design, and integration testing.',
