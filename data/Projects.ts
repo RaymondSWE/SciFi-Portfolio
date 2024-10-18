@@ -1,6 +1,9 @@
+import { ProjectCategory } from '@/types';
+
 export const projectsData = [
   {
     id: 1,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/csgo.png',
     title: 'CSFairTrade',
     description:
@@ -49,6 +52,7 @@ export const projectsData = [
   },
   {
     id: 2,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/codemate.png',
     title: 'CodeMate',
     description:
@@ -96,6 +100,7 @@ export const projectsData = [
   },
   {
     id: 3,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/snipeskins.jpg',
     title: 'SnipeSkins',
     description:
@@ -142,6 +147,7 @@ export const projectsData = [
   },
   {
     id: 4,
+    category: ProjectCategory.DesktopApplication,
     src: '/project-img/queue-student.png',
     title: 'Student Queue System',
     description:
@@ -181,6 +187,7 @@ export const projectsData = [
   },
   {
     id: 5,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/starwars-portfolio.png',
     title: 'Web portfolio',
     description:
@@ -219,6 +226,7 @@ export const projectsData = [
   },
   {
     id: 6,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/massageapp.png',
     title: "Bally's Massage Appointments System",
     description:
@@ -257,6 +265,7 @@ export const projectsData = [
   },
   {
     id: 7,
+    category: ProjectCategory.DesktopApplication,
     src: '/project-img/blackjack.png',
     title: 'Blackjack Game',
     description:
@@ -282,6 +291,7 @@ export const projectsData = [
 
   {
     id: 8,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/webportfolio.png',
     title: 'Old Web Portfolio',
     description:
@@ -312,6 +322,7 @@ export const projectsData = [
   },
   {
     id: 9,
+    category: ProjectCategory.DevOps,
     src: '/project-img/cluster.png',
     title: 'Kubernetes Scaling Analysis: A Performance and Cost Comparison',
     description:
@@ -349,6 +360,7 @@ export const projectsData = [
   },
   {
     id: 10,
+    category: ProjectCategory.WebApplication,
     src: '/project-img/validation-app.png',
     title: 'Validation-Focused Web Application',
     description:

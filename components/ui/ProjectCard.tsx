@@ -3,7 +3,7 @@ import React, { useState, memo } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaYoutube } from 'react-icons/fa';
 import Modal from './Modal';
 import { motion } from 'framer-motion';
-import { slideInFromTop } from '@/utils/motion';
+import { slideInFromLeft, slideInFromTop } from '@/utils/motion';
 import { useInView } from 'react-intersection-observer';
 import { handleMissingLink } from '@/utils/Toaster';
 
@@ -49,7 +49,7 @@ const ProjectCard = ({
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
-        variants={slideInFromTop(0.5)}
+        variants={slideInFromLeft(0.5)}
         aria-labelledby={`project-title-${id}`}
         tabIndex={0}
       >
