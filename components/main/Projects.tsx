@@ -32,7 +32,7 @@ const Projects = () => {
 
       <Tabs defaultValue={ProjectCategory.WebApplication}>
         <div className="flex justify-center">
-          <TabsList className="inline-flex mb-8 mt-[-24px]">
+          <TabsList className="inline-flex mb-4 mt-[-24px]">
             {projectsCategories.map((category: ProjectCategory) => (
               <TabsTrigger key={category} value={category}>
                 {category}
