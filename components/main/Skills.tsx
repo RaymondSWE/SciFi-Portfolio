@@ -34,7 +34,7 @@ const Skills = () => {
     >
       <div className="w-full h-auto flex flex-col items-center justify-center">
         <SectionHeader
-          title="Technical Proficiencies"
+          title="Technical Knowledge"
           subtitle="A List of My Skills"
           Icon={<BeakerIcon />}
         />

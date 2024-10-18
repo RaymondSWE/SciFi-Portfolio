@@ -10,7 +10,7 @@ import {
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 
 const socialLinks = [
   {
@@ -22,6 +22,11 @@ const socialLinks = [
     href: 'https://linkedin.com/in/raman-mohammed',
     label: 'LinkedIn',
     icon: <FaLinkedinIn />,
+  },
+  {
+    href: 'mailto:ramanmohammed@hotmail.com',
+    label: 'Email',
+    icon: <FaEnvelope />,
   },
 ];
 
@@ -38,7 +43,7 @@ const Hero = () => {
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
           variants={slideInFromLeft(0.5)}
         >
-          <div className="flex items-center sm:mb-6 mb-4">
+          <div className="flex items-center mb-4">
             <motion.div
               className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
               variants={slideInFromTop(0.5)}
@@ -49,9 +54,7 @@ const Hero = () => {
                   options={{
                     strings: [
                       "Hey there, I'm Raman Mohammed",
-                      "I'm a Full-Stack developer",
                       'Based in Gothenburg, Sweden',
-                      'You can contact me via Linkedin or Email',
                     ],
                     delay: 80,
                     deleteSpeed: 25,
@@ -62,27 +65,35 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-
           <motion.h2
             variants={slideInFromLeft(0.5)}
-            className="md:text-6xl text-2xl font-bold leading-tight"
+            className="md:text-5xl text-xl font-bold leading-tight"
           >
-            Building{' '}
+            Always{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              cool stuff
-            </span>{' '}
-            with code
+              learning
+            </span>, always{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              building
+            </span>
           </motion.h2>
+          <motion.h3
+            variants={slideInFromLeft(0.6)}
+            className="md:text-3xl text-lg font-semibold leading-tight mt-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-200"
+          >
+            Software Engineer
+          </motion.h3>
+
           <TextGenerateEffect
             words="I'm a self-motivated software developer with 4+ years of experience in desktop and web applications. 
-            I have a Bachelor's in Computer Science and am pursuing a Master's in Software Engineering at Chalmers to keep learning new skills while searching for a great workplace to contribute to. I specialize in Java, React, TypeScript, Docker, MySQL, and Spring. 
-            I'm looking to join a friendly team where I can continue to grow. 
+            I have a Bachelor's in Computer Science and am pursuing a Master's in Software Engineering at Chalmers to keep learning new skills. I specialize in Java, React, TypeScript, Docker, MySQL, and Spring. 
+            
             "
           />
-          <div className="flex flex-col md:flex-row items-center mt-4  z-20">
+          <div className="flex flex-col md:flex-row items-center mt-2 z-20">
             <a
               href="#projects"
-              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-3xl transition-colors button-3d-primary"
+              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-xl transition-colors button-3d-primary"
             >
               Explore My Projects
             </a>
@@ -107,13 +118,13 @@ const Hero = () => {
           variants={slideInFromRight(0.8)}
           className="w-full md:w-1/2 px-4 mt-12 md:mt-2 flex justify-center items-center"
         >
-          <div className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-gray-900 flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[350px] lg:w-[300px] lg:h-[400px]">
+          <div className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-gray-900 flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[370px]">
             <Image
               src="/happy-raman.jpg"
               alt="Raman Mohammed Image"
-              layout="fill"
               className="object-cover object-bottom filter grayscale contrast-65 opacity-90"
               priority
+              fill
             />
           </div>
         </motion.div>
