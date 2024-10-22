@@ -61,9 +61,8 @@ export const CertificationCard = ({
             </p>
           </div>
 
-          <motion.footer
+          <footer
             className="flex justify-end items-center mt-4"
-            variants={slideInFromRight(0.8)}
           >
             <button
               onClick={() => {
@@ -90,7 +89,7 @@ export const CertificationCard = ({
                 </span>
               )}
             </button>
-          </motion.footer>
+          </footer>
         </motion.div>
         <div
           className="absolute inset-0.5  z-20"

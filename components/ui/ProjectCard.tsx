@@ -3,8 +3,6 @@ import React, { useState, memo } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaYoutube } from 'react-icons/fa';
 import Modal from './Modal';
 import { handleMissingLink } from '@/utils/Toaster';
-import { useInView } from 'react-intersection-observer';
-import { motion } from 'framer-motion';
 
 interface ProjectCardProps {
   id: number;
@@ -39,24 +37,11 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: id * 0.2 } },
-  };
-
   return (
     <>
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
-        variants={variants}
+      <div
         data-attribute-id={id}
-        className="group z-10 flex flex-col overflow-hidden rounded-lg backdrop-blur-lg border border-gray-900 hover:scale-110 hover:shadow-lg  max-w-[350px] mx-auto relative"
+        className="group z-10 flex flex-col overflow-hidden rounded-lg backdrop-blur-lg border border-gray-900 hover:scale-105 hover:shadow-lg transition-transform duration-300  max-w-[350px] mx-auto relative"
         aria-labelledby={`project-title-${id}`}
         tabIndex={0}
       >
@@ -162,7 +147,7 @@ const ProjectCard = ({
             Click the image to view details
           </span>
         </div>
-      </motion.div>
+      </div>
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}
