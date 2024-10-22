@@ -41,12 +41,12 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
-          variants={slideInFromLeft(0.5)}
+          variants={slideInFromLeft(1)}
         >
           <div className="flex items-center mb-4">
             <motion.div
               className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
-              variants={slideInFromTop(0.5)}
+              variants={slideInFromTop(1.2)}
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-base font-semibold ">
@@ -79,7 +79,7 @@ const Hero = () => {
             </span>
           </motion.h2>
           <motion.h3
-            variants={slideInFromLeft(0.6)}
+            variants={slideInFromLeft(1.2)}
             className="md:text-3xl text-lg font-semibold leading-tight mt-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-200"
           >
             Software Engineer
@@ -116,7 +116,7 @@ const Hero = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={slideInFromRight(0.8)}
+          variants={slideInFromRight(1)}
           className="w-full md:w-1/2 px-4 mt-12 md:mt-2 flex justify-center items-center"
         >
           <div className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-gray-900 flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[370px]">
