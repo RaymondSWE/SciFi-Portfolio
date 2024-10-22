@@ -3,8 +3,9 @@ import Typewriter from 'typewriter-effect';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaEnvelope  } from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
+import { SparklesIcon } from '@heroicons/react/24/solid';
 
 const socialLinks = [
   {
@@ -62,7 +63,7 @@ const Hero = () => {
                 },
               }}
             >
-              <FaGithub className="text-[#b49bff] mr-[10px] h-5 w-5" />
+              <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-base font-semibold ">
                 <Typewriter
                   options={{
