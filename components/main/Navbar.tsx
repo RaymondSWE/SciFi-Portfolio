@@ -46,13 +46,13 @@ const Navbar = () => {
           className="z-[-10] object-cover "
         />
         <div
-          className={`fixed w-full flex justify-center px-8 z-50 transition-transform duration-300 ${
+          className={`fixed w-full flex justify-center px-3 z-50 transition-transform duration-300 ${
             showNavbar ? 'translate-y-0' : '-translate-y-80'
           }`}
         >
           <div
-            className="flex justify-center w-full bg-[#03001442] border border-gray-900 backdrop-blur-3xl rounded-2xl px-6 py-4 
-        space-x-2 md:space-x-8 z-50 md:max-w-2xl sm:max-w-lg  sm:space-x-4 "
+            className="flex justify-center w-full bg-[#03001442] border border-gray-900 backdrop-blur-3xl rounded-2xl py-4 
+        space-x-3 md:space-x-8 z-50 md:max-w-2xl sm:max-w-lg sm:space-x-4"
           >
             {navLinks.map((link) => (
               <Link
