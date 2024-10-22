@@ -7,12 +7,8 @@ import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 import ServiceItem from '../ui/ServiceItem';
 import ServiceIconItem from '../ui/ServiceIconItem';
 import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-  slideInWithDelay,
-} from '@/utils/motion';
-import { motion, Variants } from 'framer-motion';
+  slideInFromLeft} from '@/utils/motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import curve1 from '@/public/curve-1.svg';
 import curve2 from '@/public/curve-2.svg';

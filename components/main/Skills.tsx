@@ -6,8 +6,8 @@ import { BeakerIcon } from '@heroicons/react/24/solid';
 import SectionHeader from '../ui/SectionHeader';
 import { useInView } from 'react-intersection-observer';
 import { infoToast } from '@/utils/Toaster';
-import { motion } from 'framer-motion';
 const Skills = () => {
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     onChange: (inView) => {
@@ -23,13 +23,10 @@ const Skills = () => {
   });
 
   return (
-    <motion.section
+    <section
       ref={ref}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
       id="skills"
       className=" flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-4 sm:py-96"
-      style={{ transform: 'scale(0.9' }}
     >
       <div className="w-full h-auto flex flex-col items-center justify-center">
         <SectionHeader
@@ -50,7 +47,7 @@ const Skills = () => {
           src="/video/death_star.mp4"
         />
       </div>
-    </motion.section>
+    </section>
   );
 };
 
