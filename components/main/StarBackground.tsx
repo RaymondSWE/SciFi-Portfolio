@@ -15,23 +15,30 @@ const getRandomPosition = (radius: number) => {
   ];
 };
 
+const generateRandomPositions = (count: number, radius: number, center: [number, number, number] = [0, 0, 0]) => {
+  const positions = new Float32Array(count * 3);
+  for (let i = 0; i < count; i++) {
+    const [x, y, z] = random.inSphere(new Float32Array(3), { radius });
+    positions[i * 3] = x + center[0];
+    positions[i * 3 + 1] = y + center[1];
+    positions[i * 3 + 2] = z + center[2];
+  }
+  return positions;
+};
+
+
+
 const StarBackground = (props: any) => {
   const ref1: any = useRef();
   const ref2: any = useRef();
   const ref3: any = useRef();
 
-  const [cluster1] = useState(() =>
-    random.inSphere(new Float32Array(2500), { radius: 1 }),
-  );
-  const [cluster2] = useState(() =>
-    random.inSphere(new Float32Array(1000), { radius: 1.5, center: [2, 2, 0] }),
-  );
-  const [cluster3] = useState(() =>
-    random.inSphere(new Float32Array(500), {
-      radius: 1.8,
-      center: [-2, -1, 1],
-    }),
-  );
+  const [cluster1] = useState(() => generateRandomPositions(1000, 1));
+  const [cluster2] = useState(() => generateRandomPositions(500, 1.5, [2, 2, 0]));
+  const [cluster3] = useState(() => generateRandomPositions(250, 1.8, [-2, -1, 1]));
+
+  console.log(cluster1.length, cluster2.length, cluster3.length);
+
 
   useFrame((state, delta) => {
     ref1.current.rotation.x -= delta / 10;
@@ -53,7 +60,7 @@ const StarBackground = (props: any) => {
       >
         <PointMaterial
           transparent
-          color="$fff"
+          color="#fff"
           size={0.003}
           sizeAttenuation={true}
           depthWrite={false}
@@ -68,7 +75,7 @@ const StarBackground = (props: any) => {
       >
         <PointMaterial
           transparent
-          color="$fff"
+          color="#fff"
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
@@ -83,7 +90,7 @@ const StarBackground = (props: any) => {
       >
         <PointMaterial
           transparent
-          color="$fff"
+          color="#fff"
           size={0.001}
           sizeAttenuation={true}
           depthWrite={false}

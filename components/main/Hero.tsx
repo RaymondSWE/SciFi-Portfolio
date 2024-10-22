@@ -174,6 +174,9 @@ const Hero = () => {
               className="object-cover object-bottom filter grayscale contrast-65 opacity-90"
               priority
               fill
+              sizes="(max-width: 768px) 100vw, 
+              (max-width: 1200px) 50vw, 
+              33vw"
             />
           </motion.div>
         </motion.div>
