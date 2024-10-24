@@ -30,7 +30,7 @@ const SectionHeader = ({
           className:
             'text-purple-400 mr-2 md:h-8 md:w-8 hidden md:inline-block animate-pulse',
         })}
-        <p className="text-lg md:text-2xl roboto-condensed text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-200">
+        <p className="text-lg md:text-xl roboto-condensed text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-200">
           {subtitle}
         </p>
       </div>
