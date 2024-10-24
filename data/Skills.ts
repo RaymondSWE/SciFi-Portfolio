@@ -40,18 +40,9 @@ export const SkillsData = [
     height: 70,
     skillLevel: 4,
   },
-  {
-    id: 6,
-    skillName: 'Python',
-    image: '/logo/Python.svg',
-    width: 70,
-    height: 70,
-    skillLevel: 2,
-  },
-
   // Frontend Frameworks and Libraries
   {
-    id: 7,
+    id: 6,
     skillName: 'React.js',
     image: '/logo/React.svg',
     width: 70,
@@ -59,7 +50,7 @@ export const SkillsData = [
     skillLevel: 4,
   },
   {
-    id: 8,
+    id: 7,
     skillName: 'Next.js',
     image: '/logo/next.png',
     width: 70,
@@ -67,41 +58,26 @@ export const SkillsData = [
     skillLevel: 4,
   },
   {
-    id: 9,
+    id: 8,
     skillName: 'Redux',
     image: '/logo/Redux.svg',
     width: 70,
     height: 70,
     skillLevel: 3,
   },
+
   {
-    id: 10,
-    skillName: 'Material UI',
-    image: '/logo/MaterialUI.svg',
-    width: 70,
-    height: 70,
-    skillLevel: 5,
-  },
-  {
-    id: 11,
+    id: 9,
     skillName: 'Tailwind CSS',
     image: '/logo/Tailwind.svg',
     width: 80,
     height: 80,
     skillLevel: 5,
   },
-  {
-    id: 12,
-    skillName: 'Bootstrap',
-    image: '/logo/Bootstrap.svg',
-    width: 70,
-    height: 70,
-    skillLevel: 5,
-  },
 
   // Backend Frameworks and Libraries
   {
-    id: 13,
+    id: 10,
     skillName: 'Node.js',
     image: '/logo/Node.js.svg',
     width: 70,
@@ -109,7 +85,7 @@ export const SkillsData = [
     skillLevel: 4,
   },
   {
-    id: 14,
+    id: 11,
     skillName: 'Express.js',
     image: '/logo/express.png',
     width: 70,
@@ -117,7 +93,7 @@ export const SkillsData = [
     skillLevel: 4,
   },
   {
-    id: 15,
+    id: 12,
     skillName: 'Spring',
     image: '/logo/Spring.svg',
     width: 70,
@@ -127,7 +103,7 @@ export const SkillsData = [
 
   // Databases and ORMs
   {
-    id: 16,
+    id: 13,
     skillName: 'MySQL',
     image: '/logo/MySQL.svg',
     width: 70,
@@ -135,17 +111,9 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 17,
+    id: 14,
     skillName: 'MongoDB',
     image: '/logo/mongodb.svg',
-    width: 70,
-    height: 70,
-    skillLevel: 3,
-  },
-  {
-    id: 18,
-    skillName: 'PostgreSQL',
-    image: '/logo/Postgresql.svg',
     width: 70,
     height: 70,
     skillLevel: 3,
@@ -153,7 +121,7 @@ export const SkillsData = [
 
   // DevOps and Cloud
   {
-    id: 19,
+    id: 15,
     skillName: 'Docker',
     image: '/logo/Docker.svg',
     width: 80,
@@ -161,7 +129,7 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 20,
+    id: 16,
     skillName: 'Kubernetes',
     image: '/logo/kubernetes.svg',
     width: 70,
@@ -171,7 +139,7 @@ export const SkillsData = [
 
   // Operating Systems
   {
-    id: 21,
+    id: 17,
     skillName: 'Ubuntu',
     image: '/logo/ubuntu.png',
     width: 70,
@@ -179,7 +147,7 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 22,
+    id: 18,
     skillName: 'Linux',
     image: '/logo/linux.png',
     width: 70,
@@ -187,7 +155,7 @@ export const SkillsData = [
     skillLevel: 3,
   },
   {
-    id: 23,
+    id: 19,
     skillName: 'Postman',
     image: '/logo/postman.png',
     width: 70,
@@ -195,7 +163,7 @@ export const SkillsData = [
     skillLevel: 4,
   },
   {
-    id: 24,
+    id: 20,
     skillName: 'Jest',
     image: '/logo/Jest.svg',
     width: 70,
@@ -204,26 +172,10 @@ export const SkillsData = [
   },
 
   // Markup and Data Formats
-  {
-    id: 25,
-    skillName: 'JSON',
-    image: '/logo/JSON.svg',
-    width: 70,
-    height: 70,
-    skillLevel: 5,
-  },
-  {
-    id: 26,
-    skillName: 'Markdown',
-    image: '/logo/text-x-markdown.svg',
-    width: 70,
-    height: 70,
-    skillLevel: 5,
-  },
 
   // Cloud Providers
   {
-    id: 27,
+    id: 22,
     skillName: 'DigitalOcean',
     image: '/logo/digitalocean-icon.svg',
     width: 70,

@@ -27,7 +27,6 @@ const generateRandomPositions = (count: number, radius: number, center: [number,
 };
 
 
-
 const StarBackground = (props: any) => {
   const ref1: any = useRef();
   const ref2: any = useRef();
@@ -160,7 +159,7 @@ const StarsCanvas = ({ show }: { show?: boolean }) => {
   if (!show) return null;
 
   return (
-    <div className="w-full h-auto fixed inset-0 pointer-events-none -z-10">
+    <div className="w-full h-auto fixed inset-0 pointer-events-none -z-50">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <NebulaBackground />
