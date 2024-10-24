@@ -31,7 +31,7 @@ const Skills = () => {
       <div className="w-full h-auto flex flex-col items-center justify-center">
         <SectionHeader
           title="My Technical Knowledge"
-          subtitle="These are the skills, I enjoyed working with, but not the only tools in my toolbox."
+          subtitle="These are the skills I enjoy working with, but not the only tools in my toolbox."
           Icon={<BeakerIcon />}
         />
       </div>
