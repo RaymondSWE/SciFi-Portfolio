@@ -22,7 +22,7 @@ const SectionHeader = ({
       transition={{ duration: 0.8 }}
       className={`text-center mt-4 ${className}`}
     >
-      <h1 className="text-2xl orbitron md:text-5xl italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 leading-tight">
+      <h1 className="text-2xl orbitron md:text-4xl italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 leading-tight">
         {title}
       </h1>
       <div className="m-2 flex justify-center items-center ">
