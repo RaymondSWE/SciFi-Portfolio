@@ -42,7 +42,7 @@ const Services = () => {
 
           <div className="lg:ml-auto xl:w-[38rem] lg:w-1/2 mt-4">
             <motion.p
-              className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto6"
+              className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto"
               ref={ref}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
