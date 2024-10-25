@@ -7,6 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 import { ToastContainer } from 'react-toastify';
+import HeaderBackground from '@/components/main/HeaderBackground';
 
 export const metadata: Metadata = {
   title: 'Raman Mohammed Portfolio',
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <ToastContainer />
         <StarsCanvas />
+        <HeaderBackground />
         <Navbar />
         {children}
         <Analytics />

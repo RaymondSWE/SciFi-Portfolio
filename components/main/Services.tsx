@@ -42,7 +42,7 @@ const Services = () => {
 
           <div className="lg:ml-auto xl:w-[38rem] lg:w-1/2 mt-4">
             <motion.p
-              className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto"
+              className="mb-4 Welcome-text text-center md:text-left md:mb-16 lg:mb-24 italic font-semibold lg:w-[22rem] lg:mx-auto6"
               ref={ref}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
@@ -50,7 +50,7 @@ const Services = () => {
             >
               Discover my array of provided services, crafted with precision and
               passion. My portfolio showcases my expertise in solving diverse
-              technological challenges, from sleek web designs to robust backend
+              technological challenges, from sleek web designs to solid backend
               systems.
             </motion.p>
             <div className="relative left-1/2 flex w-[22rem] aspect-square border border-[#252134] rounded-full -translate-x-1/2 scale-75 md:scale-100">

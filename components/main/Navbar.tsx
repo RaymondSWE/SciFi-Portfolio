@@ -39,12 +39,6 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex flex-row w-full py-6">
-        <Image
-          src="/main.svg"
-          alt="background gradient image"
-          fill
-          className="z-[-10] object-cover "
-        />
         <div
           className={`fixed w-full flex justify-center px-3 z-50 transition-transform duration-300 ${
             showNavbar ? 'translate-y-0' : '-translate-y-80'
