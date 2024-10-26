@@ -64,7 +64,7 @@ const Hero = () => {
             >
               <FaCode className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-base px-2 ml-[-12px] font-semibold">
-               Software Engineer
+               Raman Mohammed - Software Engineer
               </div>
             </motion.div>
           </div>
