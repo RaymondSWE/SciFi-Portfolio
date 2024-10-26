@@ -115,9 +115,16 @@ const Hero = () => {
                 },
               },
             }}
-            className="md:text-xl text-lg font-medium text-gray-400 mt-3 mb-[-8px] italic flex"
+            className="md:text-xl text-lg font-medium text-gray-400 mt-3 mb-[-4px] italic flex "
           >
-            <FaMapMarkerAlt className="text-[#b49bff] mr-1" /> Based in Gothenburg
+            <Image
+            src="/sweden.png" 
+            alt="Sweden Flag"
+            width={24}
+            height={24}
+            className="mr-2"
+            /> 
+            Based in Sweden
           </motion.h4>
 
           <TextGenerateEffect
