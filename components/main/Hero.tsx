@@ -3,9 +3,8 @@ import Typewriter from 'typewriter-effect';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaGithub, FaLinkedinIn, FaEnvelope  } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaMapMarkerAlt, FaCode  } from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
-import { SparklesIcon } from '@heroicons/react/24/solid';
 
 const socialLinks = [
   {
@@ -50,7 +49,7 @@ const Hero = () => {
         >
           <div className="flex items-center mb-4">
             <motion.div
-              className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+              className="Welcome-box py-2 px-2 border border-[#7042f88b] opacity-[0.9]"
               variants={{
                 hidden: { y: -50, opacity: 0 },
                 visible: {
@@ -63,20 +62,9 @@ const Hero = () => {
                 },
               }}
             >
-              <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-              <div className="Welcome-text italic md:text-xl text-base font-semibold ">
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Hey there, I'm Raman Mohammed",
-                      'Based in Gothenburg, Sweden',
-                    ],
-                    delay: 80,
-                    deleteSpeed: 50,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
+              <FaCode className="text-[#b49bff] mr-[10px] h-5 w-5" />
+              <div className="Welcome-text italic md:text-xl text-base px-2 ml-[-12px] font-semibold">
+               Software Engineer
               </div>
             </motion.div>
           </div>
@@ -115,22 +103,22 @@ const Hero = () => {
               building
             </motion.span>
           </motion.h2>
-          <motion.h3
+          <motion.h4
             variants={{
-              hidden: { opacity: 0, y: 20 },
+              hidden: { opacity: 0, y: 10 },
               visible: {
                 opacity: 1,
                 y: 0,
                 transition: {
-                  delay: 0.8,
+                  delay: 1.1,
                   duration: 0.6,
                 },
               },
             }}
-            className="md:text-3xl text-lg font-semibold leading-tight mt-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-200"
+            className="md:text-xl text-lg font-medium text-gray-400 mt-3 mb-[-8px] italic flex"
           >
-            Software Engineer
-          </motion.h3>
+            <FaMapMarkerAlt className="text-[#b49bff] mr-1" /> Based in Gothenburg
+          </motion.h4>
 
           <TextGenerateEffect
             words="I'm a self-motivated software developer with 4+ years of experience in desktop and web applications. 
