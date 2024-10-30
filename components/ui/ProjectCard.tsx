@@ -41,7 +41,7 @@ const ProjectCard = ({
     <>
       <div
         data-attribute-id={id}
-        className="group z-10 flex flex-col overflow-hidden rounded-lg backdrop-blur-lg border border-gray-900 hover:scale-105 hover:shadow-lg transition-transform duration-300  max-w-[350px] mx-auto relative"
+        className="group z-10 flex flex-col overflow-hidden rounded-lg backdrop-blur-lg border border-gray-900  transition-transform duration-300  max-w-[350px] mx-auto relative"
         aria-labelledby={`project-title-${id}`}
         tabIndex={0}
       >
