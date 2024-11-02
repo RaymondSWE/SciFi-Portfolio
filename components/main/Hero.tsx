@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaMapMarkerAlt, FaCode  } from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
+import { slideInFromLeft, slideInFromRight } from '@/utils/motion';
 
 const socialLinks = [
   {
@@ -34,52 +35,20 @@ const Hero = () => {
         <motion.div
           initial="hidden"
           animate="visible"
+          variants={slideInFromLeft(1)}
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                delay: 0.3, 
-                duration: 0.8,
-              },
-            },
-          }}
         >
           <div className="flex items-center mb-4">
-            <motion.div
+            <div
               className="Welcome-box py-2 px-2 border border-[#7042f88b] opacity-[0.9]"
-              variants={{
-                hidden: { y: -50, opacity: 0 },
-                visible: {
-                  y: 0,
-                  opacity: 1,
-                  transition: {
-                    delay: 0.5,
-                    duration: 0.6,
-                  },
-                },
-              }}
             >
               <FaCode className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-base px-2 ml-[-12px] font-semibold">
                Raman Mohammed - Software Engineer
               </div>
-            </motion.div>
+            </div>
           </div>
           <motion.h2
-            variants={{
-              hidden: { opacity: 0, scale: 0.8 },
-              visible: {
-                opacity: 1,
-                scale: 1,
-                transition: {
-                  delay: 0.5,
-                  duration: 0.6,
-                },
-              },
-            }}
             className="md:text-5xl text-xl font-bold leading-tight"
           >
             Always{' '}
@@ -155,12 +124,12 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1, duration: 0.5 }} 
+          initial="hidden"
+          animate="visible"
+          variants={slideInFromRight(1)}
           className="w-full md:w-1/2 px-4 mt-12 md:mt-2 flex justify-center items-center"
         >
-          <motion.div
+          <div
             className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-gray-900 flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[370px]"
           >
             <Image
@@ -173,7 +142,7 @@ const Hero = () => {
               (max-width: 1200px) 50vw, 
               33vw"
             />
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>
