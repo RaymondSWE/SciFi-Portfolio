@@ -4,3 +4,7 @@ export enum ProjectCategories {
   DevOps = 'DevOps',
 }
 
+export enum MilestoneTypes {
+  Work = 'Work',
+  Education = 'Education',
+}
