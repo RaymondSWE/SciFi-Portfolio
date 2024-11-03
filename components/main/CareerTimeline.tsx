@@ -7,14 +7,10 @@ import MilestoneItem from '../ui/MilestoneItem';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/Tabs';
 import { MilestoneTypes } from '@/types';
 
-
 const CareerTimeline = () => {
-
-
   const filterMilestoneByTypes = (type: MilestoneTypes) => {
     return ExperienceData.filter((experience) => experience.type === type);
   };
-  
 
   return (
     <section id="career-timeline">
@@ -24,8 +20,8 @@ const CareerTimeline = () => {
         Icon={<ScaleIcon />}
       />
       <Tabs defaultValue={MilestoneTypes.Work}>
-        <div className='flex justify-center'>
-          <TabsList className='inline-flex mb-4'>
+        <div className="flex justify-center">
+          <TabsList className="inline-flex mb-4">
             {Object.values(MilestoneTypes).map((type) => (
               <TabsTrigger key={type} value={type}>
                 {type}

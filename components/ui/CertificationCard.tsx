@@ -61,9 +61,7 @@ export const CertificationCard = ({
             </p>
           </div>
 
-          <footer
-            className="flex justify-end items-center mt-4"
-          >
+          <footer className="flex justify-end items-center mt-4">
             <button
               onClick={() => {
                 if (!CertificationLink) {

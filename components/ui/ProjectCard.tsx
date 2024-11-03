@@ -41,7 +41,7 @@ const ProjectCard = ({
     <>
       <div
         data-attribute-id={id}
-        className="group z-10 flex flex-col overflow-hidden rounded-lg backdrop-blur-lg border border-gray-900  transition-transform duration-300  max-w-[350px] mx-auto relative"
+        className="group z-10 flex flex-col overflow-hidden rounded-lg backdrop-blur-lg border border-border-custom  transition-transform duration-300  max-w-[350px] mx-auto relative"
         aria-labelledby={`project-title-${id}`}
         tabIndex={0}
       >
@@ -50,7 +50,7 @@ const ProjectCard = ({
             src={src}
             alt={`Image of ${title}`}
             fill
-            className="object-cover z-20 cursor-pointer border-b border-gray-900"
+            className="object-cover z-20 cursor-pointer border-b border-border-custom"
             onClick={() => setModalOpen(true)}
           />
           <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black via-transparent opacity-75 rounded-b-lg" />

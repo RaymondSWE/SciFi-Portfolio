@@ -1,4 +1,4 @@
-import { MilestoneTypes } from "@/types";
+import { MilestoneTypes } from '@/types';
 
 export const ExperienceData = [
   {
@@ -9,7 +9,9 @@ export const ExperienceData = [
     img: '/company-logo/chalmers.webp',
     organization: 'Chalmers University of Technology',
     location: 'Gothenburg, Sweden',
-    description: 'Specializing in software engineering.',
+    description: [
+      "Focusing on more advanced topics like bayesian statistics, advanced requirements engineering, QA, and software architecture.",
+    ]
   },
   {
     id: 2,
@@ -19,8 +21,11 @@ export const ExperienceData = [
     img: '/company-logo/bally.png',
     organization: "Bally's",
     location: 'Skövde, Sweden',
-    description:
-      'Participated in pair programming, handling player security and inquiries, and expanded skills in new technologies.',
+    description: [
+      "Worked with a senior developer in pair programming to resolve technical issues reported by customers.",
+      "Utilized technologies such as Spring Boot, TypeScript, MySQL, Object-Oriented Programming, and Docker for backend development.",
+      "Gained practical experience with methodologies such as Jira, SCRUM meetings, and Test-Driven Development."
+    ]
   },
   {
     id: 3,
@@ -30,8 +35,12 @@ export const ExperienceData = [
     img: '/company-logo/bally.png',
     organization: "Bally's",
     location: 'Skövde, Sweden',
-    description:
-      'Developed an internal application, designing the database and implementing backend logic. The application is still used by the company today.',
+    description: [
+      "Designed the database, identified software requirements, held meetings with stakeholders, and implemented backend logic using Object-Oriented Programming principles.",
+      "Supported and mentored two other students in React and component architecture.",
+      "The inhouse project utilised MySQL, React, Spring Boot, JavaScript, Java, and the Okta API.",
+      "The application is still actively used by its 100+ employees and has received positive feedback for its usability and can be found in the project section."
+    ]
   },
   {
     id: 4,
@@ -41,8 +50,11 @@ export const ExperienceData = [
     img: '/company-logo/integrify.jpeg',
     organization: 'Integrify',
     location: 'Remote',
-    description:
-      'Developed a full-stack application, implementing a RESTful API, and a front-end using React.',
+    description: [
+      "Completed a boot camp to supplement my computer science degree with practical experience not fully covered in academics.",
+      "Gained skills in JavaScript, React, TypeScript, NodeJS, and Cloud services, improving my practical knowledge in full-stack development.",
+      "Built CSFairTrade, a full-stack app for trading CS2 in-game items, using React, Node.js, MySQL, and Socket.IO for real-time updates, with features like Steam login (oAuth) and virtual item trading."
+    ]
   },
   {
     id: 5,
@@ -52,18 +64,22 @@ export const ExperienceData = [
     img: '/company-logo/his.png',
     organization: 'University of Skövde',
     location: 'Skövde, Sweden',
-    description:
-      'Specializing in software engineering. Thesis focused on scaling strategies and deployment in cloud-native applications.',
+    description: [
+      "Specialized in software engineering, diving into algorithms, data structures, OOP and database management.",
+      "Wrote a thesis about scaling strategies and cloud-native deployment, exploring ways to improve scalability and efficiency.",
+    ]
   },
   {
     id: 6,
     type: MilestoneTypes.Work,
-    date: 'June 2019 - April 2022',
+    date: 'June 2019 - Mars 2022',
     title: 'Truck Driver',
     img: '/company-logo/mathem.jpg',
     organization: 'Mathem',
     location: 'Gothenburg, Sweden',
-    description:
-      'Operated delivery routes, ensuring timely and accurate deliveries.',
+    description: [
+      'Operated delivery routes in Gothenburg and surrounding areas.',
+      'Improved my communincations skills by interacting with customers to address delivery questions and concerns.',
+      ],
   },
 ];

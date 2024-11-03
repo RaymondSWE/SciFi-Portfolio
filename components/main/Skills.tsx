@@ -7,7 +7,6 @@ import SectionHeader from '../ui/SectionHeader';
 import { useInView } from 'react-intersection-observer';
 import { infoToast } from '@/utils/Toaster';
 const Skills = () => {
-
   const { ref, inView } = useInView({
     triggerOnce: true,
     onChange: (inView) => {

@@ -11,7 +11,7 @@ import Image from 'next/image';
     img: string;
     organization: string;
     location: string;
-    description: string;
+    description?: string[];
   }
 
   interface MilestoneProps {
@@ -32,7 +32,7 @@ const MilestoneItem: React.FC<MilestoneProps> = ({milestones})  => {
 
             <div key={id} className="relative flex items-start my-8">
               <Image
-              className='absolute top-5 md:left-[20%] sm:w-14 sm:h-14 h-10 w-10 left-[10%] transform -translate-x-1/2  border-gray-800 rounded-full '
+              className='absolute top-5 md:left-[20%] sm:w-14 sm:h-14 h-10 w-10 left-[10%] transform -translate-x-1/2  border-border-custom rounded-full '
               src={img}
               alt='Education or Company Logo' 
               width={50}
@@ -52,7 +52,11 @@ const MilestoneItem: React.FC<MilestoneProps> = ({milestones})  => {
                       <span className="text-gray-400 sm:text-sm text-xs">{date}</span>
                     </div>
                   <p className="text-gray-300 text-xs sm:text-sm italic">{organization}, {location}</p>
-                  <p className="mt-2 text-gray-400 text-xs sm:text-sm">{description}</p>
+                <ul className="mt-2 text-gray-400 text-xs sm:text-sm list-disc ml-4">
+                  {description?.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
                   </div>
               </motion.div>
             </div>

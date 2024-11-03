@@ -3,7 +3,13 @@ import Typewriter from 'typewriter-effect';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaGithub, FaLinkedinIn, FaEnvelope, FaMapMarkerAlt, FaCode  } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaCode,
+} from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion';
 
@@ -39,23 +45,19 @@ const Hero = () => {
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
         >
           <div className="flex items-center mb-4">
-            <div
-              className="Welcome-box py-2 px-2 border border-[#7042f88b] opacity-[0.9]"
-            >
+            <div className="Welcome-box py-2 px-2 border border-[#7042f88b] opacity-[0.9]">
               <FaCode className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-base px-2 ml-[-12px] font-semibold">
-               Raman Mohammed - Software Engineer
+                Raman Mohammed - Software Engineer
               </div>
             </div>
           </div>
-          <motion.h2
-            className="md:text-5xl text-xl font-bold leading-tight"
-          >
+          <motion.h2 className="md:text-5xl text-xl font-bold leading-tight">
             Always{' '}
             <motion.span
               className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
               animate={{
-                opacity: [1, 0.8, 1], 
+                opacity: [1, 0.8, 1],
                 transition: { repeat: Infinity, duration: 2 },
               }}
             >
@@ -87,12 +89,12 @@ const Hero = () => {
             className="md:text-xl text-lg font-medium text-gray-400 mt-3 mb-[-4px] italic flex "
           >
             <Image
-            src="/sweden.png" 
-            alt="Sweden Flag"
-            width={24}
-            height={24}
-            className="mr-2"
-            /> 
+              src="/sweden.png"
+              alt="Sweden Flag"
+              width={24}
+              height={24}
+              className="mr-2"
+            />
             Based in Sweden
           </motion.h4>
 
@@ -129,9 +131,7 @@ const Hero = () => {
           variants={slideInFromRight(1)}
           className="w-full md:w-1/2 px-4 mt-12 md:mt-2 flex justify-center items-center"
         >
-          <div
-            className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-gray-900 flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[370px]"
-          >
+          <div className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-border-custom flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[370px]">
             <Image
               src="/happy-raman.jpg"
               alt="Raman Mohammed Image"

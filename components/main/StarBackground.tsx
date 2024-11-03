@@ -15,7 +15,11 @@ const getRandomPosition = (radius: number) => {
   ];
 };
 
-const generateRandomPositions = (count: number, radius: number, center: [number, number, number] = [0, 0, 0]) => {
+const generateRandomPositions = (
+  count: number,
+  radius: number,
+  center: [number, number, number] = [0, 0, 0],
+) => {
   const positions = new Float32Array(count * 3);
   for (let i = 0; i < count; i++) {
     const [x, y, z] = random.inSphere(new Float32Array(3), { radius });
@@ -26,18 +30,20 @@ const generateRandomPositions = (count: number, radius: number, center: [number,
   return positions;
 };
 
-
 const StarBackground = (props: any) => {
   const ref1: any = useRef();
   const ref2: any = useRef();
   const ref3: any = useRef();
 
   const [cluster1] = useState(() => generateRandomPositions(1000, 1));
-  const [cluster2] = useState(() => generateRandomPositions(500, 1.5, [2, 2, 0]));
-  const [cluster3] = useState(() => generateRandomPositions(250, 1.8, [-2, -1, 1]));
+  const [cluster2] = useState(() =>
+    generateRandomPositions(500, 1.5, [2, 2, 0]),
+  );
+  const [cluster3] = useState(() =>
+    generateRandomPositions(250, 1.8, [-2, -1, 1]),
+  );
 
   console.log(cluster1.length, cluster2.length, cluster3.length);
-
 
   useFrame((state, delta) => {
     ref1.current.rotation.x -= delta / 10;

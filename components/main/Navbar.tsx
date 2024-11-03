@@ -45,7 +45,7 @@ const Navbar = () => {
           }`}
         >
           <div
-            className="flex justify-center w-full bg-[#03001442] backdrop-blur-lg border border-gray-800 rounded-2xl py-4 
+            className="flex justify-center w-full bg-[#03001442] backdrop-blur-lg border border-border-custom rounded-2xl py-4 
         space-x-3 md:space-x-8 z-50 md:max-w-2xl sm:max-w-lg sm:space-x-4"
           >
             {navLinks.map((link) => (

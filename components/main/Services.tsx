@@ -6,8 +6,7 @@ import SectionHeader from '../ui/SectionHeader';
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 import ServiceItem from '../ui/ServiceItem';
 import ServiceIconItem from '../ui/ServiceIconItem';
-import {
-  slideInFromLeft} from '@/utils/motion';
+import { slideInFromLeft } from '@/utils/motion';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import curve1 from '@/public/curve-1.svg';

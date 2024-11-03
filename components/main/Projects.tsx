@@ -10,7 +10,6 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
 const Projects = () => {
-
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
