@@ -27,7 +27,7 @@ const MilestoneItem: React.FC<MilestoneProps> = ({milestones})  => {
   return (
       <div className="container mx-auto px-4">
         <div className="relative">
-          <div className="absolute top-0 md:left-[20%] left-[10%] h-full w-[2px] bg-gray-800"></div>
+          <div className="absolute top-0 md:left-[20%] left-[10%] h-full w-[2px] text-transparent bg-clip bg-gradient-to-b from-[#5B0066] via-[#00204A] to-[#00204A]"></div>
           {milestones.map(({ id, date, title, img, organization, location, description }) => (
 
             <div key={id} className="relative flex items-start my-8">
