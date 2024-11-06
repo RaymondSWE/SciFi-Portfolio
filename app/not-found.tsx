@@ -15,7 +15,7 @@ export default function NotFound()  {
           Oops! <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">404</span>
         </h1>
         <p className="text-lg text-gray-400 mb-4 max-w-md">
-          The URL path &quot;<span className="text-gray-400 font-bold">{currentPath}</span>&quot; does not exist. This portfolio currently contains only a homepage.
+          The URL path &quot;<span className="text-gray-300 font-bold">{currentPath}</span>&quot; does not exist. This portfolio currently contains only a homepage.
         </p>
 
         <div
