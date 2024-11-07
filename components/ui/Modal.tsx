@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { TechnologyChip } from './TechnologyChip';
 
 interface ModalProps {
   id: number;
@@ -29,11 +30,6 @@ const ListSection = ({ title, items }: { title: string; items: string[] }) => (
   </>
 );
 
-const TechnologyChip = ({ tech }: { tech: string }) => (
-  <div className="inline-flex items-center justify-center px-3 py-1 bg-[#0D3B66]  text-gray-200 text-xs md:text-sm rounded-full shadow-md mr-2 mb-2">
-    {tech}
-  </div>
-);
 
 const Modal = ({
   isOpen,

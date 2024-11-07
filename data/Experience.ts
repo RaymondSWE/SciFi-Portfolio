@@ -11,7 +11,8 @@ export const ExperienceData = [
     location: 'Gothenburg, Sweden',
     description: [
       "Focusing on more advanced topics like bayesian statistics, advanced requirements engineering, QA, and software architecture.",
-    ]
+    ],
+    technologies: ['Advanced Requirement Engineering', 'Bayesian Statistics', 'Quality Assurance'],
   },
   {
     id: 2,
@@ -23,9 +24,10 @@ export const ExperienceData = [
     location: 'Skövde, Sweden',
     description: [
       "Worked with a senior developer in pair programming to resolve technical issues reported by customers.",
-      "Utilized technologies such as Spring Boot, TypeScript, MySQL, Object-Oriented Programming, and Docker for backend development.",
+      "Utilized technologies such as Spring Boot, MySQL, Object-Oriented Programming, and Docker for backend development.",
       "Gained practical experience with methodologies such as Jira, SCRUM meetings, and Test-Driven Development."
-    ]
+    ],
+    technologies: ['SpringBoot', 'MySQL', 'Object-Oriented Programming', 'Docker', 'Jira', 'SCRUM', 'Test-Driven Development'],
   },
   {
     id: 3,
@@ -40,7 +42,8 @@ export const ExperienceData = [
       "Supported and mentored two other students in React and component architecture.",
       "The inhouse project utilised MySQL, React, Spring Boot, JavaScript, Java, and the Okta API.",
       "The application is still actively used by its 100+ employees and has received positive feedback for its usability and can be found in the project section."
-    ]
+    ],
+    technologies: ['MySQL', 'React', 'Spring Boot', 'JavaScript', 'Java', 'Okta API'],
   },
   {
     id: 4,
@@ -54,7 +57,8 @@ export const ExperienceData = [
       "Completed a boot camp to supplement my computer science degree with practical experience not fully covered in academics.",
       "Gained skills in JavaScript, React, TypeScript, NodeJS, and Cloud services, improving my practical knowledge in full-stack development.",
       "Built CSFairTrade, a full-stack app for trading CS2 in-game items, using React, Node.js, MySQL, and Socket.IO for real-time updates, with features like Steam login (oAuth) and virtual item trading."
-    ]
+    ], 
+    technologies: ['JavaScript', 'React', 'TypeScript', 'NodeJS', 'Cloud Services', 'MySQL', 'Redux', 'RESTful APIs'],
   },
   {
     id: 5,
@@ -67,7 +71,8 @@ export const ExperienceData = [
     description: [
       "Specialized in software engineering, diving into algorithms, data structures, OOP and database management.",
       "Wrote a thesis about scaling strategies and cloud-native deployment, exploring ways to improve scalability and efficiency.",
-    ]
+    ],
+    technologies: ['Algorithms', 'Data Structures', 'Object-Oriented Programming', 'Database Management', 'Cloud services' ],
   },
   {
     id: 6,
@@ -81,5 +86,6 @@ export const ExperienceData = [
       'Operated delivery routes in Gothenburg and surrounding areas.',
       'Improved my communincations skills by interacting with customers to address delivery questions and concerns.',
       ],
+      technologies: ['Customer Service', 'Route Planning', 'Time Management'],
   },
 ];

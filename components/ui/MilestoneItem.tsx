@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUniversity, FaBriefcase } from 'react-icons/fa';
 import Image from 'next/image';
+import { TechnologyChip } from './TechnologyChip';
 
 
   interface Milestone {
@@ -12,6 +13,7 @@ import Image from 'next/image';
     organization: string;
     location: string;
     description?: string[];
+    technologies?: string[];
   }
 
   interface MilestoneProps {
@@ -28,7 +30,7 @@ const MilestoneItem: React.FC<MilestoneProps> = ({milestones})  => {
       <div className="container mx-auto px-4">
         <div className="relative">
           <div className="absolute top-0 md:left-[20%] left-[10%] h-full w-[2px] text-transparent bg-clip bg-gradient-to-b from-[#5B0066] via-[#00204A] to-[#00204A]"></div>
-          {milestones.map(({ id, date, title, img, organization, location, description }) => (
+          {milestones.map(({ id, date, title, img, organization, location, description, technologies }) => (
 
             <div key={id} className="relative flex items-start my-8">
               <Image
@@ -57,7 +59,12 @@ const MilestoneItem: React.FC<MilestoneProps> = ({milestones})  => {
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
-                  </div>
+                <div className="flex gap-2 mt-2">
+                  {technologies?.map((tech, index )=> (
+                    <TechnologyChip key={index} tech={tech} size='small' className='mt-2' />
+                  ))}
+                </div>
+                </div>
               </motion.div>
             </div>
           ))}

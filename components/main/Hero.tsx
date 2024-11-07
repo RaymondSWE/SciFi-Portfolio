@@ -1,5 +1,4 @@
 'use client';
-import Typewriter from 'typewriter-effect';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -7,7 +6,6 @@ import {
   FaGithub,
   FaLinkedinIn,
   FaEnvelope,
-  FaMapMarkerAlt,
   FaCode,
 } from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
@@ -32,6 +30,7 @@ const socialLinks = [
 ];
 
 const Hero = () => {
+
   return (
     <section
       id="hero"

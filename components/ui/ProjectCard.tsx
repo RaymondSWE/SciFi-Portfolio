@@ -62,7 +62,7 @@ const ProjectCard = ({
         </div>
         <div className="flex-grow p-4">
           <h1
-            className="text-lg font-bold text-center text-white"
+            className="text-lg font-bold text-center Welcome-text"
             id={`project-title-${id}`}
           >
             {title}
