@@ -59,9 +59,9 @@ const MilestoneItem: React.FC<MilestoneProps> = ({milestones})  => {
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
-                <div className="flex gap-2 mt-2">
+                <div className="flex flex-wrap gap-1 mt-4">
                   {technologies?.map((tech, index )=> (
-                    <TechnologyChip key={index} tech={tech} size='small' className='mt-2' />
+                    <TechnologyChip key={index} tech={tech} size="small" />
                   ))}
                 </div>
                 </div>
