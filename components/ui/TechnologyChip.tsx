@@ -25,10 +25,9 @@ export const TechnologyChip: React.FC<TechnologyChipProps> = ({
   return (
     <div
       className={cn(
-        `inline-flex items-center justify-center rounded-full shadow-md mr-2 mb-2 ${sizeClasses[size]} ${textColor}`,
+        `inline-flex items-center justify-center rounded-full shadow-md mr-2 mb-2 ${sizeClasses[size]} ${textColor} bg-[${bgColor}]`,
         className
       )}
-      style={{ backgroundColor: bgColor }}
       aria-label={ariaLabel || tech}
     >
       {tech}
