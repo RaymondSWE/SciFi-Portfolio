@@ -88,7 +88,7 @@ const Hero = () => {
                 },
               },
             }}
-            className="md:text-xl text-lg font-medium text-gray-400 mt-3 mb-[-4px] italic flex "
+            className="md:text-xl text-base font-medium text-gray-400 mt-2 mb-[-2px] italic flex "
           >
             <Image
               src="/sweden.png"
@@ -100,13 +100,13 @@ const Hero = () => {
             Based in Sweden
           </motion.h4>
 
-          <TextGenerateEffect
+          <TextGenerateEffect 
             words="I'm a self-motivated software developer with 4+ years of experience in desktop and web applications. 
             I have a Bachelor's in Computer Science and am pursuing a Master's in Software Engineering at Chalmers to keep learning new skills. I specialize in Java, React, TypeScript, Docker, MySQL, and Spring."
           />
           <div className="flex flex-col md:flex-row items-center mt-2 z-20">
             <button
-              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-xl transition-colors button-3d-primary"
+              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-sm rounded-xl transition-colors button-3d-primary"
               onClick={() => setShowStars(!showStars)}
             >
               Disable Background Stars
