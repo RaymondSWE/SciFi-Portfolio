@@ -8,7 +8,7 @@ import { StarIcon, NoSymbolIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
-  { href: '#career-timeline', label: 'Career Path' },
+  { href: '#career-timeline', label: 'Career' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#certifications', label: 'Certifications' },
