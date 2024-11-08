@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import {
@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion';
+import StarsCanvas from './StarBackground';
 
 const socialLinks = [
   {
@@ -30,6 +31,8 @@ const socialLinks = [
 ];
 
 const Hero = () => {
+  const [showStars, setShowStars] = useState(true);
+
 
   return (
     <section
@@ -102,12 +105,12 @@ const Hero = () => {
             I have a Bachelor's in Computer Science and am pursuing a Master's in Software Engineering at Chalmers to keep learning new skills. I specialize in Java, React, TypeScript, Docker, MySQL, and Spring."
           />
           <div className="flex flex-col md:flex-row items-center mt-2 z-20">
-            <a
-              href="#projects"
+            <button
               className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-base rounded-xl transition-colors button-3d-primary"
+              onClick={() => setShowStars(!showStars)}
             >
-              Explore My Projects
-            </a>
+              Toggle Background
+            </button>
             <div className="flex gap-4 md:gap-6 justify-center md:justify-end items-center mt-6 md:mt-0 md:ml-6">
               {socialLinks.map((link) => (
                 <a
@@ -144,6 +147,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+      <StarsCanvas show={showStars} />
     </section>
   );
 };

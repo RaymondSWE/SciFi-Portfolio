@@ -1,10 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import StarsCanvas from '@/components/main/StarBackground';
-import { StarIcon, NoSymbolIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
@@ -57,26 +54,10 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <button
-              onClick={() => setShowStars(!showStars)}
-              className="text-white transition duration-300 hover:text-gray-400 borderBottom"
-            >
-              {showStars ? (
-                <StarIcon
-                  className="h-4 w-4 sm:w-6 sm:h-6 text-white"
-                  aria-hidden="true"
-                />
-              ) : (
-                <NoSymbolIcon
-                  className="h-4 w-4 sm:w-6 sm:h-6 text-white"
-                  aria-hidden="true"
-                />
-              )}
-            </button>
+
           </div>
         </div>
       </nav>
-      <StarsCanvas show={showStars} />
     </>
   );
 };
