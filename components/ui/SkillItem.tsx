@@ -55,7 +55,7 @@ const SkillItem = ({
     >
       <AnimatedTooltip items={items}>
         <div>
-          <Image src={src} width={width} height={height} alt={skillName} />
+          <Image src={src} width={width} height={height} alt={skillName} className='w-16 h-16 md:w-22 md:h-22'/>
         </div>
       </AnimatedTooltip>
     </motion.div>
