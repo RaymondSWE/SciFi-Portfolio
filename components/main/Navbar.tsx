@@ -53,7 +53,6 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-
           </div>
         </div>
       </nav>

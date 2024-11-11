@@ -30,7 +30,6 @@ const ListSection = ({ title, items }: { title: string; items: string[] }) => (
   </>
 );
 
-
 const Modal = ({
   isOpen,
   onClose,

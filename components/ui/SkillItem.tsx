@@ -37,7 +37,13 @@ const SkillItem = ({
       variants={variants}
     >
       <div className="flex flex-col items-center">
-        <Image src={src} width={width} height={height} alt={skillName} className="w-16 h-16 md:w-22 md:h-22" />
+        <Image
+          src={src}
+          width={width}
+          height={height}
+          alt={skillName}
+          className="w-16 h-16 md:w-22 md:h-22"
+        />
         <p className="mt-2 text-xs md:text-sm text-gray-400">{skillName}</p>
       </div>
     </motion.div>

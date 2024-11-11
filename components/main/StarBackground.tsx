@@ -40,7 +40,6 @@ const StarBackground = (props: any) => {
     generateRandomPositions(250, 1.5, [2, 2, 0]),
   );
 
-
   console.log(cluster1.length, cluster2.length);
 
   useFrame((state, delta) => {

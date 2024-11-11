@@ -2,12 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaEnvelope,
-  FaCode,
-} from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaCode } from 'react-icons/fa';
 import { TextGenerateEffect } from '../ui/TextGenerateEffect';
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion';
 import StarsCanvas from './StarBackground';
@@ -33,7 +28,6 @@ const socialLinks = [
 const Hero = () => {
   const [showStars, setShowStars] = useState(true);
 
-
   return (
     <section
       id="hero"
@@ -56,21 +50,15 @@ const Hero = () => {
           </div>
           <h2 className="md:text-5xl text-xl font-bold leading-tight">
             Always{' '}
-            <span
-              className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
-            >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               learning
             </span>
             , always{' '}
-            <span
-              className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
-            >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               building
             </span>
           </h2>
-          <h4
-            className="md:text-xl text-base font-medium text-gray-400 mt-2 mb-[-2px] italic flex "
-          >
+          <h4 className="md:text-xl text-base font-medium text-gray-400 mt-2 mb-[-2px] italic flex ">
             <Image
               src="/sweden.png"
               alt="Sweden Flag"
@@ -81,7 +69,7 @@ const Hero = () => {
             Based in Sweden
           </h4>
 
-          <TextGenerateEffect 
+          <TextGenerateEffect
             words="I'm a self-motivated software developer with 4+ years of experience in desktop and web applications. 
             I have a Bachelor's in Computer Science and am pursuing a Master's in Software Engineering at Chalmers to keep learning new skills. I specialize in Java, React, TypeScript, Docker, MySQL, and Spring."
           />
