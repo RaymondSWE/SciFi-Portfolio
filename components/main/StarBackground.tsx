@@ -35,23 +35,19 @@ const StarBackground = (props: any) => {
   const ref2: any = useRef();
   const ref3: any = useRef();
 
-  const [cluster1] = useState(() => generateRandomPositions(1000, 1));
+  const [cluster1] = useState(() => generateRandomPositions(500, 1));
   const [cluster2] = useState(() =>
-    generateRandomPositions(500, 1.5, [2, 2, 0]),
-  );
-  const [cluster3] = useState(() =>
-    generateRandomPositions(250, 1.8, [-2, -1, 1]),
+    generateRandomPositions(250, 1.5, [2, 2, 0]),
   );
 
-  console.log(cluster1.length, cluster2.length, cluster3.length);
+
+  console.log(cluster1.length, cluster2.length);
 
   useFrame((state, delta) => {
     ref1.current.rotation.x -= delta / 10;
     ref1.current.rotation.y -= delta / 15;
     ref2.current.rotation.x -= delta / 12;
     ref2.current.rotation.y -= delta / 18;
-    ref3.current.rotation.x -= delta / 14;
-    ref3.current.rotation.y -= delta / 20;
   });
 
   return (
@@ -86,21 +82,6 @@ const StarBackground = (props: any) => {
           depthWrite={false}
         />
       </Points>
-      <Points
-        ref={ref3}
-        positions={cluster3}
-        stride={3}
-        frustumCulled
-        {...props}
-      >
-        <PointMaterial
-          transparent
-          color="#fff"
-          size={0.001}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
     </group>
   );
 };
@@ -109,9 +90,9 @@ const NebulaBackground = () => {
   const texture = useLoader(TextureLoader, '/nebula.png');
 
   const nebulaInstances = useRef(
-    new Array(10).fill(null).map(() => ({
+    new Array(5).fill(null).map(() => ({
       position: getRandomPosition(5),
-      scale: Math.random() * 0.4 + 0.2,
+      scale: Math.random() * 0.3 + 0.1,
       speedX: (Math.random() - 0.5) * 0.002,
       speedY: (Math.random() - 0.5) * 0.002,
     })),
