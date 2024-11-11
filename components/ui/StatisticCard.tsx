@@ -38,7 +38,7 @@ const StatisticCard = ({
           width={50}
           height={50}
         />
-        <h2 className="md:text-2xl text-xl Welcome-text mt-2 sm:mt-4">
+        <h2 className="font-bold md:text-2xl text-xl Welcome-text mt-2 sm:mt-4">
           {inView ? (
             <>
               <CountUp end={number} duration={14} />
