@@ -1,15 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
+import React from 'react';
+import { motion, Variants } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
 import CountUp from 'react-countup';
-import { slideInWithDelay } from '@/utils/motion';
 
 interface StatisticCardProps {
   id: number;
   icon: string;
   number: number;
-  suffix: string;
+  suffix?: string;
   description: string;
 }
 
@@ -34,11 +34,11 @@ const StatisticCard = ({
         <Image
           src={icon}
           alt="Statistic Icon"
-          className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+          className="w-10 h-10 sm:w-14 sm:h-14"
           width={50}
           height={50}
         />
-        <h2 className="title-font font-bold md:text-2xl text-xl sm:text-3xl Welcome-text mt-2 sm:mt-4">
+        <h2 className="md:text-2xl text-xl Welcome-text mt-2 sm:mt-4">
           {inView ? (
             <>
               <CountUp end={number} duration={14} />
@@ -48,7 +48,7 @@ const StatisticCard = ({
             0
           )}
         </h2>
-        <p className="text-gray-400 mt-2 sm:text-sm md:text-base text-xs font-semibold">
+        <p className="text-gray-400 mt-2 text-xs sm:text-sm md:text-base font-semibold">
           {description}
         </p>
       </div>
