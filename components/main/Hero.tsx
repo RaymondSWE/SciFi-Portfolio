@@ -87,7 +87,7 @@ const Hero = () => {
           />
           <div className="flex flex-col md:flex-row items-center mt-2 z-20">
             <button
-              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-lg text-sm rounded-xl transition-colors button-3d-primary"
+              className=" md:inline-block sm:px-8 sm:py-2 px-4 py-2 sm:text-sm md:text-base lg:text-lg text-sm rounded-xl transition-colors button-3d-primary"
               onClick={() => setShowStars(!showStars)}
             >
               Disable Background Stars
@@ -112,7 +112,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={slideInFromRight(1)}
-          className="w-full md:w-1/2 px-4 mt-12 md:mt-2 flex justify-center items-center"
+          className="w-full md:w-1/2 px-4 mt-6 md:mt-2 flex justify-center items-center"
         >
           <div className="relative overflow-hidden rounded-3xl bg-[#ffffff10] backdrop-blur-xl border border-border-custom flex justify-center items-center shadow-sm shadow-gray-800 w-[200px] h-[300px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[370px]">
             <Image
@@ -121,6 +121,7 @@ const Hero = () => {
               className="object-cover object-bottom filter grayscale contrast-65 opacity-90"
               priority
               fill
+              quality={80}
               sizes="(max-width: 768px) 100vw, 
               (max-width: 1200px) 50vw, 
               33vw"
