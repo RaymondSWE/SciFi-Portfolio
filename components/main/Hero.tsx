@@ -54,40 +54,21 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <motion.h2 className="md:text-5xl text-xl font-bold leading-tight">
+          <h2 className="md:text-5xl text-xl font-bold leading-tight">
             Always{' '}
-            <motion.span
+            <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
-              animate={{
-                opacity: [1, 0.8, 1],
-                transition: { repeat: Infinity, duration: 2 },
-              }}
             >
               learning
-            </motion.span>
+            </span>
             , always{' '}
-            <motion.span
+            <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
-              animate={{
-                opacity: [1, 0.8, 1],
-                transition: { repeat: Infinity, duration: 2, delay: 1 },
-              }}
             >
               building
-            </motion.span>
-          </motion.h2>
-          <motion.h4
-            variants={{
-              hidden: { opacity: 0, y: 10 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: {
-                  delay: 1.1,
-                  duration: 0.6,
-                },
-              },
-            }}
+            </span>
+          </h2>
+          <h4
             className="md:text-xl text-base font-medium text-gray-400 mt-2 mb-[-2px] italic flex "
           >
             <Image
@@ -98,7 +79,7 @@ const Hero = () => {
               className="mr-2"
             />
             Based in Sweden
-          </motion.h4>
+          </h4>
 
           <TextGenerateEffect 
             words="I'm a self-motivated software developer with 4+ years of experience in desktop and web applications. 

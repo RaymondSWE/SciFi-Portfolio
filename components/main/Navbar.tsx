@@ -13,7 +13,6 @@ const navLinks = [
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
-  const [showStars, setShowStars] = useState(true);
   let lastScrollY = 0;
 
   const handleScroll = () => {
