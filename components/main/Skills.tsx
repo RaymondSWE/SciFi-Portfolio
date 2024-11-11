@@ -1,11 +1,12 @@
 'use client';
 import { SkillsData } from '@/data/Skills';
 import React from 'react';
-import SkillSection from '../ui/SkillsGallery';
 import { BeakerIcon } from '@heroicons/react/24/solid';
 import SectionHeader from '../ui/SectionHeader';
 import { useInView } from 'react-intersection-observer';
 import { infoToast } from '@/utils/Toaster';
+import SkillsGallery from '../ui/SkillsGallery';
+
 const Skills = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -34,7 +35,7 @@ const Skills = () => {
           Icon={<BeakerIcon />}
         />
       </div>
-      <SkillSection skillsData={SkillsData} />
+      <SkillsGallery skillsData={SkillsData} />
       <div className="w-full h-full absolute top-0 left-0 z-[-10] opacity-30">
         <video
           className="w-full h-full object-cover opacity-40"

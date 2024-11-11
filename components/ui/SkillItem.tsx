@@ -35,7 +35,6 @@ const SkillItem = ({
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      className="flex flex-col items-center"
     >
       <div className="flex flex-col items-center">
         <Image src={src} width={width} height={height} alt={skillName} className="w-16 h-16 md:w-22 md:h-22" />
