@@ -9,17 +9,7 @@ import SkillsGallery from '../ui/SkillsGallery';
 
 const Skills = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
-    onChange: (inView) => {
-      if (inView) {
-        infoToast(
-          'Discover My Skills!',
-          'Hover over the skills icons to see the skill names!',
-          'top-right',
-          true,
-        );
-      }
-    },
+    triggerOnce: true
   });
 
   return (

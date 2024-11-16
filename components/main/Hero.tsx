@@ -40,7 +40,7 @@ const Hero = () => {
           variants={slideInFromLeft(1)}
           className="w-full md:w-1/2 flex flex-col md:items-start items-center"
         >
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-2">
             <div className="Welcome-box py-2 px-2 border border-[#7042f88b] opacity-[0.9]">
               <FaCode className="text-[#b49bff] mr-[10px] h-5 w-5" />
               <div className="Welcome-text italic md:text-xl text-xs px-2 ml-[-12px] font-semibold">
@@ -58,7 +58,7 @@ const Hero = () => {
               building
             </span>
           </h2>
-          <h4 className="md:text-xl text-base font-medium text-gray-400 mt-2 mb-[-2px] italic flex ">
+          <h4 className="md:text-xl text-base font-medium text-gray-400 mt-1 mb-[-6px] italic flex ">
             <Image
               src="/sweden.png"
               alt="Sweden Flag"

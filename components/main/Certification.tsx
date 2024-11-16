@@ -5,22 +5,11 @@ import SectionHeader from '../ui/SectionHeader';
 import { AcademicCapIcon } from '@heroicons/react/24/solid';
 import { CertificationData } from '@/data/Certification';
 import { useInView } from 'react-intersection-observer';
-import { infoToast } from '@/utils/Toaster';
 import { motion } from 'framer-motion';
 
 export const Certification = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
-    onChange: (inView) => {
-      if (inView) {
-        infoToast(
-          'Continuous Learning Update!',
-          'Actively pursuing certifications beyond my CS degree to deepen my tech expertise.',
-          'top-left',
-          true,
-        );
-      }
-    },
+    triggerOnce: true
   });
   return (
     <motion.section

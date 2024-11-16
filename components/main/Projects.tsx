@@ -1,5 +1,5 @@
 'use client';
-import React, { memo } from 'react';
+import React, { memo, useMemo } from 'react';
 import ProjectCard from '../ui/ProjectCard';
 import { projectsData } from '@/data/Projects';
 import { GlobeAltIcon } from '@heroicons/react/24/solid';
@@ -7,7 +7,7 @@ import SectionHeader from '../ui/SectionHeader';
 import { ProjectCategories } from '@/types';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/Tabs';
 import { useInView } from 'react-intersection-observer';
-import { motion } from 'framer-motion';
+
 
 const Projects = () => {
   const { ref, inView } = useInView({
@@ -20,9 +20,12 @@ const Projects = () => {
     ProjectCategories.DevOps,
   ];
 
-  const filterProjectsByCategory = (category: ProjectCategories) => {
-    return projectsData.filter((project) => project.category === category);
-  };
+  const filterProjectsByCategory = useMemo(() => {
+    return projectsCategories.reduce((acc, category) => {
+      acc[category] = projectsData.filter((project) => project.category === category);
+      return acc;
+    }, {} as Record<ProjectCategories, typeof projectsData>);
+  }, [projectsCategories, projectsData]);
 
   return (
     <section
@@ -53,7 +56,7 @@ const Projects = () => {
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12"
               aria-label={`${category} project list`}
             >
-              {filterProjectsByCategory(category).map((project) => (
+              {filterProjectsByCategory[category]?.map((project) => (
                 <ProjectCard
                   id={project.id}
                   key={project.id}
