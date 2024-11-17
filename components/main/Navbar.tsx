@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 const navLinks = [
@@ -12,34 +12,12 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
-  let lastScrollY = 0;
-
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      setShowNavbar(false);
-    } else {
-      setShowNavbar(true);
-    }
-    lastScrollY = window.scrollY;
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  
   return (
     <>
       <nav className="flex flex-row w-full py-6">
         <div
-          className={`fixed w-full flex justify-center px-3 z-50 transition-transform duration-300 ${
-            showNavbar ? 'translate-y-0' : '-translate-y-80'
-          }`}
-        >
+          className="fixed w-full flex justify-center px-3 z-50 transition-transform duration-300">
           <div
             className="flex justify-center w-full bg-[#03001442] backdrop-blur-lg border border-border-custom rounded-2xl py-4 
         space-x-3 md:space-x-8 z-50 md:max-w-2xl sm:max-w-lg sm:space-x-4"
