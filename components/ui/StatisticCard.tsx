@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { slideInFromTop, slideInWithDelay } from '@/utils/motion';
 import CountUp from 'react-countup';

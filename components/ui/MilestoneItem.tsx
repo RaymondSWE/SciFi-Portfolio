@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaUniversity, FaBriefcase } from 'react-icons/fa';
 import Image from 'next/image';
 import { TechnologyChip } from './TechnologyChip';
 

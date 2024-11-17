@@ -4,7 +4,6 @@ import React from 'react';
 import { BeakerIcon } from '@heroicons/react/24/solid';
 import SectionHeader from '../ui/SectionHeader';
 import { useInView } from 'react-intersection-observer';
-import { infoToast } from '@/utils/Toaster';
 import SkillsGallery from '../ui/SkillsGallery';
 
 const Skills = () => {
