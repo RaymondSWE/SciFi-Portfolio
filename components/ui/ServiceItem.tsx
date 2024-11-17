@@ -21,9 +21,8 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
       animate={inView ? 'visible' : 'hidden'}
       variants={slideInFromTop(0.2)}
     >
-      <li key={id} className="mb-3">
-        <div className="flex items-center">
-          <Image src={icon} width={24} height={24} alt="service icon" />
+        <div className="flex items-center mb-3">
+          <Image src={icon} width={24} height={24} alt={`Icon representing ${name}`} />
           <h6 className="mx-5 Welcome-text text-base md:text-lg font-bold">
             {name}
           </h6>
@@ -31,7 +30,6 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
         <p className="text-gray-400 text-sm md:text-base italic mt-3">
           {description}
         </p>
-      </li>
     </motion.div>
   );
 };
