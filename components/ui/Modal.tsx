@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { TechnologyChip } from './TechnologyChip';
+import DisableBodyScroll from './DisableBodyScroll';
 
 interface ModalProps {
   id: number;
@@ -46,6 +47,8 @@ const Modal = ({
   if (!isOpen) return null;
 
   return (
+    <> 
+    <DisableBodyScroll isActive={isOpen} />
     <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center px-6">
       <div className="bg-[rgba(33,82,243,0.1)] backdrop-blur-md p-6 rounded-3xl shadow-blue-700/40 border-b-2 border-[#645AFF] shadow-md max-w-4xl max-h-[90vh] w-full space-y-6 overflow-y-auto custom-scrollbar">
         <div className="flex justify-between items-center">
@@ -90,6 +93,7 @@ const Modal = ({
         </div>
       </div>
     </div>
+    </>
   );
 };
 
