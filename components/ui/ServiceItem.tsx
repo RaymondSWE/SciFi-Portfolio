@@ -27,7 +27,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
             {name}
           </h6>
         </div>
-        <p className="text-gray-400 text-sm md:text-base italic mt-3">
+        <p className="text-gray-400 text-sm md:text-base italic mt-2">
           {description}
         </p>
     </motion.div>
