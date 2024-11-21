@@ -22,7 +22,7 @@ const ServiceItem = ({ id, name, description, icon }: ServiceData) => {
       variants={slideInFromTop(0.2)}
     >
         <div className="flex">
-          <Image className='mr-2' src={icon} width={20} height={20} alt={`Icon representing ${name}`} />
+          <Image className='mr-2' src={icon} width={18} height={18} alt={`Icon representing ${name}`} />
           <h6 className="Welcome-text text-base md:text-lg font-bold">
             {name}
           </h6>
