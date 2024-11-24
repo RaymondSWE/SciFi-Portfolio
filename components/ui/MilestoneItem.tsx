@@ -71,7 +71,7 @@ const MilestoneItem: React.FC<MilestoneProps> = ({ milestones }) => {
                   </p>
                   {gpa && (
                     <p className="text-gray-400 text-xs sm:text-sm italic">
-                      GPA: {gpa.toFixed(2)} 
+                      GPA: {gpa.toFixed(2)} / 5
                     </p>
                   )}
                   <ul className="my-2 text-gray-400 text-xs sm:text-sm list-disc ml-4 sm:ml-6">

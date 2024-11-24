@@ -97,7 +97,7 @@ export const ExperienceData = [
     img: '/company-logo/his.png',
     organization: 'University of Skövde',
     location: 'Skövde, Sweden',
-    gpa: 4.1,
+    gpa: 3.8,
     description: [
       'Specialized in software engineering, diving into algorithms, data structures, OOP and database management.',
       'Wrote a thesis about scaling strategies and cloud-native deployment, exploring ways to improve scalability and efficiency.',
