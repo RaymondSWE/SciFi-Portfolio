@@ -9,6 +9,7 @@ export const ExperienceData = [
     img: '/company-logo/chalmers.webp',
     organization: 'Chalmers University of Technology',
     location: 'Gothenburg, Sweden',
+    gpa: 4.0,
     description: [
       'Focusing on more advanced topics like bayesian statistics, advanced requirements engineering, QA, and software architecture.',
     ],
@@ -96,6 +97,7 @@ export const ExperienceData = [
     img: '/company-logo/his.png',
     organization: 'University of Skövde',
     location: 'Skövde, Sweden',
+    gpa: 4.1,
     description: [
       'Specialized in software engineering, diving into algorithms, data structures, OOP and database management.',
       'Wrote a thesis about scaling strategies and cloud-native deployment, exploring ways to improve scalability and efficiency.',

@@ -12,6 +12,7 @@ interface Milestone {
   location: string;
   description?: string[];
   technologies?: string[];
+  gpa?: number;
 }
 
 interface MilestoneProps {
@@ -38,6 +39,7 @@ const MilestoneItem: React.FC<MilestoneProps> = ({ milestones }) => {
             location,
             description,
             technologies,
+            gpa,
           }) => (
             <div key={id} className="relative flex items-start my-8">
               <Image
@@ -67,6 +69,11 @@ const MilestoneItem: React.FC<MilestoneProps> = ({ milestones }) => {
                   <p className="sm:mt-0 text-gray-300 text-xs sm:text-sm italic">
                     {organization}, {location}
                   </p>
+                  {gpa && (
+                    <p className="text-gray-400 text-xs sm:text-sm italic">
+                      GPA: {gpa.toFixed(2)} 
+                    </p>
+                  )}
                   <ul className="my-2 text-gray-400 text-xs sm:text-sm list-disc ml-4 sm:ml-6">
                     {description?.map((point, index) => (
                       <li key={index}>{point}</li>
