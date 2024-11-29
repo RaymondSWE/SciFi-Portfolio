@@ -100,53 +100,6 @@ export const projectsData = [
   },
   {
     id: 3,
-    category: ProjectCategories.WebApplication,
-    src: '/project-img/snipeskins.jpg',
-    title: 'SnipeSkins',
-    description:
-      'A web application for Rust virtualization skins, offering cryptocurrency payments. SnipeSkins delivers a user-friendly platform for traing digital assets from the game Rust.',
-    sourceUrl: 'https://snipeskins.com/',
-    youtubeUrl: null,
-    githubUrl: null,
-    startDate: '2023-06-12',
-    endDate: '2023-08-20',
-    technologyStack: [
-      'Next.js',
-      'Node.js',
-      'Javascript',
-      'Prisma',
-      'Socket.io',
-      'Redis',
-      'TailwindCSS',
-      'Docker',
-      'Steam Modules',
-      'Postman',
-      'SSL',
-      'Github',
-      'Heroku',
-      'Serverless Functions',
-      'Bash-Scripting',
-      'Linux',
-      'MySQL',
-      'Radix UI',
-    ],
-    features: [
-      'A platform for trading, selling and buying in the Rust with players Virtuell items.',
-      'Consist of selling and buying items, inventory management, and real-time trading mechanism.',
-      'Players also have statistics and insights about the market and their items.',
-      'KYC and AML for secure trading.',
-    ],
-    challenges: [
-      'Introduction to PaaS and automate deployment to production with Bash-Scripting, utilising Dokku and Heroku.',
-      'Adapting to serverless functions for the first time.',
-    ],
-    accomplishments: [
-      'Few thousands users registered and bugs was introduced and fixed.',
-      'Deployed production with Bash-Scripting, utilising Dokku and Heroku.',
-    ],
-  },
-  {
-    id: 4,
     category: ProjectCategories.DesktopApplication,
     src: '/project-img/queue-student.png',
     title: 'Student Queue System',
@@ -186,7 +139,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     category: ProjectCategories.WebApplication,
     src: '/project-img/starwars-portfolio.png',
     title: 'Web portfolio',
@@ -225,7 +178,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     category: ProjectCategories.WebApplication,
     src: '/project-img/massageapp.png',
     title: "Bally's Massage Appointments System",
@@ -264,7 +217,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     category: ProjectCategories.DesktopApplication,
     src: '/project-img/blackjack.png',
     title: 'Blackjack Game',
@@ -290,7 +243,7 @@ export const projectsData = [
   },
 
   {
-    id: 8,
+    id: 7,
     category: ProjectCategories.WebApplication,
     src: '/project-img/webportfolio.png',
     title: 'Old Web Portfolio',
@@ -321,7 +274,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     category: ProjectCategories.DevOps,
     src: '/project-img/cluster.png',
     title: 'Kubernetes Scaling Analysis: A Performance and Cost Comparison',
@@ -359,7 +312,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     category: ProjectCategories.WebApplication,
     src: '/project-img/validation-app.png',
     title: 'Validation-Focused Web Application',

@@ -14,9 +14,9 @@ export const ExperienceData = [
       'Focusing on more advanced topics like bayesian statistics, advanced requirements engineering, QA, and software architecture.',
     ],
     technologies: [
-      'Advanced Requirement Engineering',
-      'Bayesian Statistics',
-      'Quality Assurance',
+      'R',
+      'SonarQube',
+      'Matlab',
     ],
   },
   {
@@ -28,10 +28,10 @@ export const ExperienceData = [
     organization: "Bally's",
     location: 'Skövde, Sweden',
     description: [
-      'Worked with a senior developer in pair programming to resolve technical issues reported by customers.',
-      'Utilized technologies such as Spring Boot, MySQL, Object-Oriented Programming, and Docker for backend development.',
-      'Gained practical experience with methodologies such as Jira, SCRUM meetings, and Test-Driven Development.',
-    ],
+      'Collaborated closely with senior developers to solve real-world technical problems raised by customers.',
+      'Gained hands-on experience with Spring Boot, TypeScript, MySQL, Docker, and Test-Driven Development.',
+      'Learned agile workflows like SCRUM and tools like Jira.',
+    ],    
     technologies: [
       'SpringBoot',
       'MySQL',
@@ -51,11 +51,10 @@ export const ExperienceData = [
     organization: "Bally's",
     location: 'Skövde, Sweden',
     description: [
-      'Designed the database, identified software requirements, held meetings with stakeholders, and implemented backend logic using Object-Oriented Programming principles.',
-      'Supported and mentored two other students in React and component architecture.',
-      'The inhouse project utilised MySQL, React, Spring Boot, JavaScript, Java, and the Okta API.',
-      'The application is still actively used by its 100+ employees and has received positive feedback for its usability and can be found in the project section.',
-    ],
+      'Designed the database using MySQL, coded the backend, held stakeholder meetings, and implemented backend logic with OOP principles.',
+      'Mentored two junior interns on React architecture and component design.',
+      'Built an in-house application using Spring Boot and React, still used by over 120+ employees and praised for its ease of use.',
+    ],    
     technologies: [
       'MySQL',
       'React',
@@ -108,6 +107,10 @@ export const ExperienceData = [
       'Object-Oriented Programming',
       'Database Management',
       'Cloud services',
+      'Java',
+      'C++',
+      'Python',
+      'SQL',
     ],
   },
   {
