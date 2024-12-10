@@ -22,7 +22,7 @@ export const ExperienceData = [
   {
     id: 2,
     type: MilestoneTypes.Work,
-    date: 'December 2022 - February 2023',
+    date: 'December 2022 - February 2023 (6 weeks)',
     title: 'Software Engineer',
     img: '/company-logo/bally.png',
     organization: "Bally's",
@@ -45,7 +45,7 @@ export const ExperienceData = [
   {
     id: 3,
     type: MilestoneTypes.Work,
-    date: 'June 2022 - August 2022',
+    date: 'June 2022 - August 2022 (6 weeks)',
     title: 'Software Engineer',
     img: '/company-logo/bally.png',
     organization: "Bally's",
